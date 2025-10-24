@@ -1,0 +1,145 @@
+---
+description: Talking Heads Studio - Professional Video Production Website with Bootstrap
+alwaysApply: true
+---
+
+You are an expert in Bootstrap and modern web application development for the Talking Heads Studio project.
+
+## Key Principles
+- Write clear, concise, and technical responses with precise Bootstrap examples.
+- Utilize Bootstrap's components and utilities to streamline development and ensure responsiveness.
+- Prioritize maintainability and readability; adhere to clean coding practices throughout your HTML and CSS.
+- Use descriptive class names and structure to promote clarity and collaboration among developers.
+
+## Bootstrap Usage
+- Leverage Bootstrap's grid system for responsive layouts; use container, row, and column classes to structure content.
+- Utilize Bootstrap components (e.g., buttons, modals, alerts) to enhance user experience without extensive custom CSS.
+- Apply Bootstrap's utility classes for quick styling adjustments, such as spacing, typography, and visibility.
+- Ensure all components are accessible; use ARIA attributes and semantic HTML where applicable.
+
+## Error Handling and Validation
+- Implement form validation using Bootstrap's built-in styles and classes to enhance user feedback.
+- Use Bootstrap's alert component to display error messages clearly and informatively.
+- Structure forms with appropriate labels, placeholders, and error messages for a better user experience.
+
+## Dependencies
+- Bootstrap (latest version, CSS and JS)
+- Any JavaScript framework (like jQuery, if required) for interactive components.
+
+## Bootstrap-Specific Guidelines
+- Customize Bootstrap's Sass variables and mixins to create a unique theme without overriding default styles.
+- Utilize Bootstrap's responsive utilities to control visibility and layout on different screen sizes.
+- Keep custom styles to a minimum; use Bootstrap's classes wherever possible for consistency.
+- Use the Bootstrap documentation to understand component behavior and customization options.
+
+## Performance Optimization
+- Minimize file sizes by including only the necessary Bootstrap components in your build process.
+- Use a CDN for Bootstrap resources to improve load times and leverage caching.
+- Optimize images and other assets to enhance overall performance, especially for mobile users.
+
+## Key Conventions
+1. Follow Bootstrap's naming conventions and class structures to ensure consistency across your project.
+2. Prioritize responsiveness and accessibility in every stage of development.
+3. Maintain a clear and organized file structure to enhance maintainability and collaboration.
+
+## Project-Specific Rules
+- Use PHP includes for header and footer
+- All CSS and JS in separate folders
+- Individual video style pages in styles folder
+- No inline CSS or JavaScript
+- Use featured-actor.php include for spokesperson management
+- Follow the warm color scheme: #EFB867 (gold), #EFB8767 (coral), #2D2D2D (charcoal), #FFF8F0 (cream), #5AC8C0 (teal)
+
+Refer to the Bootstrap documentation for best practices and detailed examples of usage patterns.
+
+## Self-Improvement Guidelines
+- **Rule Improvement Triggers:**
+  - New code patterns not covered by existing rules
+  - Repeated similar implementations across files
+  - Common error patterns that could be prevented
+  - New libraries or tools being used consistently
+  - Emerging best practices in the codebase
+
+- **Analysis Process:**
+  - Compare new code with existing rules
+  - Identify patterns that should be standardized
+  - Look for references to external documentation
+  - Check for consistent error handling patterns
+  - Monitor test patterns and coverage
+
+- **Rule Updates:**
+  - **Add New Rules When:**
+    - A new technology/pattern is used in 3+ files
+    - Common bugs could be prevented by a rule
+    - Code reviews repeatedly mention the same feedback
+    - New security or performance patterns emerge
+
+  - **Modify Existing Rules When:**
+    - Better examples exist in the codebase
+    - Additional edge cases are discovered
+    - Related rules have been updated
+    - Implementation details have changed
+
+- **Rule Quality Checks:**
+  - Rules should be actionable and specific
+  - Examples should come from actual code
+  - References should be up to date
+  - Patterns should be consistently enforced
+
+- **Continuous Improvement:**
+  - Monitor code review comments
+  - Track common development questions
+  - Update rules after major refactors
+  - Add links to relevant documentation
+  - Cross-reference related rules
+
+## Git Workflow Rules
+
+### **Critical Rule: Never Auto-Push**
+- **NEVER** run `git push` unless the user **explicitly** asks you to push
+- **NEVER** assume work is complete and ready to push
+- The user will tell you when to push
+
+### **Git Commands - What's Allowed**
+
+#### ✅ ALLOWED Without Permission:
+- `git status` - Check repository status
+- `git diff` - View changes
+- `git log` - View commit history
+- `git branch` - List branches
+
+#### ⚠️ ALLOWED But Use Caution:
+- `git add` - Stage files (only when user asks to commit/stage)
+- `git commit` - Commit changes (only when user asks to commit)
+- `git stash` - Stash changes (only when needed for user's workflow)
+
+#### 🛑 NEVER Do Without Explicit Permission:
+- `git push` - **ABSOLUTELY NEVER** push without explicit user request
+- `git push --force` - Never do this
+- `git reset --hard` - Only when user explicitly asks to revert
+- `git clean -fd` - Only when user explicitly asks
+
+### **Proper Workflow**
+
+#### When User Says "Commit":
+```bash
+git add <files>
+git commit -m "message"
+# STOP HERE - Do NOT push
+```
+
+#### When User Says "Commit and Push" or "Push":
+```bash
+git add <files>
+git commit -m "message"
+git push  # Only now is push allowed
+```
+
+#### When User Says "Stage":
+```bash
+git add <files>
+# STOP HERE - Do NOT commit or push
+```
+
+### **Remember**
+**The user controls when code goes to the remote repository. Period.**

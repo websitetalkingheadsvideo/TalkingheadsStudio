@@ -1,0 +1,2 @@
+Test file for SFTP auto-upload
+Created: <?php echo date('Y-m-d H:i:s'); ?>
