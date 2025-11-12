@@ -1,15 +1,4 @@
-// Talking Heads Studio - Main JavaScript File
-
-document.addEventListener('DOMContentLoaded', function() {
-    
-    // Initialize all components
-    initScrollAnimations();
-    initVideoGallery();
-    initContactForm();
-    initSmoothScrolling();
-    initNavbarScroll();
-    
-});
+// Talking Heads Video - Main JavaScript File
 
 // Scroll-triggered animations
 function initScrollAnimations() {
@@ -34,46 +23,36 @@ function initScrollAnimations() {
 
 // Video Gallery with Lightbox
 function initVideoGallery() {
-    const videoItems = document.querySelectorAll('.video-item');
-    const lightbox = document.getElementById('videoLightbox');
-    const lightboxFrame = document.getElementById('vimeoFrame');
-    const closeBtn = document.querySelector('.lightbox-close');
-    
-    if (!lightbox || !lightboxFrame) return;
-    
-    videoItems.forEach(item => {
-        item.addEventListener('click', function() {
-            const videoId = this.getAttribute('data-vimeo');
-            if (videoId) {
-                lightboxFrame.src = `https://player.vimeo.com/video/${videoId}?autoplay=1&title=0&byline=0&portrait=0`;
-                lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden';
+    if (typeof bootstrap === 'undefined') return;
+
+    const modalElement = document.getElementById('demoModal');
+    const modalFrame = document.getElementById('demoModalFrame');
+
+    if (!modalElement || !modalFrame) return;
+
+    const modalLabel = modalElement.querySelector('#demoModalLabel');
+    const triggers = document.querySelectorAll('[data-demo-video]');
+    const bootstrapModal = bootstrap.Modal.getOrCreateInstance(modalElement);
+
+    triggers.forEach(trigger => {
+        trigger.addEventListener('click', function() {
+            const videoSrc = this.getAttribute('data-demo-video');
+            const title = this.getAttribute('data-demo-title') || 'Demo Video';
+            if (!videoSrc) {
+                return;
             }
+
+            modalFrame.src = videoSrc.includes('?') ? `${videoSrc}&autoplay=1` : `${videoSrc}?autoplay=1`;
+            if (modalLabel) {
+                modalLabel.textContent = title;
+            }
+
+            bootstrapModal.show();
         });
     });
-    
-    // Close lightbox
-    function closeLightbox() {
-        lightboxFrame.src = '';
-        lightbox.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-    
-    if (closeBtn) {
-        closeBtn.addEventListener('click', closeLightbox);
-    }
-    
-    lightbox.addEventListener('click', function(e) {
-        if (e.target === lightbox) {
-            closeLightbox();
-        }
-    });
-    
-    // Close with Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-            closeLightbox();
-        }
+
+    modalElement.addEventListener('hidden.bs.modal', function() {
+        modalFrame.src = '';
     });
 }
 
@@ -230,7 +209,7 @@ function initNavbarScroll() {
 }
 
 // Notification system
-function showNotification(message, type = 'info') {
+function showNotification(message, type) {
     const notification = document.createElement('div');
     notification.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
     notification.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
@@ -273,6 +252,46 @@ function initLazyLoading() {
 // Initialize lazy loading when DOM is ready
 document.addEventListener('DOMContentLoaded', initLazyLoading);
 
+document.addEventListener('DOMContentLoaded', function() {
+    initPreloader();
+    initScrollAnimations();
+    initVideoGallery();
+    initContactForm();
+    initSmoothScrolling();
+    initNavbarScroll();
+});
+
+// Splash / preloader handling
+function initPreloader() {
+    const splash = document.getElementById('splash-screen');
+    const preloader = document.getElementById('preloader');
+
+    if (!splash && !preloader) {
+        return;
+    }
+ 
+    const onLoad = () => {
+        console.log('Closing splash: initial load complete');
+        [splash, preloader].forEach(overlay => {
+            if (!overlay) {
+                return;
+            }
+            overlay.classList.add('is-hidden');
+            setTimeout(() => {
+                if (overlay && overlay.parentNode) {
+                    overlay.remove();
+                }
+            }, 600);
+            overlay.addEventListener('transitionend', () => {
+                overlay.remove();
+            }, { once: true });
+        });
+        window.removeEventListener('load', onLoad);
+    };
+
+    window.addEventListener('load', onLoad);
+}
+ 
 // Utility functions
 const utils = {
     // Debounce function

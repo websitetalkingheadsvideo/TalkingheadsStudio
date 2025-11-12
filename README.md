@@ -1,4 +1,4 @@
-# Talking Heads Studio - Professional Video Production Website
+# Talking Heads Video - Professional Video Production Website
 
 A modern, responsive, SEO-optimized video sales website built with Bootstrap 5 and PHP. Features a warm, friendly design that contrasts with the main TalkingHeads.com site while maintaining professional quality.
 
@@ -27,13 +27,15 @@ TalkingHeads.Video/
 ├── includes/
 │   ├── header.php            # Site header with navigation
 │   ├── footer.php            # Site footer with contact info
-│   ├── featured-actor.php    # Spokesperson management
+│   ├── spokesperson-specials.php # Dynamic spokesperson promotions
 │   └── connect.php           # Database connection
-├── styles/
-│   ├── spokesperson-videos.php
-│   ├── explainer-videos.php
-│   ├── product-demos.php
-│   └── social-media-clips.php
+├── style/
+│   ├── spokesperson.php
+│   ├── explainer.php
+│   ├── product-demo.php
+│   ├── social-clips.php
+│   ├── testimonials.php
+│   └── training.php
 ├── images/                   # Image assets
 ├── video/                    # Video assets
 ├── notes/                    # Project documentation
@@ -133,7 +135,7 @@ TalkingHeads.Video/
 
 ## 📄 License
 
-© 2025 Talking Heads Studio. All rights reserved.
+© 2025 Talking Heads Video. All rights reserved.
 
 ## 🤝 Contributing
 
@@ -141,4 +143,4 @@ This is a client project. For development questions or issues, contact the devel
 
 ---
 
-**Built with ❤️ for Talking Heads Studio**
+**Built with ❤️ for Talking Heads Video**

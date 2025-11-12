@@ -62,7 +62,7 @@ temp/
 
 # Project specific
 notes/
-_notes/
+**/_notes/
 sync_config.jsonc
 
 # SFTP/Deployment configs (keep local, don't commit)
