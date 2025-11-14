@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/version.php';
+
 $page_title = $page_title ?? 'Talking Heads Video';
 $meta_description = $meta_description ?? 'Talking Heads Video creates warm, human-focused spokesperson, explainer, and product demo videos that convert browsers into buyers.';
 $canonical_url = $canonical_url ?? '';
@@ -105,11 +107,21 @@ if (!function_exists('ths_render_preload_links')) {
                     </li>
                 </ul>
                 <div class="d-flex align-items-center gap-2 ms-lg-4">
-                    <a class="btn btn-outline-light" href="/video/">Watch Showreel</a>
+                    <button
+                        class="btn btn-outline-light"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#demoModal"
+                        data-demo-video="https://player.vimeo.com/video/980901414?h=8390de9d94"
+                        data-demo-title="Presentation Showreel"
+                    >
+                        Watch Showreel
+                    </button>
                     <a class="btn btn-primary btn-gradient" href="/contact.php">Get a Quote</a>
                 </div>
             </div>
         </div>
     </nav>
 </header>
+<?php include __DIR__ . '/demo-modal.php'; ?>
 

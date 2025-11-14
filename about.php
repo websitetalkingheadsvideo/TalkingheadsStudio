@@ -22,8 +22,8 @@ $structured_data = json_encode([
         ],
         'contactPoint' => [
             '@type' => 'ContactPoint',
-            'contactType' => 'customer support',
-            'email' => 'info@talkingheads.video',
+            'contactType' => 'sales',
+            'email' => 'sales@websitetalkingheads.com',
             'telephone' => '+1-801-748-2281'
         ]
     ]

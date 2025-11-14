@@ -343,37 +343,9 @@ include __DIR__ . '/includes/header.php';
                     </div>
                     <div class="col-lg-7">
                         <div class="cta-form-wrapper">
-                            <form id="contactForm" class="row g-3 needs-validation" novalidate>
-                                <div class="col-md-6">
-                                    <label class="form-label" for="cfName">Full Name</label>
-                                    <input type="text" class="form-control" id="cfName" name="name" placeholder="Alex Morgan" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label" for="cfEmail">Company Email</label>
-                                    <input type="email" class="form-control" id="cfEmail" name="email" placeholder="you@company.com" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label" for="cfPhone">Mobile Number</label>
-                                    <input type="tel" class="form-control" id="cfPhone" name="phone" placeholder="+1 555 012 3456">
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label" for="cfTimeline">Launch Timeline</label>
-                                    <select class="form-select" id="cfTimeline" name="timeline">
-                                        <option value="30-days">Next 30 days</option>
-                                        <option value="60-days">30 - 60 days</option>
-                                        <option value="90-days">60 - 90 days</option>
-                                        <option value="planning">Just planning</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label" for="cfMessage">Project Goals</label>
-                                    <textarea class="form-control" id="cfMessage" name="message" rows="4" placeholder="Tell us what success looks like for you." required></textarea>
-                                </div>
-                                <div class="col-12 d-flex flex-column flex-sm-row gap-3 align-items-sm-center">
-                                    <button class="btn btn-gradient btn-lg" type="submit">Submit</button>
-                                    <a class="btn btn-outline-light btn-lg" href="https://calendly.com/talkingheads">Book a call</a>
-                                </div>
-                            </form>
+                            <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/64N8Yh5LjLa3zsJpStC8kImEOZckKBW30BIUXgC2yNZ5gGRbmBb63rrcxGiSsmoA5d">
+                                <script src="https://webforms.pipedrive.com/f/loader"></script>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -381,6 +353,5 @@ include __DIR__ . '/includes/header.php';
         </div>
     </section>
 </main>
-<?php include __DIR__ . '/includes/demo-modal.php'; ?>
 <?php include __DIR__ . '/includes/footer.php'; ?>
 

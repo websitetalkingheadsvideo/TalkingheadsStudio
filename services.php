@@ -195,6 +195,5 @@ include __DIR__ . '/includes/header.php';
         </section>
     </div>
 </main>
-<?php include __DIR__ . '/includes/demo-modal.php'; ?>
 <?php include __DIR__ . '/includes/footer.php'; ?>
 

@@ -33,9 +33,10 @@ function initVideoGallery() {
     const modalLabel = modalElement.querySelector('#demoModalLabel');
     const triggers = document.querySelectorAll('[data-demo-video]');
     const bootstrapModal = bootstrap.Modal.getOrCreateInstance(modalElement);
-
+ 
     triggers.forEach(trigger => {
-        trigger.addEventListener('click', function() {
+        trigger.addEventListener('click', function(e) {
+            e.preventDefault();
             const videoSrc = this.getAttribute('data-demo-video');
             const title = this.getAttribute('data-demo-title') || 'Demo Video';
             if (!videoSrc) {
@@ -269,8 +270,11 @@ function initPreloader() {
     if (!splash && !preloader) {
         return;
     }
- 
-    const onLoad = () => {
+
+    const MIN_SPLASH_DURATION_MS = 1500;
+    const splashStartedAt = performance.now();
+
+    const finalizeSplash = () => {
         console.log('Closing splash: initial load complete');
         [splash, preloader].forEach(overlay => {
             if (!overlay) {
@@ -287,6 +291,16 @@ function initPreloader() {
             }, { once: true });
         });
         window.removeEventListener('load', onLoad);
+    };
+
+    const onLoad = () => {
+        const elapsed = performance.now() - splashStartedAt;
+        const remaining = Math.max(0, MIN_SPLASH_DURATION_MS - elapsed);
+        if (remaining === 0) {
+            finalizeSplash();
+            return;
+        }
+        setTimeout(finalizeSplash, remaining);
     };
 
     window.addEventListener('load', onLoad);
