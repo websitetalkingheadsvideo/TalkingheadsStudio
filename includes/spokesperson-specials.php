@@ -11,6 +11,7 @@ if (!function_exists('ths_fetch_spokesperson_specials')) {
         $context = stream_context_create([
             'http' => [
                 'timeout' => 5,
+                'user_agent' => 'TalkingHeads.Video/1.0',
             ],
         ]);
 
@@ -27,9 +28,9 @@ if (!function_exists('ths_fetch_spokesperson_specials')) {
             throw new RuntimeException('Invalid spokesperson specials feed: ' . implode('; ', $errors));
         }
 
-        $male = trim((string) ($xml->male ?? ''));
-        $female = trim((string) ($xml->female ?? ''));
-        $expires = trim((string) ($xml->newdate ?? ''));
+        $male = isset($xml->male) ? trim((string) $xml->male) : '';
+        $female = isset($xml->female) ? trim((string) $xml->female) : '';
+        $expires = isset($xml->newdate) ? trim((string) $xml->newdate) : '';
 
         if ($male === '' || $female === '' || $expires === '') {
             throw new RuntimeException('Incomplete spokesperson specials feed response.');
@@ -45,7 +46,8 @@ if (!function_exists('ths_fetch_spokesperson_specials')) {
 
 try {
     $specials = ths_fetch_spokesperson_specials();
-} catch (RuntimeException $exception) {
+} catch (RuntimeException $e) {
+    error_log('Spokesperson specials error: ' . $e->getMessage());
     echo '<div class="alert alert-warning my-5" role="alert">Unable to load spokesperson specials right now. Please refresh the page or contact our team.</div>';
     return;
 }
@@ -73,7 +75,7 @@ try {
             <div class="col-lg-3">
                 <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
                     <iframe
-                        src="ivideo/talking-heads-player.php?video=<?php echo rawurlencode($specials['male']); ?>&autostart=no&controls=mouse&actor=true"
+                        src="https://www.websitetalkingheads.com/ivideo/talking-heads-player.php?video=<?php echo rawurlencode($specials['male']); ?>&autostart=no&controls=mouse&actor=true"
                         title="<?php echo htmlspecialchars($specials['male'], ENT_QUOTES, 'UTF-8'); ?> spokesperson video"
                         allow="autoplay; fullscreen"
                         loading="lazy">
@@ -84,7 +86,7 @@ try {
             <div class="col-lg-3">
                 <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
                     <iframe
-                        src="ivideo/talking-heads-player.php?video=<?php echo rawurlencode($specials['female']); ?>&autostart=no&controls=mouse&actor=true"
+                        src="https://www.websitetalkingheads.com/ivideo/talking-heads-player.php?video=<?php echo rawurlencode($specials['female']); ?>&autostart=no&controls=mouse&actor=true"
                         title="<?php echo htmlspecialchars($specials['female'], ENT_QUOTES, 'UTF-8'); ?> spokesperson video"
                         allow="autoplay; fullscreen"
                         loading="lazy">

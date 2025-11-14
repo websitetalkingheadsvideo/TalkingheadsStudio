@@ -42,7 +42,7 @@ include __DIR__ . '/includes/header.php';
                     <p class="hero-lede">We produce spokesperson, explainer, and product demo videos that combine strategy with warmth—turning curious browsers into ready buyers.</p>
                     <div class="d-flex flex-wrap gap-3 hero-ctas">
                         <a class="btn btn-gradient btn-lg" href="/contact.php">Get a Quote</a>
-                        <button class="btn btn-outline-light btn-lg d-inline-flex align-items-center gap-2" type="button" data-bs-toggle="modal" data-bs-target="#demoModal" data-demo-video="https://player.vimeo.com/video/926104810?h=3c1f4fc768" data-demo-title="Talking Heads Video Showreel">
+                        <button class="btn btn-outline-light btn-lg d-inline-flex align-items-center gap-2" type="button" data-bs-toggle="modal" data-bs-target="#demoModal" data-demo-video="https://player.vimeo.com/video/980932378?h=1596f1d46b" data-demo-title="Video Solutions">
                             <i class="bi bi-play-fill"></i>
                             Watch Showreel
                         </button>
@@ -70,20 +70,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
                 <div class="col-xl-6">
                     <div class="hero-video-card position-relative">
-                        <div class="ratio ratio-16x9 overflow-hidden rounded-4">
-                            <iframe
-                                src="https://player.vimeo.com/video/1123273750?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                                frameborder="0"
-                                allow="autoplay; fullscreen; picture-in-picture"
-                                allowfullscreen
-                                title="Talking Heads Video Showreel"
-                                class="w-100 h-100">
-                            </iframe>
-                            <div class="hero-video-overlay"></div>
-                        </div>
-                        <button class="hero-video-play" type="button" data-bs-toggle="modal" data-bs-target="#demoModal" data-demo-video="https://vimeo.com/1123273750/c140480f98?fl=tl&fe=ec" data-demo-title="Talking Heads Video Showreel">
-                            <i class="bi bi-play-fill"></i>
-                        </button>
+                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/980932378?h=1596f1d46b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Video Solutions"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                         <div class="hero-video-badge shadow-lg">
                             <div class="d-flex align-items-center gap-3">
                                 <div class="stat-badge">

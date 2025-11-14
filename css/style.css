@@ -95,6 +95,16 @@
     --ths-radius-md: 0.75rem;
     --ths-radius-sm: 0.5rem;
     --ths-shadow-soft: 0 32px 64px rgba(3, 8, 25, 0.55);
+    
+    /* Bootstrap button customization using CSS custom properties */
+    --bs-primary: #FFD700;
+    --bs-primary-rgb: 255, 215, 0;
+    --bs-btn-bg: #FFD700;
+    --bs-btn-color: #000;
+    --bs-btn-hover-bg: #FFED4E;
+    --bs-btn-hover-color: #000;
+    --bs-btn-border-color: #FFD700;
+    --bs-btn-hover-border-color: #FFED4E;
 }
 
 *,
@@ -165,15 +175,9 @@ h6 {
     display: block;
 }
 
+/* Navbar buttons inherit from .btn-outline-light base styles */
 .navbar.navbar-dark .btn-outline-light {
-    border-color: rgba(245, 247, 255, 0.35);
-    color: var(--ths-text-primary);
-}
-
-.navbar.navbar-dark .btn-outline-light:hover,
-.navbar.navbar-dark .btn-outline-light:focus {
-    background-color: rgba(245, 247, 255, 0.12);
-    color: var(--ths-text-primary);
+    /* Styles inherited from base .btn-outline-light */
 }
 
 .text-secondary {
@@ -316,23 +320,31 @@ h6 {
     margin-bottom: 1rem;
 }
 
-.btn-accent {
-    background: var(--ths-accent-gold);
-    border: none;
-    color: #161513;
+/* Use Bootstrap's primary button class - colors set via CSS custom properties */
+.btn-primary {
     padding-inline: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.btn-accent:hover,
-.btn-accent:focus {
-    background: #ffd166;
-    color: #161513;
+.btn-accent {
+    /* Alias for btn-primary to maintain existing class usage */
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-color: #000;
+    --bs-btn-hover-bg: #FFED4E;
+    --bs-btn-hover-color: #000;
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-border-color: #FFED4E;
 }
 
 .experience-logos {
     margin-top: 2.5rem;
+}
+
+.experience-logos text,
+.experience-logos tspan {
+    fill: #ffffff !important;
+    color: #ffffff !important;
 }
 
 .logo-strip {
@@ -353,9 +365,17 @@ h6 {
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.logo-strip-item img {
+.logo-strip-item img,
+.logo-strip-item svg {
     max-height: 42px;
     opacity: 0.9;
+    width: auto;
+    height: auto;
+}
+
+.logo-strip-item svg text,
+.logo-strip-item svg tspan {
+    fill: #ffffff !important;
 }
 
 .logo-strip-item:hover,
@@ -425,14 +445,9 @@ h6 {
     letter-spacing: 0.18em;
 }
 
+/* Service section buttons inherit from base .btn-outline-light */
 .services-section .btn-outline-light {
-    border-color: rgba(245, 247, 255, 0.28);
-    color: var(--ths-text-primary);
-}
-
-.services-section .btn-outline-light:hover,
-.services-section .btn-outline-light:focus {
-    background-color: rgba(245, 247, 255, 0.18);
+    /* Styles inherited from base .btn-outline-light */
 }
 
 .mission-section {
@@ -700,15 +715,9 @@ h6 {
     box-shadow: 0 0 0 0.2rem rgba(1, 227, 178, 0.15);
 }
 
+/* CTA form buttons inherit from base .btn-outline-light */
 .cta-form-wrapper .btn-outline-light {
-    border-color: rgba(245, 247, 255, 0.3);
-    color: var(--ths-text-primary);
-}
-
-.cta-form-wrapper .btn-outline-light:hover,
-.cta-form-wrapper .btn-outline-light:focus {
-    background-color: rgba(245, 247, 255, 0.18);
-    color: var(--ths-text-primary);
+    /* Styles inherited from base .btn-outline-light */
 }
 
 .site-footer {
@@ -860,17 +869,37 @@ h6 {
     transform: translateY(-1px);
 }
 
+/* btn-gradient uses primary button styling with shadow */
 .btn-gradient {
-    background-image: var(--ths-gradient);
-    border: none;
-    color: #fff;
+    /* Inherit primary button colors via CSS custom properties */
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-color: #000;
+    --bs-btn-hover-bg: #FFED4E;
+    --bs-btn-hover-color: #000;
     box-shadow: var(--ths-shadow-soft);
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .btn-gradient:hover,
 .btn-gradient:focus {
-    color: #fff;
-    box-shadow: 0 28px 48px rgba(74, 107, 255, 0.45);
+    box-shadow: 0 28px 48px rgba(255, 215, 0, 0.35);
+}
+
+/* Use Bootstrap's outline-dark variant for white bg with black border */
+.btn-outline-light {
+    /* Override to match Explainly style: white bg, black border */
+    --bs-btn-color: #000;
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-bg: #f5f5f5;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-active-bg: #f5f5f5;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-border-color: #000;
+    background-color: #fff;
+    border-width: 2px;
+    font-weight: 600;
 }
 
 .btn-outline-teal {

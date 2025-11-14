@@ -23,7 +23,15 @@ $logos = ths_client_logos();
 <div class="logo-strip">
     <?php foreach ($logos as $logo): ?>
         <div class="logo-strip-item">
-            <img src="<?php echo htmlspecialchars($logo['src'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($logo['name'], ENT_QUOTES, 'UTF-8'); ?> logo" loading="lazy">
+            <?php
+            $svgPath = __DIR__ . '/..' . $logo['src'];
+            if (file_exists($svgPath)) {
+                $svgContent = file_get_contents($svgPath);
+                echo $svgContent;
+            } else {
+                echo '<img src="' . htmlspecialchars($logo['src'], ENT_QUOTES, 'UTF-8') . '" alt="' . htmlspecialchars($logo['name'], ENT_QUOTES, 'UTF-8') . ' logo" loading="lazy">';
+            }
+            ?>
         </div>
     <?php endforeach; ?>
 </div>
