@@ -54,6 +54,10 @@ build/
 # Uploads (if large, may want to track these)
 # wp-content/uploads/
 
+# Large video files (exceed GitHub's 50MB recommendation)
+wp-content/uploads/2025/08/video_drives_sales.mp4
+wp-content/uploads/2025/07/2951209-uhd_3840_2160_30fps.mp4
+
 # Cache
 cache/
 *.cache
