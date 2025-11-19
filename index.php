@@ -664,7 +664,7 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
       <div class="th-card-video">
         <video src="/wp-content/uploads/2025/08/let_them_eat_cake.webm" autoplay muted loop playsinline></video>
       </div>
-      <a href="https://web.archive.org/web/20250818215254//our-services/funny-ads/">Funny Ads</a>
+      <a href="/our-services/funny-ads/">Funny Ads</a>
     </article>
 
     <!-- Custom Animated Videos (Vimeo) -->
@@ -672,7 +672,7 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
       <div class="th-card-video">
         <video src="/wp-content/uploads/EyequePoster.mp4" autoplay muted loop playsinline></video>
       </div>
-      <a href="https://web.archive.org/web/20250818215254//our-services/3d-and-2d-animation/">Custom Animated Videos</a>
+      <a href="/our-services/3d-and-2d-animation/">Custom Animated Videos</a>
     </article>
 
     <!-- 3D and 2D Animation -->
@@ -680,7 +680,7 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
       <div class="th-card-video">
         <video src="/wp-content/uploads/2025/07/gutters.webm" autoplay muted loop playsinline></video>
       </div>
-      <a href="https://web.archive.org/web/20250818215254//our-services/3d-and-2d-animation/">3D and 2D Animation</a>
+      <a href="/our-services/3d-and-2d-animation/">3D and 2D Animation</a>
     </article>
 
     <!-- Motion Graphics -->
@@ -688,7 +688,7 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
       <div class="th-card-video">
         <video src="/wp-content/uploads/2025/07/motion-design-2h.webm" autoplay muted loop playsinline></video>
       </div>
-      <a href="https://web.archive.org/web/20250818215254//our-services/motion-graphics/">Motion Graphics</a>
+      <a href="/our-services/motion-graphics/">Motion Graphics</a>
     </article>
 
     <!-- VSL and Presentations -->
@@ -696,7 +696,7 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
       <div class="th-card-video">
         <video src="/wp-content/uploads/2025/08/capital_financing-1.webm" autoplay muted loop playsinline></video>
       </div>
-      <a href="https://web.archive.org/web/20250818215254//our-services/vsl-and-presentations/">VSL and Presentations</a>
+      <a href="/our-services/vsl-and-presentations/">VSL and Presentations</a>
     </article>
 
     <!-- Elearning Videos -->
@@ -704,7 +704,7 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
       <div class="th-card-video">
         <video src="/wp-content/uploads/2025/07/e-learning-1.webm" autoplay muted loop playsinline></video>
       </div>
-      <a href="https://web.archive.org/web/20250818215254//our-services/elearning-videos/">Elearning Videos</a>
+      <a href="/our-services/elearning-videos/">Elearning Videos</a>
     </article>
 
     <!-- Corporate Videos -->
@@ -712,7 +712,7 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
       <div class="th-card-video">
         <video src="/wp-content/uploads/2025/07/corporate-1.webm" autoplay muted loop playsinline></video>
       </div>
-      <a href="https://web.archive.org/web/20250818215254//our-services/vsl-and-presentations/">Corporate Videos</a>
+      <a href="/our-services/vsl-and-presentations/">Corporate Videos</a>
     </article>
 
     <!-- Product Demos -->
@@ -720,7 +720,7 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
       <div class="th-card-video">
         <video src="/wp-content/uploads/2025/07/product-demo-1.webm" autoplay muted loop playsinline></video>
       </div>
-      <a href="https://web.archive.org/web/20250818215254//our-services/product-demos/">Product Demos</a>
+      <a href="/our-services/product-demos/">Product Demos</a>
     </article>
 
     <!-- Whiteboard Videos -->
@@ -728,7 +728,7 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
       <div class="th-card-video">
         <video src="/wp-content/uploads/2025/07/whiteboard-2.webm" autoplay muted loop playsinline></video>
       </div>
-      <a href="https://web.archive.org/web/20250818215254//our-services/whiteboard-videos/">Whiteboard Videos</a>
+      <a href="/our-services/whiteboard-videos/">Whiteboard Videos</a>
     </article>
 
     <!-- App Walkthrough -->
@@ -736,7 +736,7 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
       <div class="th-card-video">
         <video src="/wp-content/uploads/2025/07/app-walkthrough-1.webm" autoplay muted loop playsinline></video>
       </div>
-      <a href="https://web.archive.org/web/20250818215254//our-services/motion-graphics/">App Walkthrough</a>
+      <a href="/our-services/motion-graphics/">App Walkthrough</a>
     </article>
   </div>
 </div>
