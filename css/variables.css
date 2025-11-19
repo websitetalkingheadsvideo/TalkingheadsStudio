@@ -1,0 +1,43 @@
+/**
+ * CSS Custom Properties (Variables)
+ * Color palette, fonts, spacing, shadows
+ */
+
+:root {
+	--wp--preset--color--black: #000000;
+	--wp--preset--color--white: #ffffff;
+	--wp--preset--color--cyan-bluish-gray: #abb8c3;
+	
+	/* Elementor Colors */
+	--e-global-color-primary: #6EC1E4;
+	--e-global-color-secondary: #54595F;
+	--e-global-color-text: #7A7A7A;
+	--e-global-color-accent: #61CE70;
+	--e-global-color-1ba7292: #EAA73F;
+	
+	/* Typography */
+	--e-global-typography-primary-font-family: "Roboto", Sans-serif;
+	--e-global-typography-primary-font-weight: 600;
+	--e-global-typography-secondary-font-family: "Roboto Slab", Sans-serif;
+	--e-global-typography-secondary-font-weight: 400;
+	--e-global-typography-text-font-family: "Roboto", Sans-serif;
+	--e-global-typography-text-font-weight: 400;
+	--e-global-typography-accent-font-family: "Roboto", Sans-serif;
+	--e-global-typography-accent-font-weight: 500;
+	
+	/* Container */
+	--container-max-width: 1600px;
+}
+
+@media(max-width: 1024px) {
+	:root {
+		--container-max-width: 1024px;
+	}
+}
+
+@media(max-width: 767px) {
+	:root {
+		--container-max-width: 767px;
+	}
+}
+

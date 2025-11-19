@@ -1,0 +1,59 @@
+/**
+ * Typography Styles
+ * Font families, sizes, weights, line heights
+ * Goli font @font-face declarations
+ */
+
+/* Goli Font */
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Regular.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Regular.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.svg#Goli') format('svg');
+}
+
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Medium.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Medium.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.svg#Goli') format('svg');
+}
+
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-SemiBold.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-SemiBold.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.svg#Goli') format('svg');
+}
+
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Bold.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Bold.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.svg#Goli') format('svg');
+}
+

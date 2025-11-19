@@ -1,0 +1,1623 @@
+<?php
+/**
+ * Home Page
+ * Main landing page for Video Agency
+ */
+
+require_once __DIR__ . '/includes/config.php';
+
+// Page-specific variables for head include
+$page_title = 'Home - Video Agency';
+$page_description = 'Discover how Talking Heads can elevate your online presence! Our video marketing strategies help you grow engagement and increase conversions';
+$canonical_url = '/';
+$og_type = 'website';
+$og_image = '/wp-content/uploads/2025/06/Group-20.svg';
+
+// Include head
+require_once __DIR__ . '/includes/head.php';
+
+// Page-specific inline CSS
+<style id="elementor-frontend-inline-css">
+.elementor-kit-5{--e-global-color-primary:#6EC1E4;--e-global-color-secondary:#54595F;--e-global-color-text:#7A7A7A;--e-global-color-accent:#61CE70;--e-global-color-1ba7292:#EAA73F;--e-global-typography-primary-font-family:"Roboto";--e-global-typography-primary-font-weight:600;--e-global-typography-secondary-font-family:"Roboto Slab";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Roboto";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Roboto";--e-global-typography-accent-font-weight:500;}.elementor-kit-5 e-page-transition{background-color:#FFBC7D;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1600px;}.e-con{--container-max-width:1600px;}.elementor-widget:not(:last-child){margin-block-end:20px;}.elementor-element{--widgets-spacing:20px 20px;--widgets-spacing-row:20px;--widgets-spacing-column:20px;}{}h1.entry-title{display:var(--page-title-display);}.elementor-lightbox{background-color:#00000040;}.site-header .site-branding{flex-direction:column;align-items:stretch;}.site-header{padding-inline-end:0px;padding-inline-start:0px;}.site-footer .site-branding{flex-direction:column;align-items:stretch;}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}
+.elementor-6564 .elementor-element.elementor-element-1ee0a40e{--display:flex;--min-height:100vh;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--align-items:center;--margin-top:-125px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-1ee0a40e:not(.elementor-motion-effects-element-type-background), .elementor-6564 .elementor-element.elementor-element-1ee0a40e > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#000000;}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );color:var( --e-global-color-primary );}.elementor-6564 .elementor-element.elementor-element-59c6e146 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-59c6e146{text-align:center;}.elementor-6564 .elementor-element.elementor-element-59c6e146 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:34px;font-weight:500;text-transform:capitalize;line-height:45px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-687c80f > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-687c80f{text-align:center;}.elementor-6564 .elementor-element.elementor-element-687c80f .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:180px;font-weight:700;text-transform:capitalize;line-height:200px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-553b4e4a{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-button .elementor-button{background-color:var( --e-global-color-accent );font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-6564 .elementor-element.elementor-element-f01b71 .elementor-button{background-color:var( --e-global-color-1ba7292 );font-family:"Goli", Sans-serif;font-size:18px;font-weight:600;text-transform:uppercase;border-radius:50px 50px 50px 50px;padding:20px 30px 20px 30px;}.elementor-6564 .elementor-element.elementor-element-f01b71 .elementor-button-content-wrapper{flex-direction:row-reverse;}.elementor-6564 .elementor-element.elementor-element-5dc24193{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--align-items:center;--gap:50px 50px;--row-gap:50px;--column-gap:50px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:80px;--padding-bottom:80px;--padding-left:30px;--padding-right:30px;}.elementor-6564 .elementor-element.elementor-element-5dc24193:not(.elementor-motion-effects-element-type-background), .elementor-6564 .elementor-element.elementor-element-5dc24193 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#141414;}.elementor-6564 .elementor-element.elementor-element-1adbc3d6{width:var( --container-widget-width, 70% );max-width:70%;--container-widget-width:70%;--container-widget-flex-grow:0;text-align:center;}.elementor-6564 .elementor-element.elementor-element-1adbc3d6 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-1adbc3d6 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:88px;font-weight:700;text-transform:capitalize;line-height:100px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-35517587{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:center;--gap:30px 30px;--row-gap:30px;--column-gap:30px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-13d28a78 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:20px 0px 20px 0px;}.elementor-6564 .elementor-element.elementor-element-13d28a78{text-align:center;}.elementor-6564 .elementor-element.elementor-element-13d28a78 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:40px;font-weight:700;text-transform:capitalize;line-height:50px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-3d9aa91d{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-between;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-5c77af5b{--display:flex;--align-items:flex-start;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-icon-box.elementor-view-stacked .elementor-icon{background-color:var( --e-global-color-primary );}.elementor-widget-icon-box.elementor-view-framed .elementor-icon, .elementor-widget-icon-box.elementor-view-default .elementor-icon{fill:var( --e-global-color-primary );color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-widget-icon-box .elementor-icon-box-title, .elementor-widget-icon-box .elementor-icon-box-title a{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-icon-box .elementor-icon-box-title{color:var( --e-global-color-primary );}.elementor-widget-icon-box:has(:hover) .elementor-icon-box-title,
+					 .elementor-widget-icon-box:has(:focus) .elementor-icon-box-title{color:var( --e-global-color-primary );}.elementor-widget-icon-box .elementor-icon-box-description{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );color:var( --e-global-color-text );}.elementor-6564 .elementor-element.elementor-element-70eded9c{width:var( --container-widget-width, 88% );max-width:88%;--container-widget-width:88%;--container-widget-flex-grow:0;--icon-box-icon-margin:15px;}.elementor-6564 .elementor-element.elementor-element-70eded9c > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-70eded9c .elementor-icon{font-size:94px;}.elementor-6564 .elementor-element.elementor-element-70eded9c .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-70eded9c .elementor-icon-box-title a{font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-70eded9c .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-70eded9c:has(:hover) .elementor-icon-box-title,
+					 .elementor-6564 .elementor-element.elementor-element-70eded9c:has(:focus) .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-70eded9c .elementor-icon-box-description{font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-6564 .elementor-element.elementor-element-123bafbc{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-6a8b1e18{width:var( --container-widget-width, 88% );max-width:88%;--container-widget-width:88%;--container-widget-flex-grow:0;--icon-box-icon-margin:15px;}.elementor-6564 .elementor-element.elementor-element-6a8b1e18 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-6a8b1e18 .elementor-icon{font-size:94px;}.elementor-6564 .elementor-element.elementor-element-6a8b1e18 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6a8b1e18 .elementor-icon-box-title a{font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-6a8b1e18 .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-6a8b1e18:has(:hover) .elementor-icon-box-title,
+					 .elementor-6564 .elementor-element.elementor-element-6a8b1e18:has(:focus) .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-6a8b1e18 .elementor-icon-box-description{font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-6564 .elementor-element.elementor-element-242d2a4b{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-169601f3{width:var( --container-widget-width, 88% );max-width:88%;--container-widget-width:88%;--container-widget-flex-grow:0;--icon-box-icon-margin:15px;}.elementor-6564 .elementor-element.elementor-element-169601f3 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-169601f3 .elementor-icon{font-size:94px;}.elementor-6564 .elementor-element.elementor-element-169601f3 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-169601f3 .elementor-icon-box-title a{font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-169601f3 .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-169601f3:has(:hover) .elementor-icon-box-title,
+					 .elementor-6564 .elementor-element.elementor-element-169601f3:has(:focus) .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-169601f3 .elementor-icon-box-description{font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-6564 .elementor-element.elementor-element-6d96190e{--display:flex;--align-items:flex-end;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-6de6a15a{width:var( --container-widget-width, 88% );max-width:88%;--container-widget-width:88%;--container-widget-flex-grow:0;--icon-box-icon-margin:15px;}.elementor-6564 .elementor-element.elementor-element-6de6a15a > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-6de6a15a .elementor-icon{font-size:94px;}.elementor-6564 .elementor-element.elementor-element-6de6a15a .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6de6a15a .elementor-icon-box-title a{font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-6de6a15a .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-6de6a15a:has(:hover) .elementor-icon-box-title,
+					 .elementor-6564 .elementor-element.elementor-element-6de6a15a:has(:focus) .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-6de6a15a .elementor-icon-box-description{font-family:"Roboto", Sans-serif;font-weight:400;}.elementor-6564 .elementor-element.elementor-element-89cfcbd{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:flex-start;--align-items:flex-start;--gap:0px 50px;--row-gap:0px;--column-gap:50px;--flex-wrap:wrap;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:80px;--padding-left:30px;--padding-right:30px;}.elementor-6564 .elementor-element.elementor-element-89cfcbd:not(.elementor-motion-effects-element-type-background), .elementor-6564 .elementor-element.elementor-element-89cfcbd > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#141414;}.elementor-6564 .elementor-element.elementor-element-b9998d4{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;text-align:center;}.elementor-6564 .elementor-element.elementor-element-b9998d4 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-b9998d4 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:48px;font-weight:700;text-transform:capitalize;line-height:55px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-16eca2b2{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:20px 20px;--row-gap:20px;--column-gap:20px;--flex-wrap:nowrap;--margin-top:20px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-745a5cdf{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-23a59f3c > .elementor-widget-container{border-radius:20px 20px 20px 20px;}.elementor-6564 .elementor-element.elementor-element-23a59f3c .elementor-wrapper{--video-aspect-ratio:0.5625;}.elementor-6564 .elementor-element.elementor-element-23a59f3c .elementor-custom-embed-play i{color:#EAA73F;font-size:75px;}.elementor-6564 .elementor-element.elementor-element-23a59f3c .elementor-custom-embed-play svg{fill:#EAA73F;width:75px;height:75px;}.elementor-6564 .elementor-element.elementor-element-344e94df{--display:flex;--gap:10px 0px;--row-gap:10px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:16px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-6acc910{text-align:center;}.elementor-6564 .elementor-element.elementor-element-6acc910 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:28px;font-weight:600;color:#FFFFFF;}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-6564 .elementor-element.elementor-element-1973e1ae{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;text-align:center;font-family:"Goli", Sans-serif;font-size:16px;font-weight:500;line-height:24px;color:#7A7A7A;}.elementor-6564 .elementor-element.elementor-element-1973e1ae > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-279ee459{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-5e935f23 > .elementor-widget-container{border-radius:20px 20px 20px 20px;}.elementor-6564 .elementor-element.elementor-element-5e935f23 .elementor-wrapper{--video-aspect-ratio:0.5625;}.elementor-6564 .elementor-element.elementor-element-5e935f23 .elementor-custom-embed-play i{color:#EAA73F;font-size:75px;}.elementor-6564 .elementor-element.elementor-element-5e935f23 .elementor-custom-embed-play svg{fill:#EAA73F;width:75px;height:75px;}.elementor-6564 .elementor-element.elementor-element-57ea90ca{--display:flex;--gap:10px 0px;--row-gap:10px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:16px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-6f9a90ad{text-align:center;}.elementor-6564 .elementor-element.elementor-element-6f9a90ad .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:28px;font-weight:600;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-efd471d{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;text-align:center;font-family:"Goli", Sans-serif;font-size:16px;font-weight:500;line-height:24px;color:#7A7A7A;}.elementor-6564 .elementor-element.elementor-element-efd471d > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-25f5c70e{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-2b8d74b6 > .elementor-widget-container{border-radius:20px 20px 20px 20px;}.elementor-6564 .elementor-element.elementor-element-2b8d74b6 .elementor-wrapper{--video-aspect-ratio:0.5625;}.elementor-6564 .elementor-element.elementor-element-2b8d74b6 .elementor-custom-embed-play i{color:#EAA73F;font-size:75px;}.elementor-6564 .elementor-element.elementor-element-2b8d74b6 .elementor-custom-embed-play svg{fill:#EAA73F;width:75px;height:75px;}.elementor-6564 .elementor-element.elementor-element-2f1705c3{--display:flex;--gap:10px 0px;--row-gap:10px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:16px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-10515177{text-align:center;}.elementor-6564 .elementor-element.elementor-element-10515177 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:28px;font-weight:600;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-1b09def4{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;text-align:center;font-family:"Goli", Sans-serif;font-size:16px;font-weight:500;line-height:24px;color:#7A7A7A;}.elementor-6564 .elementor-element.elementor-element-1b09def4 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-41a2663{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-0af798b > .elementor-widget-container{border-radius:20px 20px 20px 20px;}.elementor-6564 .elementor-element.elementor-element-0af798b .elementor-wrapper{--video-aspect-ratio:0.5625;}.elementor-6564 .elementor-element.elementor-element-0af798b .elementor-custom-embed-play i{color:#EAA73F;font-size:75px;}.elementor-6564 .elementor-element.elementor-element-0af798b .elementor-custom-embed-play svg{fill:#EAA73F;width:75px;height:75px;}.elementor-6564 .elementor-element.elementor-element-adde93c{--display:flex;--gap:10px 0px;--row-gap:10px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:16px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-8fefe25{text-align:center;}.elementor-6564 .elementor-element.elementor-element-8fefe25 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:28px;font-weight:600;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-95d6876{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;text-align:center;font-family:"Goli", Sans-serif;font-size:16px;font-weight:500;line-height:24px;color:#7A7A7A;}.elementor-6564 .elementor-element.elementor-element-95d6876 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-c485aae{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-1a7349c > .elementor-widget-container{border-radius:20px 20px 20px 20px;}.elementor-6564 .elementor-element.elementor-element-1a7349c .elementor-wrapper{--video-aspect-ratio:0.5625;}.elementor-6564 .elementor-element.elementor-element-1a7349c .elementor-custom-embed-play i{color:#EAA73F;font-size:75px;}.elementor-6564 .elementor-element.elementor-element-1a7349c .elementor-custom-embed-play svg{fill:#EAA73F;width:75px;height:75px;}.elementor-6564 .elementor-element.elementor-element-90adee9{--display:flex;--gap:10px 0px;--row-gap:10px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:16px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-f46f32f{text-align:center;}.elementor-6564 .elementor-element.elementor-element-f46f32f .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:28px;font-weight:600;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-f50cf52{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;text-align:center;font-family:"Goli", Sans-serif;font-size:16px;font-weight:500;line-height:24px;color:#7A7A7A;}.elementor-6564 .elementor-element.elementor-element-f50cf52 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-1ece095{--display:flex;}.elementor-6564 .elementor-element.elementor-element-8e3922f .elementor-wrapper{--video-aspect-ratio:1.77777;}.elementor-6564 .elementor-element.elementor-element-2ca0bfe2{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:center;--gap:0px 40px;--row-gap:0px;--column-gap:40px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:80px;--padding-bottom:80px;--padding-left:30px;--padding-right:30px;}.elementor-6564 .elementor-element.elementor-element-2ca0bfe2:not(.elementor-motion-effects-element-type-background), .elementor-6564 .elementor-element.elementor-element-2ca0bfe2 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#000000;}.elementor-6564 .elementor-element.elementor-element-3c44612{--display:flex;--justify-content:flex-start;--align-items:flex-start;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--margin-top:10px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-29091c20 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-29091c20{text-align:left;}.elementor-6564 .elementor-element.elementor-element-29091c20 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:88px;font-weight:700;text-transform:capitalize;line-height:100px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-6e6d876d{width:var( --container-widget-width, 94% );max-width:94%;--container-widget-width:94%;--container-widget-flex-grow:0;font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;line-height:30px;}.elementor-6564 .elementor-element.elementor-element-6e6d876d > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-29e730f0{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-between;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-6206d943{--display:flex;--align-items:flex-start;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-3a5e43af .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-6575765d > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon-box-wrapper{text-align:left;}.elementor-6564 .elementor-element.elementor-element-6575765d{--icon-box-icon-margin:15px;}.elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon{font-size:59px;}.elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon-box-title a{font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-6575765d:has(:hover) .elementor-icon-box-title,
+					 .elementor-6564 .elementor-element.elementor-element-6575765d:has(:focus) .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon-box-description{font-family:"Roboto", Sans-serif;font-size:24px;font-weight:500;line-height:30px;}.elementor-6564 .elementor-element.elementor-element-3b121306{--display:flex;--align-items:flex-start;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-30375f2 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-48b919ea > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon-box-wrapper{text-align:left;}.elementor-6564 .elementor-element.elementor-element-48b919ea{--icon-box-icon-margin:15px;}.elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon{font-size:59px;}.elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon-box-title a{font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-48b919ea:has(:hover) .elementor-icon-box-title,
+					 .elementor-6564 .elementor-element.elementor-element-48b919ea:has(:focus) .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon-box-description{font-family:"Roboto", Sans-serif;font-size:24px;font-weight:500;line-height:30px;}.elementor-6564 .elementor-element.elementor-element-10fbfe7e{--display:flex;--align-items:flex-start;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-371d162b .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-2615b46e > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon-box-wrapper{text-align:left;}.elementor-6564 .elementor-element.elementor-element-2615b46e{--icon-box-icon-margin:15px;}.elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon{font-size:59px;}.elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon-box-title a{font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-2615b46e:has(:hover) .elementor-icon-box-title,
+					 .elementor-6564 .elementor-element.elementor-element-2615b46e:has(:focus) .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon-box-description{font-family:"Roboto", Sans-serif;font-size:24px;font-weight:500;line-height:30px;}.elementor-6564 .elementor-element.elementor-element-3a4eb89f{--display:flex;--align-items:flex-start;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-53e9866e .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-23e60bf8 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon-box-wrapper{text-align:left;}.elementor-6564 .elementor-element.elementor-element-23e60bf8{--icon-box-icon-margin:15px;}.elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon{font-size:59px;}.elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon-box-title a{font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-23e60bf8:has(:hover) .elementor-icon-box-title,
+					 .elementor-6564 .elementor-element.elementor-element-23e60bf8:has(:focus) .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon-box-description{font-family:"Roboto", Sans-serif;font-size:24px;font-weight:500;line-height:30px;}.elementor-6564 .elementor-element.elementor-element-19fb6cc0{--display:flex;--align-items:flex-start;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-210700e1 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-6d705968 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon-box-wrapper{text-align:left;}.elementor-6564 .elementor-element.elementor-element-6d705968{--icon-box-icon-margin:15px;}.elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon{font-size:59px;}.elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon-box-title a{font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-6d705968:has(:hover) .elementor-icon-box-title,
+					 .elementor-6564 .elementor-element.elementor-element-6d705968:has(:focus) .elementor-icon-box-title{color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon-box-description{font-family:"Roboto", Sans-serif;font-size:24px;font-weight:500;line-height:30px;}.elementor-6564 .elementor-element.elementor-element-505c143b{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-7ec03049 .elementor-button{background-color:var( --e-global-color-1ba7292 );font-family:"Goli", Sans-serif;font-size:18px;font-weight:600;text-transform:uppercase;border-radius:50px 50px 50px 50px;padding:20px 30px 20px 30px;}.elementor-6564 .elementor-element.elementor-element-7ec03049 .elementor-button-content-wrapper{flex-direction:row-reverse;}.elementor-6564 .elementor-element.elementor-element-44f80571{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-572a4ec{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;}.elementor-6564 .elementor-element.elementor-element-28004d1c{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:100px 100px;--row-gap:100px;--column-gap:100px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:80px;--padding-bottom:80px;--padding-left:30px;--padding-right:30px;}.elementor-6564 .elementor-element.elementor-element-28004d1c:not(.elementor-motion-effects-element-type-background), .elementor-6564 .elementor-element.elementor-element-28004d1c > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#141414;}.elementor-6564 .elementor-element.elementor-element-303b2b19{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-7b97d288{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-counter .elementor-counter-number-wrapper{color:var( --e-global-color-primary );font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-counter .elementor-counter-title{color:var( --e-global-color-secondary );font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-weight:var( --e-global-typography-secondary-font-weight );}.elementor-6564 .elementor-element.elementor-element-7d41d73d > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-7d41d73d .elementor-counter-title{justify-content:start;color:#FFFFFF;font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;text-transform:capitalize;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-7d41d73d .elementor-counter{gap:25px;}.elementor-6564 .elementor-element.elementor-element-7d41d73d .elementor-counter-number-wrapper{text-align:{{VALUE}};--counter-prefix-grow:0;--counter-suffix-grow:1;--counter-number-grow:0;gap:10px;color:#FFFFFF;font-family:"Goli", Sans-serif;font-size:128px;font-weight:700;text-shadow:0px 0px 10px rgba(0,0,0,0.3);}.elementor-6564 .elementor-element.elementor-element-47df8384{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-2c15ec73 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-2c15ec73 .elementor-counter-title{justify-content:start;color:#FFFFFF;font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;text-transform:capitalize;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-2c15ec73 .elementor-counter{gap:25px;}.elementor-6564 .elementor-element.elementor-element-2c15ec73 .elementor-counter-number-wrapper{text-align:{{VALUE}};--counter-prefix-grow:0;--counter-suffix-grow:1;--counter-number-grow:0;gap:10px;color:#FFFFFF;font-family:"Goli", Sans-serif;font-size:128px;font-weight:700;text-shadow:0px 0px 10px rgba(0,0,0,0.3);}.elementor-6564 .elementor-element.elementor-element-6a47344e{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-18ca05c8 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-18ca05c8 .elementor-counter-title{justify-content:start;color:#FFFFFF;font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;text-transform:capitalize;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-18ca05c8 .elementor-counter{gap:25px;}.elementor-6564 .elementor-element.elementor-element-18ca05c8 .elementor-counter-number-wrapper{text-align:{{VALUE}};--counter-prefix-grow:0;--counter-suffix-grow:1;--counter-number-grow:0;gap:10px;color:#FFFFFF;font-family:"Goli", Sans-serif;font-size:128px;font-weight:700;text-shadow:0px 0px 10px rgba(0,0,0,0.3);}.elementor-6564 .elementor-element.elementor-element-4a03dd5d{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-5f493a7f > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-5f493a7f .elementor-counter-title{justify-content:start;color:#FFFFFF;font-family:"Goli", Sans-serif;font-size:24px;font-weight:500;text-transform:capitalize;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-5f493a7f .elementor-counter{gap:25px;}.elementor-6564 .elementor-element.elementor-element-5f493a7f .elementor-counter-number-wrapper{text-align:{{VALUE}};--counter-prefix-grow:0;--counter-suffix-grow:1;--counter-number-grow:0;gap:10px;color:#FFFFFF;font-family:"Goli", Sans-serif;font-size:128px;font-weight:700;text-shadow:0px 0px 10px rgba(0,0,0,0.3);}.elementor-6564 .elementor-element.elementor-element-4a976d50{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:0px 80px;--row-gap:0px;--column-gap:80px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-2f0d1de{--display:flex;--gap:30px 30px;--row-gap:30px;--column-gap:30px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-544dbf7d{width:var( --container-widget-width, 85% );max-width:85%;--container-widget-width:85%;--container-widget-flex-grow:0;text-align:left;}.elementor-6564 .elementor-element.elementor-element-544dbf7d > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-544dbf7d .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:88px;font-weight:700;text-transform:capitalize;line-height:100px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-61001cd7{width:var( --container-widget-width, 94% );max-width:94%;--container-widget-width:94%;--container-widget-flex-grow:0;font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;line-height:30px;}.elementor-6564 .elementor-element.elementor-element-61001cd7 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-412cc3b2{width:var( --container-widget-width, 94% );max-width:94%;--container-widget-width:94%;--container-widget-flex-grow:0;text-align:left;}.elementor-6564 .elementor-element.elementor-element-412cc3b2 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-412cc3b2 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:40px;font-weight:700;text-transform:capitalize;line-height:50px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-1e394288{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:0px 70px;--row-gap:0px;--column-gap:70px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-9a2e530{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-69834375{--display:flex;--margin-top:150px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-1f1f1b3a .elementor-button{background-color:#FFFFFF;font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;line-height:28px;fill:#000000;color:#000000;border-radius:50px 50px 50px 50px;padding:12px 33px 8px 33px;}.elementor-6564 .elementor-element.elementor-element-26b2e91a{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--align-items:center;--gap:50px 50px;--row-gap:50px;--column-gap:50px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:80px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-26b2e91a:not(.elementor-motion-effects-element-type-background), .elementor-6564 .elementor-element.elementor-element-26b2e91a > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#141414;}.elementor-6564 .elementor-element.elementor-element-a81030e{width:100%;max-width:100%;}.elementor-6564 .elementor-element.elementor-element-a81030e.elementor-element{--align-self:center;}.elementor-6564 .elementor-element.elementor-element-df65d40{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:80px;--padding-bottom:80px;--padding-left:30px;--padding-right:30px;}.elementor-6564 .elementor-element.elementor-element-df65d40:not(.elementor-motion-effects-element-type-background), .elementor-6564 .elementor-element.elementor-element-df65d40 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#000000;}.elementor-6564 .elementor-element.elementor-element-4eabc22a{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-791dc4a{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-22fcefbe{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;text-align:left;}.elementor-6564 .elementor-element.elementor-element-22fcefbe > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-22fcefbe .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:88px;font-weight:700;text-transform:capitalize;line-height:100px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-7b5b9878{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:flex-end;--align-items:center;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-2554753f{width:var( --container-widget-width, 50% );max-width:50%;--container-widget-width:50%;--container-widget-flex-grow:0;text-align:right;font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;line-height:30px;}.elementor-6564 .elementor-element.elementor-element-2554753f > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-widget-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-6564 .elementor-element.elementor-element-7a6a6da img{max-width:91%;}.elementor-6564 .elementor-element.elementor-element-38d22db1{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:0px 40px;--row-gap:0px;--column-gap:40px;--margin-top:20px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-5141c58b{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-6b065f41{--display:flex;--gap:40px 0px;--row-gap:40px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-2acb8d2d{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:flex-start;--align-items:center;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-image-gallery .gallery-item .gallery-caption{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-6564 .elementor-element.elementor-element-6401c049{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;}.elementor-6564 .elementor-element.elementor-element-6401c049 .gallery-item{padding:0 24px 24px 0;}.elementor-6564 .elementor-element.elementor-element-6401c049 .gallery{margin:0 -24px -24px 0;}.elementor-6564 .elementor-element.elementor-element-6401c049 .gallery-item .gallery-caption{text-align:center;}.elementor-6564 .elementor-element.elementor-element-78b4e27a{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-between;--align-items:center;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-5aaf0db6{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;}.elementor-6564 .elementor-element.elementor-element-5aaf0db6 .gallery-item{padding:0 50px 50px 0;}.elementor-6564 .elementor-element.elementor-element-5aaf0db6 .gallery{margin:0 -50px -50px 0;}.elementor-6564 .elementor-element.elementor-element-5aaf0db6 .gallery-item .gallery-caption{text-align:center;}.elementor-6564 .elementor-element.elementor-element-5e5e386b{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-32d5435d{width:var( --container-widget-width, 94% );max-width:94%;--container-widget-width:94%;--container-widget-flex-grow:0;text-align:left;}.elementor-6564 .elementor-element.elementor-element-32d5435d > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-32d5435d .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:40px;font-weight:700;text-transform:capitalize;line-height:50px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-3568d22 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-3568d22{font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;line-height:30px;}.elementor-6564 .elementor-element.elementor-element-6ef5aec1{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-42af4b9b .elementor-button{background-color:#EAA73F;font-family:"Goli", Sans-serif;font-size:18px;font-weight:600;text-transform:uppercase;border-radius:50px 50px 50px 50px;padding:20px 30px 20px 30px;}.elementor-6564 .elementor-element.elementor-element-42af4b9b .elementor-button-content-wrapper{flex-direction:row-reverse;}.elementor-6564 .elementor-element.elementor-element-688f39b{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:80px;--padding-bottom:80px;--padding-left:30px;--padding-right:30px;}.elementor-6564 .elementor-element.elementor-element-688f39b:not(.elementor-motion-effects-element-type-background), .elementor-6564 .elementor-element.elementor-element-688f39b > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#141414;}.elementor-6564 .elementor-element.elementor-element-572355bb{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-bf37398{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-1385b63b{width:var( --container-widget-width, 85% );max-width:85%;--container-widget-width:85%;--container-widget-flex-grow:0;text-align:left;}.elementor-6564 .elementor-element.elementor-element-1385b63b > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-1385b63b .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:88px;font-weight:700;text-transform:capitalize;line-height:100px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-3ef2ced4{text-align:left;}.elementor-6564 .elementor-element.elementor-element-3ef2ced4 img{max-width:91%;}.elementor-6564 .elementor-element.elementor-element-4dc2311c > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-4dc2311c{text-align:left;font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;line-height:30px;color:#FFFFFF;}.elementor-6564 .elementor-element.elementor-element-249c7e2e{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-icon.elementor-view-stacked .elementor-icon{background-color:var( --e-global-color-primary );}.elementor-widget-icon.elementor-view-framed .elementor-icon, .elementor-widget-icon.elementor-view-default .elementor-icon{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-widget-icon.elementor-view-framed .elementor-icon, .elementor-widget-icon.elementor-view-default .elementor-icon svg{fill:var( --e-global-color-primary );}.elementor-6564 .elementor-element.elementor-element-3fe48029 .elementor-icon-wrapper{text-align:left;}.elementor-widget-testimonial-carousel .elementor-testimonial__text{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-testimonial-carousel .elementor-testimonial__name{color:var( --e-global-color-text );font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-testimonial-carousel .elementor-testimonial__title{color:var( --e-global-color-primary );font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-weight:var( --e-global-typography-secondary-font-weight );}.elementor-6564 .elementor-element.elementor-element-4845259 .swiper-pagination-bullet-active, .elementor-6564 .elementor-element.elementor-element-4845259 .swiper-pagination-progressbar-fill{background-color:var( --e-global-color-1ba7292 );}.elementor-6564 .elementor-element.elementor-element-4845259 .swiper-pagination-fraction{color:var( --e-global-color-1ba7292 );}.elementor-6564 .elementor-element.elementor-element-4845259 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-4845259.elementor-element{--align-self:flex-start;}.elementor-6564 .elementor-element.elementor-element-4845259 .elementor-main-swiper .swiper-slide{border-width:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-4845259 .elementor-swiper-button{font-size:20px;}.elementor-6564 .elementor-element.elementor-element-4845259 .swiper-pagination-bullet{--swiper-pagination-bullet-horizontal-gap:8px;--swiper-pagination-bullet-vertical-gap:8px;height:12px;width:12px;}.elementor-6564 .elementor-element.elementor-element-4845259 .swiper-horizontal .swiper-pagination-progressbar{height:12px;}.elementor-6564 .elementor-element.elementor-element-4845259 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active){background-color:#FFFFFF;opacity:1;}.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_inline .elementor-testimonial__footer,
+					.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_stacked .elementor-testimonial__footer{margin-top:30px;}.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_above .elementor-testimonial__footer{margin-bottom:30px;}.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_left .elementor-testimonial__footer{padding-right:30px;}.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_right .elementor-testimonial__footer{padding-left:30px;}.elementor-6564 .elementor-element.elementor-element-4845259 .elementor-testimonial__text{color:#838383;font-family:"Goli", Sans-serif;font-size:20px;font-weight:400;font-style:normal;line-height:30px;}.elementor-6564 .elementor-element.elementor-element-4845259 .elementor-testimonial__name{color:#FFFFFF;font-family:"Goli", Sans-serif;font-size:25px;font-weight:600;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-4845259 .elementor-testimonial__image img{width:200px;height:200px;border-radius:0px;}.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_left .elementor-testimonial__content:after,
+					 .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_right .elementor-testimonial__content:after{top:calc( 20px + (200px / 2) - 8px );}body:not(.rtl) .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_stacked:not(.elementor-testimonial--align-center):not(.elementor-testimonial--align-right) .elementor-testimonial__content:after,
+					 body:not(.rtl) .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_inline:not(.elementor-testimonial--align-center):not(.elementor-testimonial--align-right) .elementor-testimonial__content:after,
+					 .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_stacked.elementor-testimonial--align-left .elementor-testimonial__content:after,
+					 .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_inline.elementor-testimonial--align-left .elementor-testimonial__content:after{left:calc( 20px + (200px / 2) - 8px );right:auto;}body.rtl .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_stacked:not(.elementor-testimonial--align-center):not(.elementor-testimonial--align-left) .elementor-testimonial__content:after,
+					 body.rtl .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_inline:not(.elementor-testimonial--align-center):not(.elementor-testimonial--align-left) .elementor-testimonial__content:after,
+					 .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_stacked.elementor-testimonial--align-right .elementor-testimonial__content:after,
+					 .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_inline.elementor-testimonial--align-right .elementor-testimonial__content:after{right:calc( 20px + (200px / 2) - 8px );left:auto;}body:not(.rtl) .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_above:not(.elementor-testimonial--align-center):not(.elementor-testimonial--align-right) .elementor-testimonial__content:after,
+					 .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_above.elementor-testimonial--align-left .elementor-testimonial__content:after{left:calc( 20px + (200px / 2) - 8px );right:auto;}body.rtl .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_above:not(.elementor-testimonial--align-center):not(.elementor-testimonial--align-left) .elementor-testimonial__content:after,
+					 .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_above.elementor-testimonial--align-right .elementor-testimonial__content:after{right:calc( 20px + (200px / 2) - 8px );left:auto;}body.rtl .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_inline.elementor-testimonial--align-left .elementor-testimonial__image + cite,
+					 body.rtl .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_above.elementor-testimonial--align-left .elementor-testimonial__image + cite,
+					 body:not(.rtl) .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_inline .elementor-testimonial__image + cite,
+					 body:not(.rtl) .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_above .elementor-testimonial__image + cite{margin-left:0px;margin-right:0;}body:not(.rtl) .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_inline.elementor-testimonial--align-right .elementor-testimonial__image + cite,
+					 body:not(.rtl) .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_above.elementor-testimonial--align-right .elementor-testimonial__image + cite,
+					 body.rtl .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_inline .elementor-testimonial__image + cite,
+					 body.rtl .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_above .elementor-testimonial__image + cite{margin-right:0px;margin-left:0;}.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_stacked .elementor-testimonial__image + cite,
+					 .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_left .elementor-testimonial__image + cite,
+					 .elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_right .elementor-testimonial__image + cite{margin-top:0px;}:root{--page-title-display:none;}@media(min-width:768px){.elementor-6564 .elementor-element.elementor-element-553b4e4a{--width:332px;}.elementor-6564 .elementor-element.elementor-element-16eca2b2{--width:100%;}.elementor-6564 .elementor-element.elementor-element-745a5cdf{--width:20%;}.elementor-6564 .elementor-element.elementor-element-279ee459{--width:20%;}.elementor-6564 .elementor-element.elementor-element-25f5c70e{--width:20%;}.elementor-6564 .elementor-element.elementor-element-41a2663{--width:20%;}.elementor-6564 .elementor-element.elementor-element-c485aae{--width:20%;}.elementor-6564 .elementor-element.elementor-element-505c143b{--width:255px;}.elementor-6564 .elementor-element.elementor-element-5141c58b{--width:100%;}.elementor-6564 .elementor-element.elementor-element-6b065f41{--width:96%;}.elementor-6564 .elementor-element.elementor-element-6ef5aec1{--width:231px;}.elementor-6564 .elementor-element.elementor-element-bf37398{--width:60%;}.elementor-6564 .elementor-element.elementor-element-249c7e2e{--width:100%;}}@media(max-width:1440px) and (min-width:768px){.elementor-6564 .elementor-element.elementor-element-553b4e4a{--width:332px;}.elementor-6564 .elementor-element.elementor-element-6ef5aec1{--width:231px;}}@media(max-width:1024px) and (min-width:768px){.elementor-6564 .elementor-element.elementor-element-745a5cdf{--width:31%;}.elementor-6564 .elementor-element.elementor-element-279ee459{--width:31%;}.elementor-6564 .elementor-element.elementor-element-25f5c70e{--width:31%;}.elementor-6564 .elementor-element.elementor-element-41a2663{--width:31%;}.elementor-6564 .elementor-element.elementor-element-c485aae{--width:31%;}.elementor-6564 .elementor-element.elementor-element-505c143b{--width:255px;}.elementor-6564 .elementor-element.elementor-element-6ef5aec1{--width:231px;}}@media(max-width:1440px){.elementor-6564 .elementor-element.elementor-element-687c80f .elementor-heading-title{font-size:131px;line-height:150px;}.elementor-6564 .elementor-element.elementor-element-1adbc3d6 > .elementor-widget-container{margin:0px 0px 20px 0px;}.elementor-6564 .elementor-element.elementor-element-1adbc3d6{--container-widget-width:95%;--container-widget-flex-grow:0;width:var( --container-widget-width, 95% );max-width:95%;}.elementor-6564 .elementor-element.elementor-element-1adbc3d6 .elementor-heading-title{font-size:70px;line-height:89px;}.elementor-6564 .elementor-element.elementor-element-70eded9c{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-6a8b1e18{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-169601f3{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-6de6a15a{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-b9998d4 > .elementor-widget-container{margin:0px 0px 20px 0px;}.elementor-6564 .elementor-element.elementor-element-b9998d4{--container-widget-width:95%;--container-widget-flex-grow:0;width:var( --container-widget-width, 95% );max-width:95%;}.elementor-6564 .elementor-element.elementor-element-b9998d4 .elementor-heading-title{font-size:48px;line-height:55px;}.elementor-6564 .elementor-element.elementor-element-16eca2b2{--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;}.elementor-6564 .elementor-element.elementor-element-1973e1ae{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-efd471d{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-1b09def4{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-95d6876{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-f50cf52{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-2ca0bfe2{--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-6564 .elementor-element.elementor-element-29091c20 .elementor-heading-title{font-size:65px;line-height:75px;}.elementor-6564 .elementor-element.elementor-element-6e6d876d{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon{font-size:32px;}.elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon-box-title a{font-size:14px;line-height:24px;}.elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon{font-size:32px;}.elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon-box-title a{font-size:14px;line-height:24px;}.elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon{font-size:32px;}.elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon-box-title a{font-size:14px;line-height:24px;}.elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon{font-size:32px;}.elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon-box-title a{font-size:14px;line-height:24px;}.elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon{font-size:32px;}.elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon-box-title a{font-size:14px;line-height:24px;}.elementor-6564 .elementor-element.elementor-element-7d41d73d .elementor-counter-number-wrapper{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-7d41d73d .elementor-counter-title{font-size:18px;line-height:32px;}.elementor-6564 .elementor-element.elementor-element-2c15ec73 .elementor-counter-number-wrapper{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-2c15ec73 .elementor-counter-title{font-size:18px;line-height:32px;}.elementor-6564 .elementor-element.elementor-element-18ca05c8 .elementor-counter-number-wrapper{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-18ca05c8 .elementor-counter-title{font-size:18px;line-height:32px;}.elementor-6564 .elementor-element.elementor-element-5f493a7f .elementor-counter-number-wrapper{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-5f493a7f .elementor-counter-title{font-size:18px;line-height:32px;}.elementor-6564 .elementor-element.elementor-element-544dbf7d{--container-widget-width:95%;--container-widget-flex-grow:0;width:var( --container-widget-width, 95% );max-width:95%;}.elementor-6564 .elementor-element.elementor-element-544dbf7d .elementor-heading-title{font-size:60px;line-height:75px;}.elementor-6564 .elementor-element.elementor-element-61001cd7{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-22fcefbe{--container-widget-width:95%;--container-widget-flex-grow:0;width:var( --container-widget-width, 95% );max-width:95%;}.elementor-6564 .elementor-element.elementor-element-22fcefbe .elementor-heading-title{font-size:65px;line-height:75px;}.elementor-6564 .elementor-element.elementor-element-2554753f{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-38d22db1{--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-6564 .elementor-element.elementor-element-3568d22{font-size:18px;}.elementor-6564 .elementor-element.elementor-element-572355bb{--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-6564 .elementor-element.elementor-element-1385b63b{--container-widget-width:95%;--container-widget-flex-grow:0;width:var( --container-widget-width, 95% );max-width:95%;}.elementor-6564 .elementor-element.elementor-element-1385b63b .elementor-heading-title{font-size:65px;line-height:75px;}}@media(max-width:1024px){.elementor-6564 .elementor-element.elementor-element-1ee0a40e{--min-height:70vh;}.elementor-6564 .elementor-element.elementor-element-59c6e146 .elementor-heading-title{font-size:24px;line-height:40px;}.elementor-6564 .elementor-element.elementor-element-687c80f .elementor-heading-title{font-size:60px;line-height:75px;}.elementor-6564 .elementor-element.elementor-element-5dc24193{--padding-top:50px;--padding-bottom:50px;--padding-left:20px;--padding-right:20px;}.elementor-6564 .elementor-element.elementor-element-1adbc3d6{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-1adbc3d6 .elementor-heading-title{font-size:32px;line-height:40px;}.elementor-6564 .elementor-element.elementor-element-35517587{--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-6564 .elementor-element.elementor-element-13d28a78 .elementor-heading-title{font-size:30px;line-height:40px;}.elementor-6564 .elementor-element.elementor-element-70eded9c .elementor-icon{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-70eded9c .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-70eded9c .elementor-icon-box-title a{font-size:18px;line-height:26px;}.elementor-6564 .elementor-element.elementor-element-6a8b1e18 .elementor-icon{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-6a8b1e18 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6a8b1e18 .elementor-icon-box-title a{font-size:18px;line-height:26px;}.elementor-6564 .elementor-element.elementor-element-169601f3 .elementor-icon{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-169601f3 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-169601f3 .elementor-icon-box-title a{font-size:18px;line-height:26px;}.elementor-6564 .elementor-element.elementor-element-6de6a15a .elementor-icon{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-6de6a15a .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6de6a15a .elementor-icon-box-title a{font-size:18px;line-height:26px;}.elementor-6564 .elementor-element.elementor-element-89cfcbd{--padding-top:50px;--padding-bottom:50px;--padding-left:20px;--padding-right:20px;}.elementor-6564 .elementor-element.elementor-element-b9998d4{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-b9998d4 .elementor-heading-title{font-size:32px;line-height:40px;}.elementor-6564 .elementor-element.elementor-element-16eca2b2{--flex-wrap:wrap;}.elementor-6564 .elementor-element.elementor-element-1973e1ae{font-size:16px;line-height:25px;}.elementor-6564 .elementor-element.elementor-element-efd471d{font-size:16px;line-height:25px;}.elementor-6564 .elementor-element.elementor-element-1b09def4{font-size:16px;line-height:25px;}.elementor-6564 .elementor-element.elementor-element-95d6876{font-size:16px;line-height:25px;}.elementor-6564 .elementor-element.elementor-element-f50cf52{font-size:16px;line-height:25px;}.elementor-6564 .elementor-element.elementor-element-2ca0bfe2{--flex-wrap:wrap;--padding-top:50px;--padding-bottom:50px;--padding-left:20px;--padding-right:20px;}.elementor-6564 .elementor-element.elementor-element-3c44612{--margin-top:0px;--margin-bottom:30px;--margin-left:0px;--margin-right:0px;}.elementor-6564 .elementor-element.elementor-element-29091c20 .elementor-heading-title{font-size:45px;line-height:55px;}.elementor-6564 .elementor-element.elementor-element-6e6d876d{font-size:16px;line-height:25px;}.elementor-6564 .elementor-element.elementor-element-28004d1c{--padding-top:50px;--padding-bottom:50px;--padding-left:20px;--padding-right:20px;}.elementor-6564 .elementor-element.elementor-element-7d41d73d .elementor-counter-number-wrapper{font-size:48px;}.elementor-6564 .elementor-element.elementor-element-7d41d73d .elementor-counter-title{line-height:26px;}.elementor-6564 .elementor-element.elementor-element-2c15ec73 .elementor-counter-number-wrapper{font-size:48px;}.elementor-6564 .elementor-element.elementor-element-2c15ec73 .elementor-counter-title{line-height:26px;}.elementor-6564 .elementor-element.elementor-element-18ca05c8 .elementor-counter-number-wrapper{font-size:48px;}.elementor-6564 .elementor-element.elementor-element-18ca05c8 .elementor-counter-title{line-height:26px;}.elementor-6564 .elementor-element.elementor-element-5f493a7f .elementor-counter-number-wrapper{font-size:48px;}.elementor-6564 .elementor-element.elementor-element-5f493a7f .elementor-counter-title{line-height:26px;}.elementor-6564 .elementor-element.elementor-element-4a976d50{--flex-wrap:wrap;}.elementor-6564 .elementor-element.elementor-element-544dbf7d{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-544dbf7d .elementor-heading-title{font-size:45px;line-height:55px;}.elementor-6564 .elementor-element.elementor-element-61001cd7{font-size:16px;line-height:25px;}.elementor-6564 .elementor-element.elementor-element-412cc3b2 .elementor-heading-title{font-size:30px;line-height:40px;}.elementor-6564 .elementor-element.elementor-element-1e394288{--margin-top:50px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;}.elementor-6564 .elementor-element.elementor-element-26b2e91a{--padding-top:50px;--padding-bottom:50px;--padding-left:20px;--padding-right:20px;}.elementor-6564 .elementor-element.elementor-element-df65d40{--padding-top:50px;--padding-bottom:50px;--padding-left:20px;--padding-right:20px;}.elementor-6564 .elementor-element.elementor-element-22fcefbe{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-22fcefbe .elementor-heading-title{font-size:40px;line-height:45px;}.elementor-6564 .elementor-element.elementor-element-2554753f{font-size:17px;line-height:25px;}.elementor-6564 .elementor-element.elementor-element-38d22db1{--flex-wrap:wrap;}.elementor-6564 .elementor-element.elementor-element-5141c58b{--gap:0px 0px;--row-gap:0px;--column-gap:0px;}.elementor-6564 .elementor-element.elementor-element-6401c049{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-5aaf0db6{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-32d5435d .elementor-heading-title{font-size:30px;line-height:40px;}.elementor-6564 .elementor-element.elementor-element-3568d22{font-size:16px;line-height:25px;}.elementor-6564 .elementor-element.elementor-element-688f39b{--padding-top:50px;--padding-bottom:50px;--padding-left:20px;--padding-right:20px;}.elementor-6564 .elementor-element.elementor-element-572355bb{--flex-wrap:wrap;}.elementor-6564 .elementor-element.elementor-element-1385b63b{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-1385b63b .elementor-heading-title{font-size:45px;line-height:55px;}.elementor-6564 .elementor-element.elementor-element-4dc2311c{font-size:17px;line-height:25px;}}@media(max-width:767px){.elementor-6564 .elementor-element.elementor-element-1ee0a40e{--min-height:450px;--justify-content:center;--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--margin-top:-60px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:50px;--padding-bottom:0px;--padding-left:20px;--padding-right:20px;}.elementor-6564 .elementor-element.elementor-element-59c6e146 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:70px 0px 0px 0px;}.elementor-6564 .elementor-element.elementor-element-59c6e146 .elementor-heading-title{line-height:29px;}.elementor-6564 .elementor-element.elementor-element-687c80f .elementor-heading-title{font-size:42px;line-height:50px;}.elementor-6564 .elementor-element.elementor-element-553b4e4a{--width:340px;}.elementor-6564 .elementor-element.elementor-element-5dc24193{--gap:40px 40px;--row-gap:40px;--column-gap:40px;}.elementor-6564 .elementor-element.elementor-element-1adbc3d6 .elementor-heading-title{font-size:32px;line-height:42px;}.elementor-6564 .elementor-element.elementor-element-13d28a78 .elementor-heading-title{font-size:32px;line-height:42px;}.elementor-6564 .elementor-element.elementor-element-70eded9c .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-70eded9c .elementor-icon-box-title a{font-size:20px;line-height:28px;}.elementor-6564 .elementor-element.elementor-element-6a8b1e18 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6a8b1e18 .elementor-icon-box-title a{font-size:20px;line-height:28px;}.elementor-6564 .elementor-element.elementor-element-169601f3 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-169601f3 .elementor-icon-box-title a{font-size:20px;line-height:28px;}.elementor-6564 .elementor-element.elementor-element-6de6a15a .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6de6a15a .elementor-icon-box-title a{font-size:20px;line-height:28px;}.elementor-6564 .elementor-element.elementor-element-89cfcbd{--gap:0px 0px;--row-gap:0px;--column-gap:0px;}.elementor-6564 .elementor-element.elementor-element-b9998d4 .elementor-heading-title{font-size:32px;line-height:36px;}.elementor-6564 .elementor-element.elementor-element-23a59f3c .elementor-custom-embed-play i{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-23a59f3c .elementor-custom-embed-play svg{width:64px;height:64px;}.elementor-6564 .elementor-element.elementor-element-344e94df{--padding-top:16px;--padding-bottom:1px;--padding-left:16px;--padding-right:16px;}.elementor-6564 .elementor-element.elementor-element-5e935f23 .elementor-custom-embed-play i{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-5e935f23 .elementor-custom-embed-play svg{width:64px;height:64px;}.elementor-6564 .elementor-element.elementor-element-57ea90ca{--padding-top:16px;--padding-bottom:1px;--padding-left:16px;--padding-right:16px;}.elementor-6564 .elementor-element.elementor-element-2b8d74b6 .elementor-custom-embed-play i{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-2b8d74b6 .elementor-custom-embed-play svg{width:64px;height:64px;}.elementor-6564 .elementor-element.elementor-element-2f1705c3{--padding-top:16px;--padding-bottom:1px;--padding-left:16px;--padding-right:16px;}.elementor-6564 .elementor-element.elementor-element-0af798b .elementor-custom-embed-play i{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-0af798b .elementor-custom-embed-play svg{width:64px;height:64px;}.elementor-6564 .elementor-element.elementor-element-adde93c{--padding-top:16px;--padding-bottom:1px;--padding-left:16px;--padding-right:16px;}.elementor-6564 .elementor-element.elementor-element-1a7349c .elementor-custom-embed-play i{font-size:64px;}.elementor-6564 .elementor-element.elementor-element-1a7349c .elementor-custom-embed-play svg{width:64px;height:64px;}.elementor-6564 .elementor-element.elementor-element-90adee9{--padding-top:16px;--padding-bottom:1px;--padding-left:16px;--padding-right:16px;}.elementor-6564 .elementor-element.elementor-element-3c44612{--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-6564 .elementor-element.elementor-element-29091c20 .elementor-heading-title{font-size:32px;line-height:42px;}.elementor-6564 .elementor-element.elementor-element-6206d943{--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-6564 .elementor-element.elementor-element-3a5e43af .elementor-heading-title{font-size:26px;}.elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon-box-wrapper{text-align:center;}.elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon{font-size:48px;}.elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6575765d .elementor-icon-box-title a{font-size:18px;}.elementor-6564 .elementor-element.elementor-element-3b121306{--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-6564 .elementor-element.elementor-element-30375f2 .elementor-heading-title{font-size:26px;}.elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon-box-wrapper{text-align:center;}.elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon{font-size:48px;}.elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-48b919ea .elementor-icon-box-title a{font-size:18px;}.elementor-6564 .elementor-element.elementor-element-10fbfe7e{--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-6564 .elementor-element.elementor-element-371d162b .elementor-heading-title{font-size:26px;}.elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon-box-wrapper{text-align:center;}.elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon{font-size:48px;}.elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-2615b46e .elementor-icon-box-title a{font-size:18px;}.elementor-6564 .elementor-element.elementor-element-3a4eb89f{--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-6564 .elementor-element.elementor-element-53e9866e .elementor-heading-title{font-size:26px;}.elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon-box-wrapper{text-align:center;}.elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon{font-size:48px;}.elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-23e60bf8 .elementor-icon-box-title a{font-size:18px;}.elementor-6564 .elementor-element.elementor-element-19fb6cc0{--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-6564 .elementor-element.elementor-element-210700e1 .elementor-heading-title{font-size:26px;}.elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon-box-wrapper{text-align:center;}.elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon{font-size:48px;}.elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon-box-title, .elementor-6564 .elementor-element.elementor-element-6d705968 .elementor-icon-box-title a{font-size:18px;}.elementor-6564 .elementor-element.elementor-element-505c143b{--width:255px;}.elementor-6564 .elementor-element.elementor-element-44f80571{--margin-top:30px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;}.elementor-6564 .elementor-element.elementor-element-572a4ec{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-6564 .elementor-element.elementor-element-28004d1c{--gap:40px 0px;--row-gap:40px;--column-gap:0px;}.elementor-6564 .elementor-element.elementor-element-7b97d288{--padding-top:0px;--padding-bottom:20px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-7d41d73d .elementor-counter-title{justify-content:center;}.elementor-6564 .elementor-element.elementor-element-7d41d73d .elementor-counter{gap:8px;}.elementor-6564 .elementor-element.elementor-element-7d41d73d .elementor-counter-number-wrapper{text-align:{{VALUE}};--counter-prefix-grow:1;--counter-suffix-grow:1;--counter-number-grow:0;gap:8px;font-size:40px;}.elementor-6564 .elementor-element.elementor-element-47df8384{--padding-top:0px;--padding-bottom:20px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-2c15ec73 .elementor-counter-title{justify-content:center;}.elementor-6564 .elementor-element.elementor-element-2c15ec73 .elementor-counter{gap:8px;}.elementor-6564 .elementor-element.elementor-element-2c15ec73 .elementor-counter-number-wrapper{text-align:{{VALUE}};--counter-prefix-grow:1;--counter-suffix-grow:1;--counter-number-grow:0;gap:8px;font-size:40px;}.elementor-6564 .elementor-element.elementor-element-6a47344e{--padding-top:0px;--padding-bottom:20px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-18ca05c8 .elementor-counter-title{justify-content:center;}.elementor-6564 .elementor-element.elementor-element-18ca05c8 .elementor-counter{gap:8px;}.elementor-6564 .elementor-element.elementor-element-18ca05c8 .elementor-counter-number-wrapper{text-align:{{VALUE}};--counter-prefix-grow:1;--counter-suffix-grow:1;--counter-number-grow:0;gap:8px;font-size:40px;}.elementor-6564 .elementor-element.elementor-element-4a03dd5d{--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-5f493a7f .elementor-counter-title{justify-content:center;}.elementor-6564 .elementor-element.elementor-element-5f493a7f .elementor-counter{gap:8px;}.elementor-6564 .elementor-element.elementor-element-5f493a7f .elementor-counter-number-wrapper{text-align:{{VALUE}};--counter-prefix-grow:1;--counter-suffix-grow:1;--counter-number-grow:0;gap:8px;font-size:40px;}.elementor-6564 .elementor-element.elementor-element-544dbf7d .elementor-heading-title{font-size:32px;line-height:42px;}.elementor-6564 .elementor-element.elementor-element-412cc3b2 .elementor-heading-title{font-size:32px;line-height:42px;}.elementor-6564 .elementor-element.elementor-element-69834375{--margin-top:40px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-6564 .elementor-element.elementor-element-26b2e91a{--gap:20px 20px;--row-gap:20px;--column-gap:20px;--padding-top:0px;--padding-bottom:50px;--padding-left:20px;--padding-right:20px;}.elementor-6564 .elementor-element.elementor-element-22fcefbe .elementor-heading-title{font-size:32px;line-height:42px;}.elementor-6564 .elementor-element.elementor-element-7b5b9878{--justify-content:flex-start;}.elementor-6564 .elementor-element.elementor-element-2554753f{text-align:left;}.elementor-6564 .elementor-element.elementor-element-5141c58b{--margin-top:0px;--margin-bottom:25px;--margin-left:0px;--margin-right:0px;}.elementor-6564 .elementor-element.elementor-element-2acb8d2d{--justify-content:center;}.elementor-6564 .elementor-element.elementor-element-6401c049{--container-widget-width:50%;--container-widget-flex-grow:0;width:var( --container-widget-width, 50% );max-width:50%;}.elementor-6564 .elementor-element.elementor-element-78b4e27a{--justify-content:center;}.elementor-6564 .elementor-element.elementor-element-5aaf0db6{--container-widget-width:70%;--container-widget-flex-grow:0;width:var( --container-widget-width, 70% );max-width:70%;}.elementor-6564 .elementor-element.elementor-element-32d5435d .elementor-heading-title{font-size:25px;line-height:35px;}.elementor-6564 .elementor-element.elementor-element-6ef5aec1{--width:231px;}.elementor-6564 .elementor-element.elementor-element-688f39b{--padding-top:50px;--padding-bottom:0px;--padding-left:20px;--padding-right:20px;}.elementor-6564 .elementor-element.elementor-element-1385b63b .elementor-heading-title{font-size:35px;line-height:45px;}.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_inline .elementor-testimonial__footer,
+					.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_stacked .elementor-testimonial__footer{margin-top:16px;}.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_above .elementor-testimonial__footer{margin-bottom:16px;}.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_left .elementor-testimonial__footer{padding-right:16px;}.elementor-6564 .elementor-element.elementor-element-4845259.elementor-testimonial--layout-image_right .elementor-testimonial__footer{padding-left:16px;}.elementor-6564 .elementor-element.elementor-element-4845259 .elementor-testimonial__text{font-size:16px;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Regular.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Regular.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.svg#Goli') format('svg');
+}
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Medium.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Medium.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.svg#Goli') format('svg');
+}
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-SemiBold.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-SemiBold.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.svg#Goli') format('svg');
+}
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Bold.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Bold.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.svg#Goli') format('svg');
+}
+/* End Custom Fonts CSS */
+.elementor-7 .elementor-element.elementor-element-c56560b{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:30px;--padding-bottom:0px;--padding-left:30px;--padding-right:30px;--z-index:1;}.elementor-7 .elementor-element.elementor-element-c56560b:not(.elementor-motion-effects-element-type-background), .elementor-7 .elementor-element.elementor-element-c56560b > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#141414;}.elementor-7 .elementor-element.elementor-element-b3fd4e6{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-theme-site-logo .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-7 .elementor-element.elementor-element-8a7a87f{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-nav-menu .elementor-nav-menu .elementor-item{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item{color:var( --e-global-color-text );fill:var( --e-global-color-text );}.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item:hover,
+					.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item.elementor-item-active,
+					.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item.highlighted,
+					.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item:focus{color:var( --e-global-color-accent );fill:var( --e-global-color-accent );}.elementor-widget-nav-menu .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:before,
+					.elementor-widget-nav-menu .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:after{background-color:var( --e-global-color-accent );}.elementor-widget-nav-menu .e--pointer-framed .elementor-item:before,
+					.elementor-widget-nav-menu .e--pointer-framed .elementor-item:after{border-color:var( --e-global-color-accent );}.elementor-widget-nav-menu{--e-nav-menu-divider-color:var( --e-global-color-text );}.elementor-widget-nav-menu .elementor-nav-menu--dropdown .elementor-item, .elementor-widget-nav-menu .elementor-nav-menu--dropdown  .elementor-sub-item{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-7 .elementor-element.elementor-element-108ad57 .elementor-menu-toggle{margin:0 auto;}.elementor-7 .elementor-element.elementor-element-108ad57 .elementor-nav-menu .elementor-item{font-family:"Goli", Sans-serif;font-size:18px;font-weight:500;}.elementor-7 .elementor-element.elementor-element-108ad57 .elementor-nav-menu--main .elementor-item{color:#FFFFFF;fill:#FFFFFF;}.elementor-7 .elementor-element.elementor-element-108ad57 .elementor-nav-menu--main .elementor-item:hover,
+					.elementor-7 .elementor-element.elementor-element-108ad57 .elementor-nav-menu--main .elementor-item.elementor-item-active,
+					.elementor-7 .elementor-element.elementor-element-108ad57 .elementor-nav-menu--main .elementor-item.highlighted,
+					.elementor-7 .elementor-element.elementor-element-108ad57 .elementor-nav-menu--main .elementor-item:focus{color:#EAA73F;fill:#EAA73F;}.elementor-7 .elementor-element.elementor-element-108ad57 .elementor-nav-menu--main .elementor-item.elementor-item-active{color:#EAA73F;}.elementor-7 .elementor-element.elementor-element-108ad57{--e-nav-menu-horizontal-menu-item-margin:calc( 5px / 2 );}.elementor-7 .elementor-element.elementor-element-108ad57 .elementor-nav-menu--main:not(.elementor-nav-menu--layout-horizontal) .elementor-nav-menu > li:not(:last-child){margin-bottom:5px;}.elementor-7 .elementor-element.elementor-element-094c366{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-button .elementor-button{background-color:var( --e-global-color-accent );font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-7 .elementor-element.elementor-element-da4cb3c .elementor-button{background-color:var( --e-global-color-1ba7292 );font-family:"Goli", Sans-serif;font-size:18px;font-weight:600;text-transform:uppercase;border-radius:50px 50px 50px 50px;padding:20px 30px 20px 30px;}.elementor-7 .elementor-element.elementor-element-da4cb3c .elementor-button-content-wrapper{flex-direction:row-reverse;}.elementor-7 .elementor-element.elementor-element-f950a46{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:30px;--padding-bottom:0px;--padding-left:30px;--padding-right:30px;--z-index:1;}.elementor-7 .elementor-element.elementor-element-f950a46:not(.elementor-motion-effects-element-type-background), .elementor-7 .elementor-element.elementor-element-f950a46 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#141414;}.elementor-7 .elementor-element.elementor-element-4b56f5b{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-7 .elementor-element.elementor-element-0d11267{--display:flex;}.elementor-7 .elementor-element.elementor-element-7a12545{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-7 .elementor-element.elementor-element-c6ff626 .elementor-button{background-color:var( --e-global-color-1ba7292 );font-family:"Roboto", Sans-serif;font-size:18px;font-weight:600;text-transform:uppercase;border-radius:50px 50px 50px 50px;padding:20px 30px 20px 30px;}.elementor-7 .elementor-element.elementor-element-c6ff626 .elementor-button-content-wrapper{flex-direction:row-reverse;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-menu-toggle{margin:0 auto;background-color:#EAA73F;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu .elementor-item{font-family:"Roboto", Sans-serif;font-size:18px;font-weight:500;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--main .elementor-item{color:#FFFFFF;fill:#FFFFFF;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--main .elementor-item:hover,
+					.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--main .elementor-item.elementor-item-active,
+					.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--main .elementor-item.highlighted,
+					.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--main .elementor-item:focus{color:#EAA73F;fill:#EAA73F;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--main .elementor-item.elementor-item-active{color:#EAA73F;}.elementor-7 .elementor-element.elementor-element-8f1870a{--e-nav-menu-horizontal-menu-item-margin:calc( 5px / 2 );}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--main:not(.elementor-nav-menu--layout-horizontal) .elementor-nav-menu > li:not(:last-child){margin-bottom:5px;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--dropdown a, .elementor-7 .elementor-element.elementor-element-8f1870a .elementor-menu-toggle{color:#000000;fill:#000000;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--dropdown a:hover,
+					.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--dropdown a:focus,
+					.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--dropdown a.elementor-item-active,
+					.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--dropdown a.highlighted{background-color:#EAA73F;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--dropdown a.elementor-item-active{color:#000000;background-color:#EAA73F;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--dropdown .elementor-item, .elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--dropdown  .elementor-sub-item{font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-7 .elementor-element.elementor-element-8f1870a div.elementor-menu-toggle{color:#FFFFFF;}.elementor-7 .elementor-element.elementor-element-8f1870a div.elementor-menu-toggle svg{fill:#FFFFFF;}.elementor-theme-builder-content-area{height:400px;}.elementor-location-header:before, .elementor-location-footer:before{content:"";display:table;clear:both;}@media(max-width:1024px){.elementor-7 .elementor-element.elementor-element-4b56f5b{--justify-content:center;}.elementor-7 .elementor-element.elementor-element-0d11267{--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:flex-end;--align-items:center;--gap:0px 24px;--row-gap:0px;--column-gap:24px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-7 .elementor-element.elementor-element-8f1870a > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu .elementor-item{font-size:16px;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--main .elementor-item{padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;}.elementor-7 .elementor-element.elementor-element-8f1870a{--e-nav-menu-horizontal-menu-item-margin:calc( 31px / 2 );--nav-menu-icon-size:32px;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--main:not(.elementor-nav-menu--layout-horizontal) .elementor-nav-menu > li:not(:last-child){margin-bottom:31px;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--dropdown .elementor-item, .elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--dropdown  .elementor-sub-item{font-size:18px;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--dropdown a{padding-left:32px;padding-right:32px;padding-top:16px;padding-bottom:16px;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--main > .elementor-nav-menu > li > .elementor-nav-menu--dropdown, .elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu__container.elementor-nav-menu--dropdown{margin-top:30px !important;}}@media(min-width:768px){.elementor-7 .elementor-element.elementor-element-b3fd4e6{--width:15%;}.elementor-7 .elementor-element.elementor-element-8a7a87f{--width:68%;}.elementor-7 .elementor-element.elementor-element-094c366{--width:262px;}.elementor-7 .elementor-element.elementor-element-4b56f5b{--width:15%;}.elementor-7 .elementor-element.elementor-element-7a12545{--width:15%;}}@media(max-width:1440px) and (min-width:768px){.elementor-7 .elementor-element.elementor-element-094c366{--width:262px;}.elementor-7 .elementor-element.elementor-element-7a12545{--width:29%;}}@media(max-width:1024px) and (min-width:768px){.elementor-7 .elementor-element.elementor-element-4b56f5b{--width:300px;}.elementor-7 .elementor-element.elementor-element-7a12545{--width:190px;}}@media(max-width:1440px){.elementor-7 .elementor-element.elementor-element-108ad57 .elementor-nav-menu .elementor-item{font-size:18px;}.elementor-7 .elementor-element.elementor-element-108ad57{--e-nav-menu-horizontal-menu-item-margin:calc( 5px / 2 );}.elementor-7 .elementor-element.elementor-element-108ad57 .elementor-nav-menu--main:not(.elementor-nav-menu--layout-horizontal) .elementor-nav-menu > li:not(:last-child){margin-bottom:5px;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu .elementor-item{font-size:11px;}.elementor-7 .elementor-element.elementor-element-8f1870a{--e-nav-menu-horizontal-menu-item-margin:calc( 5px / 2 );}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu--main:not(.elementor-nav-menu--layout-horizontal) .elementor-nav-menu > li:not(:last-child){margin-bottom:5px;}}@media(max-width:767px){.elementor-7 .elementor-element.elementor-element-c56560b{--padding-top:50px;--padding-bottom:50px;--padding-left:20px;--padding-right:20px;}.elementor-7 .elementor-element.elementor-element-f950a46{--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:flex-start;--flex-wrap:nowrap;--padding-top:0px;--padding-bottom:0px;--padding-left:20px;--padding-right:20px;}.elementor-7 .elementor-element.elementor-element-4b56f5b{--width:100%;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;}.elementor-7 .elementor-element.elementor-element-0d11267{--width:100%;--justify-content:flex-end;--gap:5px 5px;--row-gap:5px;--column-gap:5px;--flex-wrap:nowrap;}.elementor-7 .elementor-element.elementor-element-7a12545{--width:100%;--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--gap:0px 0px;--row-gap:0px;--column-gap:0px;}.elementor-7 .elementor-element.elementor-element-8f1870a .elementor-nav-menu .elementor-item{font-size:16px;}.elementor-7 .elementor-element.elementor-element-8f1870a{--nav-menu-icon-size:28px;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Regular.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Regular.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.svg#Goli') format('svg');
+}
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Medium.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Medium.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.svg#Goli') format('svg');
+}
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-SemiBold.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-SemiBold.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.svg#Goli') format('svg');
+}
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Bold.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Bold.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.svg#Goli') format('svg');
+}
+/* End Custom Fonts CSS */
+.elementor-53 .elementor-element.elementor-element-2b779b1{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:70px;--padding-bottom:70px;--padding-left:30px;--padding-right:30px;}.elementor-53 .elementor-element.elementor-element-2b779b1:not(.elementor-motion-effects-element-type-background), .elementor-53 .elementor-element.elementor-element-2b779b1 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#000000;}.elementor-53 .elementor-element.elementor-element-0151371{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-53 .elementor-element.elementor-element-f08bf05{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );color:var( --e-global-color-primary );}.elementor-53 .elementor-element.elementor-element-0c303aa .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:24px;font-weight:700;color:#FFFFFF;}.elementor-53 .elementor-element.elementor-element-945d746{--grid-template-columns:repeat(0, auto);--icon-size:20px;--grid-column-gap:15px;--grid-row-gap:0px;}.elementor-53 .elementor-element.elementor-element-945d746 .elementor-widget-container{text-align:left;}.elementor-53 .elementor-element.elementor-element-945d746 .elementor-social-icon{background-color:#FFFFFF;}.elementor-53 .elementor-element.elementor-element-945d746 .elementor-social-icon i{color:#000000;}.elementor-53 .elementor-element.elementor-element-945d746 .elementor-social-icon svg{fill:#000000;}.elementor-53 .elementor-element.elementor-element-945d746 .elementor-social-icon:hover{background-color:#FFFFFF;}.elementor-53 .elementor-element.elementor-element-945d746 .elementor-social-icon:hover i{color:var( --e-global-color-1ba7292 );}.elementor-53 .elementor-element.elementor-element-945d746 .elementor-social-icon:hover svg{fill:var( --e-global-color-1ba7292 );}.elementor-widget-theme-site-logo .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-53 .elementor-element.elementor-element-7feac32{text-align:left;}.elementor-53 .elementor-element.elementor-element-7feac32 img{width:75%;max-width:100%;}.elementor-53 .elementor-element.elementor-element-4d22395{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-53 .elementor-element.elementor-element-8e8f0a7 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:24px;font-weight:700;color:#FFFFFF;}.elementor-widget-nav-menu .elementor-nav-menu .elementor-item{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item{color:var( --e-global-color-text );fill:var( --e-global-color-text );}.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item:hover,
+					.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item.elementor-item-active,
+					.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item.highlighted,
+					.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item:focus{color:var( --e-global-color-accent );fill:var( --e-global-color-accent );}.elementor-widget-nav-menu .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:before,
+					.elementor-widget-nav-menu .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:after{background-color:var( --e-global-color-accent );}.elementor-widget-nav-menu .e--pointer-framed .elementor-item:before,
+					.elementor-widget-nav-menu .e--pointer-framed .elementor-item:after{border-color:var( --e-global-color-accent );}.elementor-widget-nav-menu{--e-nav-menu-divider-color:var( --e-global-color-text );}.elementor-widget-nav-menu .elementor-nav-menu--dropdown .elementor-item, .elementor-widget-nav-menu .elementor-nav-menu--dropdown  .elementor-sub-item{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-53 .elementor-element.elementor-element-060c740 .elementor-nav-menu .elementor-item{font-family:"Goli", Sans-serif;font-size:18px;font-weight:500;}.elementor-53 .elementor-element.elementor-element-060c740 .elementor-nav-menu--main .elementor-item{color:#FFFFFF;fill:#FFFFFF;padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;}.elementor-53 .elementor-element.elementor-element-060c740 .elementor-nav-menu--main .elementor-item:hover,
+					.elementor-53 .elementor-element.elementor-element-060c740 .elementor-nav-menu--main .elementor-item.elementor-item-active,
+					.elementor-53 .elementor-element.elementor-element-060c740 .elementor-nav-menu--main .elementor-item.highlighted,
+					.elementor-53 .elementor-element.elementor-element-060c740 .elementor-nav-menu--main .elementor-item:focus{color:#EAA73F;fill:#EAA73F;}.elementor-53 .elementor-element.elementor-element-060c740 .elementor-nav-menu--main .elementor-item.elementor-item-active{color:#EAA73F;}.elementor-53 .elementor-element.elementor-element-060c740{--e-nav-menu-horizontal-menu-item-margin:calc( 0px / 2 );}.elementor-53 .elementor-element.elementor-element-060c740 .elementor-nav-menu--main:not(.elementor-nav-menu--layout-horizontal) .elementor-nav-menu > li:not(:last-child){margin-bottom:0px;}.elementor-53 .elementor-element.elementor-element-2d97379{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-53 .elementor-element.elementor-element-2a1aa6c .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:24px;font-weight:700;color:#FFFFFF;}.elementor-53 .elementor-element.elementor-element-3abe232 .elementor-nav-menu .elementor-item{font-family:"Goli", Sans-serif;font-size:18px;font-weight:500;}.elementor-53 .elementor-element.elementor-element-3abe232 .elementor-nav-menu--main .elementor-item{color:#FFFFFF;fill:#FFFFFF;padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;}.elementor-53 .elementor-element.elementor-element-3abe232 .elementor-nav-menu--main .elementor-item:hover,
+					.elementor-53 .elementor-element.elementor-element-3abe232 .elementor-nav-menu--main .elementor-item.elementor-item-active,
+					.elementor-53 .elementor-element.elementor-element-3abe232 .elementor-nav-menu--main .elementor-item.highlighted,
+					.elementor-53 .elementor-element.elementor-element-3abe232 .elementor-nav-menu--main .elementor-item:focus{color:#EAA73F;fill:#EAA73F;}.elementor-53 .elementor-element.elementor-element-3abe232 .elementor-nav-menu--main .elementor-item.elementor-item-active{color:#EAA73F;}.elementor-53 .elementor-element.elementor-element-3abe232{--e-nav-menu-horizontal-menu-item-margin:calc( 0px / 2 );}.elementor-53 .elementor-element.elementor-element-3abe232 .elementor-nav-menu--main:not(.elementor-nav-menu--layout-horizontal) .elementor-nav-menu > li:not(:last-child){margin-bottom:0px;}.elementor-53 .elementor-element.elementor-element-b65a1a1{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:flex-start;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-53 .elementor-element.elementor-element-f8d9a64 .elementor-heading-title{font-family:"Goli", Sans-serif;font-size:24px;font-weight:700;color:#FFFFFF;}.elementor-widget-icon-list .elementor-icon-list-item:not(:last-child):after{border-color:var( --e-global-color-text );}.elementor-widget-icon-list .elementor-icon-list-icon i{color:var( --e-global-color-primary );}.elementor-widget-icon-list .elementor-icon-list-icon svg{fill:var( --e-global-color-primary );}.elementor-widget-icon-list .elementor-icon-list-item > .elementor-icon-list-text, .elementor-widget-icon-list .elementor-icon-list-item > a{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-icon-list .elementor-icon-list-text{color:var( --e-global-color-secondary );}.elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(15px/2);}.elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(15px/2);}.elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-inline:calc(15px/2);}.elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-items.elementor-inline-items{margin-inline:calc(-15px/2);}.elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{inset-inline-end:calc(-15px/2);}.elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-icon i{transition:color 0.3s;}.elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-icon svg{transition:fill 0.3s;}.elementor-53 .elementor-element.elementor-element-563fd92{--e-icon-list-icon-size:14px;--icon-vertical-offset:0px;}.elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-item > a{font-family:"Goli", Sans-serif;font-size:18px;font-weight:500;}.elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-text{color:#FFFFFF;transition:color 0.3s;}.elementor-53 .elementor-element.elementor-element-118acd4{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-53 .elementor-element.elementor-element-133e546{--display:flex;--justify-content:center;--align-items:flex-start;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-53 .elementor-element.elementor-element-4ae0779 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-53 .elementor-element.elementor-element-4ae0779{font-family:"Goli", Sans-serif;font-size:18px;font-weight:400;line-height:25px;color:#FFFFFF;}.elementor-53 .elementor-element.elementor-element-4ae0779 a{color:#FFFFFF;}.elementor-53 .elementor-element.elementor-element-4ae0779 a:hover, .elementor-53 .elementor-element.elementor-element-4ae0779 a:focus{color:#EAA73F;}.elementor-53 .elementor-element.elementor-element-7d341c2{--display:flex;--justify-content:flex-start;--align-items:flex-start;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-icon-box.elementor-view-stacked .elementor-icon{background-color:var( --e-global-color-primary );}.elementor-widget-icon-box.elementor-view-framed .elementor-icon, .elementor-widget-icon-box.elementor-view-default .elementor-icon{fill:var( --e-global-color-primary );color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-widget-icon-box .elementor-icon-box-title, .elementor-widget-icon-box .elementor-icon-box-title a{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-icon-box .elementor-icon-box-title{color:var( --e-global-color-primary );}.elementor-widget-icon-box:has(:hover) .elementor-icon-box-title,
+					 .elementor-widget-icon-box:has(:focus) .elementor-icon-box-title{color:var( --e-global-color-primary );}.elementor-widget-icon-box .elementor-icon-box-description{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );color:var( --e-global-color-text );}.elementor-53 .elementor-element.elementor-element-0e92558 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-wrapper{align-items:center;text-align:left;}.elementor-53 .elementor-element.elementor-element-0e92558{--icon-box-icon-margin:16px;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-title{margin-block-end:0px;color:#FFFFFF;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon{font-size:65px;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-title, .elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-title a{font-family:"Goli", Sans-serif;font-size:85px;font-weight:700;line-height:100px;}.elementor-53 .elementor-element.elementor-element-0e92558:has(:hover) .elementor-icon-box-title,
+					 .elementor-53 .elementor-element.elementor-element-0e92558:has(:focus) .elementor-icon-box-title{color:#FFFFFF;}.elementor-theme-builder-content-area{height:400px;}.elementor-location-header:before, .elementor-location-footer:before{content:"";display:table;clear:both;}@media(max-width:1440px){.elementor-53 .elementor-element.elementor-element-945d746{--icon-size:16px;}.elementor-53 .elementor-element.elementor-element-060c740 .elementor-nav-menu .elementor-item{font-size:14px;}.elementor-53 .elementor-element.elementor-element-3abe232 .elementor-nav-menu .elementor-item{font-size:14px;}.elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-item > a{font-size:16px;}.elementor-53 .elementor-element.elementor-element-4ae0779{font-size:16px;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon{font-size:44px;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-title, .elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-title a{font-size:55px;line-height:70px;}}@media(max-width:1024px){.elementor-53 .elementor-element.elementor-element-0151371{--flex-wrap:wrap;}.elementor-53 .elementor-element.elementor-element-0c303aa .elementor-heading-title{font-size:20px;}.elementor-53 .elementor-element.elementor-element-945d746{--grid-column-gap:5px;}.elementor-53 .elementor-element.elementor-element-8e8f0a7 .elementor-heading-title{font-size:20px;}.elementor-53 .elementor-element.elementor-element-060c740 .elementor-nav-menu .elementor-item{font-size:14px;}.elementor-53 .elementor-element.elementor-element-2a1aa6c .elementor-heading-title{font-size:20px;}.elementor-53 .elementor-element.elementor-element-3abe232 .elementor-nav-menu .elementor-item{font-size:14px;}.elementor-53 .elementor-element.elementor-element-f8d9a64 .elementor-heading-title{font-size:20px;}.elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-53 .elementor-element.elementor-element-563fd92 .elementor-icon-list-item > a{font-size:13px;}.elementor-53 .elementor-element.elementor-element-4ae0779{font-size:17px;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon{font-size:30px;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-title, .elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-title a{font-size:35px;line-height:45px;}}@media(max-width:767px){.elementor-53 .elementor-element.elementor-element-2b779b1{--padding-top:50px;--padding-bottom:50px;--padding-left:20px;--padding-right:20px;}.elementor-53 .elementor-element.elementor-element-0c303aa .elementor-heading-title{font-size:24px;}.elementor-53 .elementor-element.elementor-element-945d746 > .elementor-widget-container{margin:10px 0px 10px 0px;padding:0px 0px 0px 0px;}.elementor-53 .elementor-element.elementor-element-8e8f0a7 .elementor-heading-title{font-size:24px;}.elementor-53 .elementor-element.elementor-element-060c740 .elementor-nav-menu .elementor-item{font-size:16px;}.elementor-53 .elementor-element.elementor-element-2a1aa6c .elementor-heading-title{font-size:24px;}.elementor-53 .elementor-element.elementor-element-3abe232 .elementor-nav-menu .elementor-item{font-size:16px;}.elementor-53 .elementor-element.elementor-element-f8d9a64 .elementor-heading-title{font-size:24px;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-wrapper{align-items:end;text-align:justify;}.elementor-53 .elementor-element.elementor-element-0e92558{--icon-box-icon-margin:16px;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-title{margin-block-end:0px;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon{font-size:25px;}.elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-title, .elementor-53 .elementor-element.elementor-element-0e92558 .elementor-icon-box-title a{font-size:28px;line-height:32px;}}@media(min-width:768px){.elementor-53 .elementor-element.elementor-element-f08bf05{--width:70%;}.elementor-53 .elementor-element.elementor-element-4d22395{--width:60%;}.elementor-53 .elementor-element.elementor-element-2d97379{--width:60%;}.elementor-53 .elementor-element.elementor-element-b65a1a1{--width:50%;}}@media(max-width:1440px) and (min-width:768px){.elementor-53 .elementor-element.elementor-element-f08bf05{--width:70%;}.elementor-53 .elementor-element.elementor-element-4d22395{--width:65%;}.elementor-53 .elementor-element.elementor-element-b65a1a1{--width:80%;}.elementor-53 .elementor-element.elementor-element-133e546{--width:100%;}}@media(max-width:1024px) and (min-width:768px){.elementor-53 .elementor-element.elementor-element-f08bf05{--width:48%;}.elementor-53 .elementor-element.elementor-element-4d22395{--width:48%;}.elementor-53 .elementor-element.elementor-element-2d97379{--width:48%;}.elementor-53 .elementor-element.elementor-element-b65a1a1{--width:48%;}}
+</style>
+<style>
+.video-wrapper-talking {
+    position: relative;
+   
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .video-wrapper-talking video {
+    width: 100%;
+    height: auto;
+    display: block;
+		border-radius: 30px;
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+		border-radius: 30px;
+  }
+
+  .video-overlay::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: url('/wp-content/uploads/2025/08/newarrow.svg') no-repeat center center;
+    background-size: contain;
+    z-index: 3;
+  }
+
+  .video-hidden {
+    display: none !important;
+  }	
+	
+	
+	
+	
+.testimonial-slider .elementor-testimonial__image img {width: 170px !important; height: 24px !important;}	
+.service-popup {max-width: 850px !important;}	
+.service-popup iframe { height: 500px !important;margin-top: 24px; }	
+.service-slider-title {position:relative;z-index:100}
+.service-slider-title h3 a {	width: 100%; display: flex;}
+.testimonials-video video {border-radius: 20px;}	
+.testimonials-video .elementor-custom-embed-image-overlay {border-radius: 20px;}	
+.category-gender {width: 100%;display: flex;}	
+.category-gender .elementor-widget-container {width: 100%;}
+.services-posted .elementor-shortcode {display: flex;gap: 28px;flex-wrap: wrap;}
+.services-posted .spokepeople-video-wrapper {width: 31.5%;}
+.services-posted .spokepeople-video-wrapper video {object-fit: cover;}	
+.category-gender .elementor-shortcode {display: flex;gap: 20px;flex-wrap: wrap;}
+.spokepeople-video-wrapper {display: flex;flex-wrap: wrap;border-radius: 30px;width: 18.8%;}
+.spokepeople-video-wrapper:hover .spokepeople-video-heading:hover {color: #EAA73F;}
+.spokepeople-video-wrapper video {border-radius: 30px;}
+.elementor-lightbox-prevent-close .elementor-video-square {background: #262626;padding: 40px 20px;border-radius: 20px;width: 600px !important;    border: solid 1px #5d5d5d;}	
+.elementor-lightbox-prevent-close .elementor-video-square iframe {width: 95% !important;height: 100% !important;border-radius: 20px;}	
+.elementor-lightbox .dialog-widget-content {width: 600px !important;left: 50% !important;transform: translate(-50%, -50%);top: 50% !important;height: 630px !important;}	
+.dialog-lightbox-close-button {top:5px;right: 0px;font-size: 24px !important;padding: 0px !important;}	
+
+.modal a.close-modal {top: 24px !important;right: 16px !important;}	
+.spokepeople-video-heading {text-align: center;font-family: "Goli", Sans-serif;font-size: 30px;font-style: normal;text-transform: capitalize;font-weight: 500;line-height: normal;width: 100%;color: #fff;margin-top: 16px;}	
+.spokepeople-video-heading a {color: #FFF;}	
+.modal {max-width:700px;background: #141414 !important;border-radius: 20px !important;padding: 16px 16px !important;border: solid 1px #5d5d5d;}	
+.actor-popup iframe {width:100%;height: 650px;}
+.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
+.home-services {height:auto !important;}	
+.home-frame .phone-frame {height: 660px;}
+.phone-frame {width: 100%;height: 550px;border: 5px solid #000;border-radius: 40px;position: relative;z-index:1000}
+.phone-frame:before {content: '';box-shadow: 0px 0px 3px 1px rgb(255 255 255);position: absolute;top: -3px;width: 100%;
+height: 86.6%;z-index: -1;border-radius: 40px 40px 0 0;left: 0px;}
+.phone-frame:after {content: '';box-shadow: 0px 0px 3px 1px rgb(255 255 255);position: absolute;bottom: -7px;width: 100%;height: 15%;
+z-index: -1;border-radius: 0px 0px 40px 40px;left: 0px;}
+.side-one {position: absolute;left: -9px;top: 80px;background: #514f4f;width: 3px;height: 28px;}
+.side-two {position: absolute;left: -9px;top: 140px;background: #514f4f;width: 3px;height: 50px;}
+.side-three {position: absolute;left: -9px;top: 210px;background: #514f4f;width: 3px;height: 50px;}
+.side-four {position: absolute;right: -9px;top: 150px;background: #514f4f;width: 3px;height: 70px;}
+.side-bottom {position: absolute;position: absolute;right: 0;bottom: -8px;background: #000000;width: 50px;height: 8px;left: 0;margin: 0 auto;}
+.phone-frame video {width: 100%;height: 100%;object-fit: cover;border-radius: 38px;}	
+.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
+top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
+.our-spokespeople video {height: 450px;border-radius: 30px;} 	
+.main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
+.main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
+display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}
+.main-button-schedule a.elementor-button-link {background-color: #EAA73F;font-family: "Goli", Sans-serif;font-size: 18px;font-weight: 600;text-transform: uppercase;
+ border-radius: 50px 50px 50px 50px;padding: 20px 30px 20px 30px;transition: all 0.2s ease;}
+.main-button-schedule a.elementor-button-link:hover {background-color:#589DFD !important;}
+.main-button-schedule:hover .elementor-button-link .elementor-button-icon  {background:#589DFD !important;rotate: 45deg;}	
+.border-line {;background: linear-gradient(#2a2a2a, #2a2a2a) padding-box, linear-gradient(to top, rgb(255 255 255 / 10%), rgb(255 255 255 / 25%)) border-box;border-radius: 20px !important;border-width: 2pt !important;border: 0px solid transparent;}
+.accodian-wrapper summary[aria-expanded="true"] {border-bottom: none !important;}	
+.this-title span {background: #EAA73F;padding: 16px 35px 14px 35px;border-radius: 50px;display: inline-block;margin-left: 25px;line-height: 33px;}
+.special-video video {border-radius:20px;position:relative}
+.post-category video {border-radius:30px;}
+.custom-video h2.elementor-heading-title {display: inline-grid;padding: 14px 30px;border-radius: 18px 0 18px 0;background: #EAA73F}
+.custom-video ul li {padding: 0 20px 10px 0;}
+.video-single video {border-radius: 20px 20px 0px 0px;}
+.video-single .elementor-widget-text-editor ul {padding-left:20px}	
+.sopkespeople .e-hosted-video {width: 80%;height: 550px; margin: 0 auto;}
+.sopkespeople .e-hosted-video .elementor-custom-embed-image-overlay  {width: 80%;height: 538px; margin: 0 auto;border-radius:30px;}
+.view-more-work .elementor-button-icon svg {width:40px;position: relative;top: -20px;}
+.work .e-hosted-video video  {border-radius: 20px 20px 0 0;}
+.work video  {border-radius: 20px 20px 0 0;}	
+.work .elementor-widget-text-editor p {overflow: hidden;-webkit-line-clamp: 3;display: -webkit-box;-webkit-box-orient: vertical;}
+.ugc-video .e-hosted-video {width: 80%;height: 670px; margin: 0 auto;}
+.ugc-video .e-hosted-video video {border-radius:30px;}
+.ugc-video .e-hosted-video .elementor-custom-embed-image-overlay  {width: 80%;height: 670px; margin: 0 auto;border-radius:30px;}
+.ugc-video .gradient-line {margin-top: -265px;padding-top: 245px;}
+.ugc-video .gradient-line h3 {position: relative;top: 36px;}
+.video-section-big h2 {position: absolute;bottom: 0px;}
+.sopkespeople .elementor-widget-image .elementor-widget-container {width: 80%;margin: 0 auto;position: relative;z-index: 1;}
+.sopkespeople .elementor-widget-image .elementor-widget-container img {height: 538px; }
+.sopkespeople .e-hosted-video video {border-radius: 30px;}
+.gradient-line {margin-top: -100px;padding-top: 150px;}
+.actor-video {position: relative;z-index:1}
+.step-wrapper h2 {font-family: "Goli", Sans-serif;font-size: 20px;font-weight: 400;color: #EAA73F;border: solid 1px #fff;padding: 8px 25px;border-radius: 50px;display: inline-grid;}
+.our-spokepeople-wrapper .e-n-tabs-heading {position: relative;top: -70px;}
+.play-button {display:none;}
+.main-button {position:relative;display: flex;align-items: center;}	
+.main-button .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
+display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}
+.main-button a.elementor-button-link {transition: all 0.2s ease;}
+.main-button a.elementor-button-link:hover {background-color:#589DFD !important;}
+.main-button:hover .elementor-button-link .elementor-button-icon  {background:#589DFD !important;rotate: 45deg;}
+.about-form .elementor-button {position:relative;display: flex;align-items: center;}	
+.about-form .elementor-button .elementor-button-icon  {position: absolute;right: -63px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
+display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}
+.about-form .elementor-button .elementor-button-link {transition: all 0.2s ease;}
+.about-form .elementor-button:hover {background-color:#589DFD !important;}
+.about-form .elementor-button:hover .elementor-button-icon  {background:#589DFD !important;rotate: 45deg;}
+.about-form .elementor-field-type-submit {margin-top:25px;}
+.service-slider {transition: height 0.5s ease-out;}
+.service-slider:hover:before {content: '';display: block;position: absolute;height: 100%;width: 100%;bottom: 0;transition: height 0.5s ease-out;background: linear-gradient(to top, transparent 0%, black 100%);z-index: 10;	}
+.service-slider:hover .main-button .elementor-button-link .elementor-button-icon {background:#589DFD !important;rotate: 45deg;}
+.mp-gradient-text a {border-bottom: solid 2px #fff;}
+.special-video-taiking video {height:820px !important;}
+.video-process video {height:650px !important;}
+.video-wrapper {position:relative;}
+.video-wrapper .elementor-widget-button {position: absolute;transform: translate(-50%, -50%);top: 71%;left: 50%;width: 320px;border-radius: 50px;z-index:1000000}
+.mp-gradient-text { background: linear-gradient(89deg, #EAA73F 0.12%, #CF7E00 83.85%);   -webkit-background-clip: text;    -webkit-text-fill-color: transparent; }
+.video-counter .elementor-counter-number-wrapper { border-bottom: 1px solid #666; }
+.testimonial-slider .swiper-pagination {position: absolute;background: #D9D9D9;width: auto;right: 0;left: inherit;height: 25px;border-radius: 50px;bottom: 45px !important;}
+.testimonial-slider .swiper-pagination:before {content:'';width: 690px;display: flex;background: #666;height: 1px;position: absolute;right: 136px;top: 14px;}
+.footer-service-list nav ul {display: flex; width: 100%;  flex-wrap: wrap;}
+.footer-service-list nav ul li {width: 50%; }
+.about-form .elementor-field-group .elementor-field {background: linear-gradient(#2a2a2a, #2a2a2a) padding-box, linear-gradient(to top, rgb(255 255 255 / 10%), rgb(255 255 255 / 20%)) border-box;
+border-radius: 20px !important;border-width: 2pt !important;border: 0px solid transparent;}	
+.contact-form-iframe {width: 530px !important;height: 720px;}	
+.contact-page-form {margin-top: -60px;}	
+	
+@media screen and (max-width: 1440px) {
+.spokepeople-video-wrapper video {border-radius: 30px;height:380px}
+.services-posted .spokepeople-video-wrapper video {height: 290px;}
+.home-frame .phone-frame {height: 550px;}
+.testimonial-slider .swiper-pagination:before {width:520px;}
+}
+	
+@media screen and (max-width: 1400px) {
+.header .main-button a.elementor-button-link {padding: 20px 20px 20px 20px !important;font-size: 14px !important;}
+.header ul li a  {padding: 13px 10px !important;}
+.sopkespeople .e-hosted-video {height: 350px;}
+.ugc-video .e-hosted-video {height: 500px;}
+.ugc-video .e-hosted-video {height: 500px;}
+.ugc-video .e-hosted-video .elementor-custom-embed-image-overlay  {height: 500px;}
+.video-process video {height:500px !important;}
+.sopkespeople .e-hosted-video .elementor-custom-embed-image-overlay {height: 350px;}
+.video-wrapper .elementor-widget-button {top:40%}	
+.spokepeople-video-wrapper video {height:250px}
+.spokepeople-video-wrapper {width: 18%;}
+}
+
+	
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
+	.service-popup {max-width: 720px !important;}
+	.service-popup iframe {height: 360px !important;}
+	.header-mobile .main-button a.elementor-button-link {padding: 20px 20px 20px 20px !important;font-size: 14px !important;}
+	.services-posted .spokepeople-video-wrapper video {height: 170px;}
+	.services-posted .spokepeople-video-wrapper {width: 30%;}
+	.spokepeople-video-heading {font-size: 20px;}
+	.home-frame .phone-frame {height: 700px;}
+	.spokepeople-video-wrapper video {height: 230px;}
+}
+	
+@media screen and (max-width: 1024px) {
+.video-frame video.elementor-video {border-radius: 40px;}
+.footer-service-list nav ul {display: block;}
+.this-title span {padding: 8px 24px 8px 24px;margin-left: 0px;}
+.marketing-frame video.elementor-video {border-radius: 70px !important;}
+.spokepeople-video-wrapper {width: 22%;} 
+}
+	
+@media screen and (max-width: 767px) {
+	.actor-popup h2 {font-size: 18px;}
+.actor-popup iframe {height:350px;}
+.modal {width: 100%;padding: 16px 16px !important;}
+.services-posted .spokepeople-video-wrapper video {height: 200px;}
+.services-posted .spokepeople-video-wrapper {width: 47%;}
+.spokepeople-video-heading {font-size: 18px;}
+.spokepeople-video-wrapper video {height: 400px;}
+.sopkespeople .e-hosted-video {height: 470px;}
+.spokepeople-video-wrapper {width: 100%;justify-content: center;}
+.home-frame .phone-frame {height: 580px;}
+.tab-wrapper #e-n-tab-title-2340567452 {position:absolute;top:50px;z-index:1000;width:100%}
+			.contact-page-form {margin-top: 0px;}	
+		.mp-gradient-text a {display: inline-block;margin-top: 12px;}
+		.special-video-taiking video {height: 300px !important;}
+		.marketing-subheading br {display:none;}
+	.video-wrapper .elementor-widget-button {bottom: 2%;top:inherit;}
+	.video-process video {height:400px !important;}
+		.testimonial-slider .swiper-pagination:before  {display:none}	
+		.testimonial-slider .swiper-pagination {bottom: 48px !important;}
+		.footer-logo .elementor-icon-box-icon {position: relative;top: 10px;}
+		.header-mobile {position: relative;top: 20px;}
+		.header-mobile .header-book a {padding: 10px 11px 10px 11px !important;font-size: 14px !important;border-radius: 50px 50px 50px 50px!important;}
+		.header-book .elementor-button-icon {display:none  !important}
+		.video-wrapper .elementor-widget-button {width: 290px}
+		.footer-service-list nav ul li {width: 100%; }
+		.about-form .elementor-field-type-submit {width: 130px;}
+		.video-frame video.elementor-video {border-radius: 70px;}
+		.gradient-line {padding-top: 130px;min-height: auto;}
+		.ugc-video .gradient-line h3 {position: relative;top: 0px;}
+		.ugc-video .gradient-line {padding-top: 290px;}
+		.our-spokepeople-wrapper .e-n-tabs-heading {position: inherit;}
+		.video-section-big h2 {display:none;}
+		.our-spokespeople:hover .play-button {display:none;}
+		.our-spokespeople .e-hosted-video video {height: 300px;}
+		.e-n-tab-title {z-index:1}
+}
+	@media screen and (max-width: 640px) {
+		.testimonail-title br {display:none}
+		.video-overlay::before {width: 64px;height: 64px;}
+		.service-popup iframe {height:180px !important;}
+		.services-posted .spokepeople-video-wrapper video {height: 200px;}
+		.services-posted .spokepeople-video-wrapper {width: 100% !important;}
+		.spokepeople-video-heading {font-size: 24px;}
+	}
+	
+	
+</style>
+<style id="wp-custom-css">
+			#content > div > div > div.elementor-element.elementor-element-57e0ccc.e-flex.e-con-boxed.e-con.e-parent.e-lazyloaded{background-color:black;}
+.container {
+  width: 100%; /* Default 100% width on small screens */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-left: -15px;
+}
+.col-md-6 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px; /* Gutters (the space between columns) */
+  padding-left: 15px;
+}
+
+/* For medium devices and larger (screens 768px and up) */
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 50%; /* Sets the column to take up exactly 50% of the row space */
+    max-width: 50%; /* Ensures the column's width does not exceed 50% */
+  }
+}
+.text-white{color:white}
+.special{
+	max-height:446px;
+	max-width:446px!important;
+	border-radius: 20px;
+	border:black thin solid;
+	background:black;
+	 margin: 0 auto!important;
+	display: block;
+}
+.text-center{text-align:center}		</style>
+
+</head>
+
+<body <?php body_class(); ?>>
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+<?php require_once __DIR__ . '/includes/header.php'; ?>
+
+<main id="content" class="site-main post-6564 page type-page status-publish hentry">
+
+	
+	<div class="page-content">
+				<div data-elementor-type="wp-page" data-elementor-id="6564" class="elementor elementor-6564" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-1ee0a40e e-flex e-con-boxed e-con e-parent" data-id="1ee0a40e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1106382740\/88f762d477?ts=0&amp;share=copy&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;,&quot;background_video_start&quot;:0.1}">
+					<div class="e-con-inner">
+		<div class="elementor-background-video-container" aria-hidden="true">
+							<div class="elementor-background-video-embed"></div>
+						</div>		<div class="elementor-element elementor-element-59c6e146 elementor-widget elementor-widget-heading" data-id="59c6e146" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">A video production company </h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-687c80f elementor-invisible elementor-widget elementor-widget-heading" data-id="687c80f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><span class="mp-gradient-text">Captivate</span><br>Your audience</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-553b4e4a e-con-full e-flex e-con e-child" data-id="553b4e4a" data-element_type="container">
+				<div class="elementor-element elementor-element-f01b71 elementor-align-right main-button elementor-widget elementor-widget-button" data-id="f01b71" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="14" height="13" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg>			</span>
+									<span class="elementor-button-text">Start Your Project</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5dc24193 animated-slow e-flex e-con-boxed e-con e-parent" data-id="5dc24193" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1adbc3d6 elementor-widget__width-initial animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="1adbc3d6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">We create every style of <br> <span class="mp-gradient-text">video you need.</span></h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-35517587 e-con-full animated-slow e-flex e-con e-child" data-id="35517587" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+				<div class="elementor-element elementor-element-f5f5140 elementor-widget elementor-widget-html" data-id="f5f5140" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<style>
+/* === HARD-CENTER ROOT (works in flex/grid/anything) === */
+.th-root {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1400px;       /* adjust if you want wider/narrower */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+/* === GRID === */
+.th-grid {
+  --card-radius: 20px;
+  --gap: 1.5rem;
+  --text-font: "Goli", sans-serif;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  grid-template-areas:
+    "funny custom  three   motion"
+    "vsl   elearn  corp    motion"
+    "vsl   demo    white   app";
+  gap: var(--gap);
+  background: #101010;
+}
+
+/* === CARDS + ANIM === */
+.th-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--card-radius);
+  min-height: 150px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(12px);
+  animation: thFadeUp .55s ease forwards;
+}
+.th-card:nth-child(1){animation-delay:.05s}
+.th-card:nth-child(2){animation-delay:.1s}
+.th-card:nth-child(3){animation-delay:.15s}
+.th-card:nth-child(4){animation-delay:.2s}
+.th-card:nth-child(5){animation-delay:.25s}
+.th-card:nth-child(6){animation-delay:.3s}
+.th-card:nth-child(7){animation-delay:.35s}
+.th-card:nth-child(8){animation-delay:.4s}
+.th-card:nth-child(9){animation-delay:.45s}
+.th-card:nth-child(10){animation-delay:.5s}
+
+@keyframes thFadeUp { to { opacity:1; transform:translateY(0); } }
+
+/* overlay + hover */
+.th-card::before{
+  content:"";
+  position:absolute; inset:0;
+  background:rgba(0,0,0,.55);
+  z-index:1; transition:background .25s ease;
+}
+.th-card:hover{ transform: translateY(-3px); }
+.th-card:hover::before{ background:rgba(0,0,0,.35); }
+
+/* video bg */
+.th-card-video{ position:absolute; inset:0; width:100%; height:100%; overflow:hidden; z-index:0; }
+.th-card-video video,
+.th-card-video iframe{ width:100%; height:100%; object-fit:cover; }
+
+/* text */
+.th-card a{
+  position:relative; z-index:2;
+  color:#fff; font-weight:700; font-size:1.25rem; line-height:1.3;
+  text-decoration:none; font-family:var(--text-font); padding:0 1rem;
+}
+
+/* grid areas */
+.th-funny{grid-area:funny}
+.th-custom{grid-area:custom}
+.th-3d2d{grid-area:three}
+.th-motion{grid-area:motion; min-height:100%}
+.th-vsl{grid-area:vsl; min-height:calc(150px * 2 + var(--gap))}
+.th-elearn{grid-area:elearn}
+.th-corp{grid-area:corp}
+.th-demo{grid-area:demo}
+.th-whiteboard{grid-area:white}
+.th-app{grid-area:app}
+
+/* responsive */
+@media (max-width:1024px){
+  .th-grid{
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    grid-template-areas:
+      "funny custom"
+      "three motion"
+      "vsl vsl"
+      "elearn corp"
+      "demo white"
+      "app app";
+  }
+  .th-vsl{min-height:220px}
+}
+@media (max-width:600px){
+  .th-grid{
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "funny" "custom" "three" "motion" "vsl"
+      "elearn" "corp" "demo" "white" "app";
+  }
+  .th-card{min-height:140px}
+  .th-card a{font-size:1.1rem}
+}
+</style>
+
+<div class="th-root">
+  <div class="th-grid">
+    <!-- Funny Ads -->
+    <article class="th-card th-funny">
+      <div class="th-card-video">
+        <video src="/wp-content/uploads/2025/08/let_them_eat_cake.webm" autoplay muted loop playsinline></video>
+      </div>
+      <a href="https://web.archive.org/web/20250818215254//our-services/funny-ads/">Funny Ads</a>
+    </article>
+
+    <!-- Custom Animated Videos (Vimeo) -->
+    <article class="th-card th-custom">
+      <div class="th-card-video">
+        <video src="/wp-content/uploads/EyequePoster.mp4" autoplay muted loop playsinline></video>
+      </div>
+      <a href="https://web.archive.org/web/20250818215254//our-services/3d-and-2d-animation/">Custom Animated Videos</a>
+    </article>
+
+    <!-- 3D and 2D Animation -->
+    <article class="th-card th-3d2d">
+      <div class="th-card-video">
+        <video src="/wp-content/uploads/2025/07/gutters.webm" autoplay muted loop playsinline></video>
+      </div>
+      <a href="https://web.archive.org/web/20250818215254//our-services/3d-and-2d-animation/">3D and 2D Animation</a>
+    </article>
+
+    <!-- Motion Graphics -->
+    <article class="th-card th-motion">
+      <div class="th-card-video">
+        <video src="/wp-content/uploads/2025/07/motion-design-2h.webm" autoplay muted loop playsinline></video>
+      </div>
+      <a href="https://web.archive.org/web/20250818215254//our-services/motion-graphics/">Motion Graphics</a>
+    </article>
+
+    <!-- VSL and Presentations -->
+    <article class="th-card th-vsl">
+      <div class="th-card-video">
+        <video src="/wp-content/uploads/2025/08/capital_financing-1.webm" autoplay muted loop playsinline></video>
+      </div>
+      <a href="https://web.archive.org/web/20250818215254//our-services/vsl-and-presentations/">VSL and Presentations</a>
+    </article>
+
+    <!-- Elearning Videos -->
+    <article class="th-card th-elearn">
+      <div class="th-card-video">
+        <video src="/wp-content/uploads/2025/07/e-learning-1.webm" autoplay muted loop playsinline></video>
+      </div>
+      <a href="https://web.archive.org/web/20250818215254//our-services/elearning-videos/">Elearning Videos</a>
+    </article>
+
+    <!-- Corporate Videos -->
+    <article class="th-card th-corp">
+      <div class="th-card-video">
+        <video src="/wp-content/uploads/2025/07/corporate-1.webm" autoplay muted loop playsinline></video>
+      </div>
+      <a href="https://web.archive.org/web/20250818215254//our-services/vsl-and-presentations/">Corporate Videos</a>
+    </article>
+
+    <!-- Product Demos -->
+    <article class="th-card th-demo">
+      <div class="th-card-video">
+        <video src="/wp-content/uploads/2025/07/product-demo-1.webm" autoplay muted loop playsinline></video>
+      </div>
+      <a href="https://web.archive.org/web/20250818215254//our-services/product-demos/">Product Demos</a>
+    </article>
+
+    <!-- Whiteboard Videos -->
+    <article class="th-card th-whiteboard">
+      <div class="th-card-video">
+        <video src="/wp-content/uploads/2025/07/whiteboard-2.webm" autoplay muted loop playsinline></video>
+      </div>
+      <a href="https://web.archive.org/web/20250818215254//our-services/whiteboard-videos/">Whiteboard Videos</a>
+    </article>
+
+    <!-- App Walkthrough -->
+    <article class="th-card th-app">
+      <div class="th-card-video">
+        <video src="/wp-content/uploads/2025/07/app-walkthrough-1.webm" autoplay muted loop playsinline></video>
+      </div>
+      <a href="https://web.archive.org/web/20250818215254//our-services/motion-graphics/">App Walkthrough</a>
+    </article>
+  </div>
+</div>
+				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-13d28a78 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="13d28a78" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Ready to Create a Video Like This?  <span class="mp-gradient-text"> <a href="/contact"> Let’s Talk <img decoding="async" src="/wp-content/uploads/2025/06/Group-20.svg"></a></span></h3>				</div>
+				</div>
+		<div class="elementor-element elementor-element-3d9aa91d e-con-full e-flex elementor-invisible e-con e-child" data-id="3d9aa91d" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;zoomIn&quot;}">
+		<div class="elementor-element elementor-element-5c77af5b e-con-full e-flex e-con e-child" data-id="5c77af5b" data-element_type="container">
+				<div class="elementor-element elementor-element-70eded9c elementor-widget__width-initial elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="70eded9c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="94" height="94" viewbox="0 0 94 94" fill="none"><path d="M17.5735 42.7161L18.2462 44.6953C18.3633 45.0418 18.347 45.4195 18.2003 45.7546C18.0536 46.0897 17.7871 46.358 17.4531 46.507L10.5484 49.9277C10.2076 50.0943 9.81563 50.1227 9.45442 50.0069C9.09321 49.8911 8.79076 49.6401 8.61036 49.3065L3.30443 39.4584C3.14739 39.1672 3.09356 38.8315 3.1517 38.5058C3.20985 38.1802 3.37653 37.8838 3.62462 37.665L21.9211 20.3225L18.1441 15.6144C17.9015 15.3113 17.7891 14.9244 17.8316 14.5385C17.8742 14.1527 18.0682 13.7995 18.3711 13.5566C18.4444 13.4941 18.5254 13.4411 18.6119 13.3987V13.3936C20.9201 12.1936 23.2004 12.245 25.3786 13C27.2182 13.6345 28.9513 14.7706 30.5552 16.0447C33.2482 15.9103 35.7503 16.2481 38.0636 16.9803C44.7002 19.0799 49.7065 24.3631 53.1633 30.7544C56.551 37.0202 58.456 44.3802 58.9377 50.7848C59.2579 55.0574 58.9465 58.946 58.03 61.852C57.9381 62.1449 57.7567 62.4016 57.5113 62.586C57.2659 62.7704 56.9688 62.8733 56.6619 62.8801C55.3782 62.9873 54.0813 63.5946 53.0384 64.517C52.1704 65.2815 51.4896 66.2494 51.1422 67.3209C50.7803 68.392 50.7966 69.5548 51.1885 70.6154C51.6578 71.8851 52.6771 73.1872 54.4433 74.4165C54.7629 74.6389 54.9813 74.9788 55.0507 75.3619C55.1201 75.745 55.0348 76.14 54.8134 76.4603C54.6778 76.6543 54.4975 76.8127 54.2878 76.9223C54.078 77.0318 53.845 77.0892 53.6083 77.0897H16.6379C15.9476 77.0897 15.3638 76.6123 15.2103 75.9639C14.8776 74.8337 11.8365 63.4926 21.6574 53.6716C28.8684 46.4607 29.5403 44.4257 28.3771 41.6916C26.3377 43.6047 23.4552 43.1978 20.8085 42.827C19.4697 42.6368 18.2227 42.4605 17.5735 42.7161ZM15.0575 44.4272L14.5053 42.805C14.4406 42.6137 14.4162 42.4112 14.4338 42.21C14.4514 42.0089 14.5105 41.8137 14.6073 41.6365C15.9425 39.1808 18.454 39.5325 21.2117 39.9225C23.5705 40.2552 26.2077 40.6312 27.2086 38.2349V38.24C27.3409 37.9227 27.5802 37.6617 27.885 37.5027C28.2287 37.3228 28.6298 37.2868 29.0001 37.4024C29.3704 37.5181 29.6796 37.776 29.8598 38.1196L30.1051 38.5918C30.119 38.6153 30.1322 38.6432 30.1469 38.6667C32.9141 43.922 33.8262 45.6602 23.7328 55.7499C16.3735 63.1136 17.2027 71.3167 17.7814 74.1529H49.8666C49.2138 73.3282 48.7452 72.4807 48.4353 71.6273C47.7729 69.8259 47.8184 68.0355 48.3523 66.4147C48.8715 64.8387 49.8585 63.4243 51.096 62.3308C52.3569 61.2189 53.8859 60.4214 55.4751 60.0975C56.092 57.6403 56.2727 54.4846 56.009 51.0036C55.5588 44.9604 53.7655 38.0315 50.5812 32.141C47.463 26.3709 43.0075 21.6253 37.1779 19.7805C35.046 19.1086 32.7151 18.8163 30.1888 19.0065V19.0021C29.8134 19.0307 29.4415 18.9128 29.1511 18.6731C27.6493 17.44 26.041 16.3238 24.4239 15.7627C23.5477 15.4616 22.6577 15.3265 21.7588 15.4337L25.0444 19.5352L25.0496 19.5404C25.5225 20.1294 25.4755 20.9908 24.9188 21.5188L6.41455 39.0559L10.5205 46.6693L15.0575 44.4272Z" fill="#EAA73F"></path><path d="M11.6741 74.1533H58.0005C58.3959 74.1532 58.7873 74.2314 59.1523 74.3832C59.5173 74.5351 59.8487 74.7577 60.1273 75.0382C60.4065 75.3176 60.628 75.6491 60.7791 76.0141C60.9302 76.379 61.0079 76.7701 61.0078 77.165V82.1706C61.0078 82.9997 60.6693 83.7495 60.1273 84.2974C59.5627 84.8604 58.7979 85.1766 58.0005 85.1764H11.6741C10.8778 85.1762 10.1143 84.8601 9.55095 84.2974C9.27075 84.0185 9.04835 83.6872 8.8965 83.3222C8.74464 82.9572 8.66632 82.5659 8.66602 82.1706V77.165C8.66602 76.3359 9.00457 75.5802 9.55095 75.0382H9.55609C9.83309 74.7581 10.1629 74.5356 10.5265 74.3837C10.89 74.2318 11.2801 74.1535 11.6741 74.1533ZM58.0005 77.0909H11.6741C11.6557 77.0926 11.638 77.0989 11.6226 77.1092L11.6278 77.1151C11.6208 77.1215 11.6153 77.1292 11.6113 77.1378C11.6074 77.1463 11.6053 77.1556 11.605 77.165V82.1706C11.605 82.1795 11.6071 82.1883 11.6111 82.1964C11.615 82.2044 11.6207 82.2114 11.6278 82.2169C11.6417 82.2315 11.6557 82.2396 11.6741 82.2396H58.0005C58.0189 82.2396 58.038 82.2308 58.0468 82.2169C58.0615 82.208 58.0695 82.1897 58.0695 82.1706V77.165C58.0694 77.1556 58.0672 77.1463 58.0633 77.1377C58.0594 77.1291 58.0538 77.1214 58.0468 77.1151C58.038 77.1004 58.0196 77.0923 58.0005 77.0923V77.0909Z" fill="#EAA73F"></path><path d="M3.61391 91.0636H66.0594C66.1479 91.0642 66.2357 91.0472 66.3176 91.0137C66.3995 90.9802 66.474 90.9307 66.5367 90.8683V90.8638C66.6001 90.8007 66.6504 90.7256 66.6846 90.6429C66.7187 90.5602 66.7361 90.4716 66.7357 90.3821V85.8583C66.737 85.6782 66.6667 85.5049 66.5404 85.3765L66.536 85.3721C66.4732 85.3097 66.3987 85.2603 66.3168 85.2268C66.2349 85.1932 66.1471 85.1762 66.0586 85.1768H3.61391C3.43527 85.1764 3.26372 85.2467 3.13656 85.3721L3.13215 85.3765C3.0058 85.5049 2.93555 85.6782 2.9368 85.8583V90.3821C2.9368 90.5716 3.01538 90.739 3.13582 90.8638V90.8683C3.26312 90.994 3.435 91.0642 3.61391 91.0636ZM66.0601 94.0011H3.61391C3.13993 93.9999 2.67085 93.9052 2.23355 93.7223C1.79626 93.5394 1.39936 93.2721 1.06559 92.9355L1.06119 92.9399C0.72488 92.6044 0.458046 92.2058 0.275955 91.7671C0.0938633 91.3283 8.94419e-05 90.8579 0 90.3828V85.859C0 84.8676 0.407583 83.9643 1.06119 83.3056H1.06559V83.3012C1.7411 82.6241 2.6575 82.2425 3.61391 82.24H66.0594C67.0464 82.24 67.9497 82.6476 68.6084 83.3012L68.6128 83.3056C69.2907 83.9826 69.6724 84.9009 69.674 85.859V90.3828C69.674 90.8579 69.5802 91.3283 69.3981 91.7671C69.216 92.2059 68.9492 92.6044 68.6128 92.9399V92.9355C68.2783 93.2724 67.8807 93.5398 67.4426 93.7227C67.0046 93.9056 66.5348 94.0002 66.0601 94.0011ZM67.5472 19.3818C67.5593 19.0001 67.7194 18.6381 67.9937 18.3723C68.268 18.1066 68.6348 17.958 69.0167 17.958C69.3986 17.958 69.7655 18.1066 70.0398 18.3723C70.3141 18.6381 70.4742 19.0001 70.4862 19.3818V39.255H83.6618C84.4726 39.255 85.1306 39.9086 85.1306 40.7193V58.418C85.1306 58.8077 84.9758 59.1815 84.7002 59.4571C84.4246 59.7327 84.0508 59.8875 83.6611 59.8875C83.2714 59.8875 82.8976 59.7327 82.622 59.4571C82.3464 59.1815 82.1916 58.8077 82.1916 58.418V42.1881H69.016C68.8231 42.1881 68.632 42.1501 68.4538 42.0762C68.2755 42.0024 68.1136 41.8941 67.9772 41.7576C67.8408 41.6212 67.7326 41.4592 67.6588 41.2809C67.5851 41.1026 67.5471 40.9115 67.5472 40.7186V19.3818Z" fill="#EAA73F"></path><path d="M64.4788 26.6949C64.2322 26.9871 63.8811 27.1713 63.5005 27.208C63.1199 27.2447 62.7401 27.1309 62.4423 26.8912C62.1444 26.6514 61.9523 26.3046 61.9068 25.9249C61.8614 25.5453 61.9664 25.1629 62.1993 24.8597L67.8709 17.8382C68.0089 17.6682 68.1831 17.5311 68.3808 17.437C68.5785 17.3428 68.7947 17.2939 69.0136 17.2939C69.2326 17.2939 69.4488 17.3428 69.6465 17.437C69.8442 17.5311 70.0183 17.6682 70.1563 17.8382V17.8338L75.8331 24.8501C75.9545 25.0001 76.0451 25.1726 76.0999 25.3576C76.1546 25.5427 76.1723 25.7367 76.1521 25.9286C76.1318 26.1205 76.074 26.3065 75.9818 26.476C75.8897 26.6456 75.765 26.7953 75.615 26.9167C75.465 27.038 75.2925 27.1287 75.1075 27.1834C74.9225 27.2381 74.7285 27.2559 74.5366 27.2356C74.3447 27.2154 74.1586 27.1575 73.9891 27.0654C73.8196 26.9732 73.6698 26.8486 73.5485 26.6986L69.0114 21.0908L64.4788 26.6949ZM69.0158 7.93212e-06C70.5837 7.93212e-06 72.0004 0.634516 73.0307 1.66412C73.5576 2.19106 73.9753 2.81683 74.2599 3.50554C74.5444 4.19425 74.6902 4.93236 74.689 5.67754C74.6898 6.42276 74.5438 7.16085 74.2593 7.84962C73.9748 8.53839 73.5573 9.16434 73.0307 9.69168C72.5033 10.2184 71.8772 10.636 71.1884 10.9207C70.4995 11.2053 69.7612 11.3514 69.0158 11.3507C68.2706 11.3518 67.5325 11.2059 66.8438 10.9212C66.1551 10.6365 65.5293 10.2187 65.0024 9.69168C64.4743 9.16518 64.0554 8.53953 63.7698 7.85065C63.4843 7.16178 63.3376 6.42326 63.3383 5.67754C63.3383 4.11109 63.9735 2.68859 65.0024 1.66412C65.5284 1.13557 66.1539 0.716397 66.8427 0.43078C67.5316 0.145164 68.2701 -0.00124167 69.0158 7.93212e-06ZM70.9539 3.74023C70.6998 3.48558 70.3979 3.28365 70.0656 3.14603C69.7333 3.0084 69.377 2.9378 69.0173 2.93828C68.2616 2.93828 67.5757 3.24378 67.0793 3.74023C66.5828 4.23667 66.2773 4.92185 66.2773 5.67754C66.2773 6.43322 66.5828 7.11913 67.0793 7.61484C67.5941 8.12746 68.2908 8.41573 69.0173 8.41679C69.7433 8.41526 70.4393 8.12704 70.9539 7.61484C71.4666 7.10035 71.7549 6.40388 71.7558 5.67754C71.7556 4.95105 71.4672 4.25431 70.9539 3.74023ZM83.6617 65.7406C85.2281 65.7406 86.6462 66.3759 87.6751 67.4004C88.2019 67.9274 88.6196 68.5532 88.9044 69.2419C89.1892 69.9305 89.3354 70.6686 89.3348 71.4138C89.3348 72.9861 88.6995 74.4027 87.6751 75.4272C87.1489 75.9556 86.5234 76.3746 85.8346 76.6602C85.1458 76.9458 84.4073 77.0923 83.6617 77.0913C82.9156 77.0933 82.1766 76.9473 81.4874 76.6616C80.7983 76.3759 80.1726 75.9564 79.6468 75.4272C79.1181 74.9013 78.6989 74.2759 78.4136 73.587C78.1282 72.8981 77.9822 72.1594 77.9841 71.4138C77.9841 69.8473 78.6179 68.4292 79.6468 67.4004C80.1737 66.873 80.7997 66.4548 81.4887 66.17C82.1777 65.8852 82.9161 65.7393 83.6617 65.7406ZM85.5938 69.4816C85.341 69.2266 85.0399 69.0244 84.7082 68.8867C84.3765 68.7491 84.0208 68.6787 83.6617 68.6797C83.3017 68.6787 82.945 68.749 82.6124 68.8867C82.2797 69.0243 81.9777 69.2265 81.7236 69.4816C81.4685 69.7344 81.2662 70.0354 81.1286 70.3671C80.9909 70.6988 80.9206 71.0546 80.9217 71.4138C80.9207 71.7738 80.991 72.1304 81.1287 72.4631C81.2663 72.7957 81.4685 73.0978 81.7236 73.3518C81.9779 73.6066 82.28 73.8086 82.6126 73.9462C82.9452 74.0839 83.3017 74.1544 83.6617 74.1538C84.0207 74.1544 84.3764 74.0838 84.708 73.9462C85.0397 73.8085 85.3407 73.6065 85.5938 73.3518C85.8489 73.0978 86.0511 72.7957 86.1888 72.4631C86.3264 72.1304 86.3968 71.7738 86.3958 71.4138C86.3958 70.6574 86.0903 69.9722 85.5938 69.4816ZM91.4931 18.6446C91.7684 18.3692 92.1419 18.2144 92.5313 18.2143C92.9207 18.2143 93.2942 18.3689 93.5696 18.6442C93.845 18.9195 93.9998 19.2929 93.9998 19.6824C93.9999 20.0718 93.8453 20.4453 93.57 20.7207L85.9221 28.3678C85.786 28.5044 85.6243 28.6127 85.4462 28.6867C85.2681 28.7606 85.0772 28.7986 84.8844 28.7986C84.6916 28.7986 84.5007 28.7606 84.3226 28.6867C84.1446 28.6127 83.9828 28.5044 83.8467 28.3678C83.7101 28.2317 83.6016 28.0699 83.5276 27.8918C83.4536 27.7137 83.4155 27.5227 83.4155 27.3298C83.4155 27.1369 83.4536 26.9459 83.5276 26.7677C83.6016 26.5896 83.7101 26.4278 83.8467 26.2917L91.4931 18.6446Z" fill="#EAA73F"></path><path d="M93.57 26.2919C93.7063 26.4283 93.8144 26.5902 93.8882 26.7683C93.9619 26.9465 93.9999 27.1374 93.9998 27.3302C93.9998 27.523 93.9618 27.714 93.888 27.8921C93.8142 28.0702 93.706 28.2321 93.5696 28.3684C93.4332 28.5047 93.2714 28.6128 93.0932 28.6866C92.915 28.7603 92.7241 28.7983 92.5313 28.7983C92.3385 28.7982 92.1476 28.7602 91.9694 28.6864C91.7913 28.6126 91.6295 28.5044 91.4931 28.368L83.8467 20.7209C83.7101 20.5848 83.6016 20.423 83.5276 20.2448C83.4536 20.0667 83.4155 19.8757 83.4155 19.6828C83.4155 19.4899 83.4536 19.2989 83.5276 19.1208C83.6016 18.9427 83.7101 18.7809 83.8467 18.6448C83.9828 18.5082 84.1446 18.3999 84.3226 18.3259C84.5007 18.252 84.6916 18.2139 84.8844 18.2139C85.0772 18.2139 85.2681 18.252 85.4462 18.3259C85.6243 18.3999 85.786 18.5082 85.9221 18.6448L93.57 26.2919ZM51.0249 5.24225C51.1612 5.10588 51.323 4.9977 51.5012 4.92388C51.6793 4.85006 51.8702 4.81205 52.063 4.81201C52.2558 4.81198 52.4468 4.84992 52.6249 4.92368C52.8031 4.99744 52.965 5.10556 53.1013 5.24188C53.2377 5.3782 53.3459 5.54004 53.4197 5.71817C53.4935 5.8963 53.5315 6.08722 53.5316 6.28004C53.5316 6.47286 53.4937 6.6638 53.4199 6.84195C53.3462 7.0201 53.238 7.18198 53.1017 7.31835L45.4538 14.9648C45.3177 15.1013 45.156 15.2097 44.9779 15.2836C44.7999 15.3575 44.6089 15.3956 44.4161 15.3956C44.2233 15.3956 44.0324 15.3575 43.8544 15.2836C43.6763 15.2097 43.5146 15.1013 43.3785 14.9648C43.2418 14.8286 43.1333 14.6669 43.0593 14.4887C42.9854 14.3106 42.9473 14.1196 42.9473 13.9267C42.9473 13.7338 42.9854 13.5428 43.0593 13.3647C43.1333 13.1866 43.2418 13.0248 43.3785 12.8887L51.0249 5.24225Z" fill="#EAA73F"></path><path d="M53.1016 12.8885C53.6766 13.4628 53.6766 14.3903 53.1016 14.9646C52.5266 15.5389 51.5998 15.5389 51.0247 14.9646L43.3783 7.31821C43.2418 7.18199 43.1335 7.02019 43.0597 6.84206C42.9858 6.66394 42.9477 6.473 42.9477 6.28016C42.9477 6.08732 42.9858 5.89637 43.0597 5.71825C43.1335 5.54013 43.2418 5.37833 43.3783 5.24211C43.5145 5.10561 43.6763 4.99732 43.8545 4.92344C44.0326 4.84955 44.2235 4.81152 44.4164 4.81152C44.6092 4.81152 44.8002 4.84955 44.9783 4.92344C45.1564 4.99732 45.3182 5.10561 45.4544 5.24211L53.1016 12.8885ZM34.5356 24.8502C34.1798 24.6946 33.9001 24.4044 33.7576 24.0432C33.6152 23.6819 33.6216 23.279 33.7755 22.9224C33.9311 22.5666 34.2212 22.2869 34.5825 22.1445C34.9438 22.002 35.3467 22.0084 35.7033 22.1623C39.9759 24.0211 44.5974 28.2247 47.8133 34.7541C50.3667 39.9447 52.0492 46.6232 51.9758 54.7808C51.9743 54.9729 51.935 55.1628 51.8601 55.3397C51.7852 55.5166 51.6761 55.677 51.5392 55.8117C51.4022 55.9464 51.24 56.0528 51.0619 56.1248C50.8838 56.1968 50.6932 56.2329 50.5011 56.2312C50.3088 56.2303 50.1186 56.1914 49.9415 56.1167C49.7643 56.042 49.6037 55.9329 49.4689 55.7959C49.334 55.6588 49.2277 55.4964 49.1559 55.318C49.0841 55.1396 49.0484 54.9488 49.0507 54.7565C49.1197 47.1057 47.5533 40.8722 45.1849 36.0517C42.298 30.1943 38.2472 26.4636 34.5356 24.8502Z" fill="#EAA73F"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Business Intelligence  &amp; Strategy						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-123bafbc e-con-full e-flex e-con e-child" data-id="123bafbc" data-element_type="container">
+				<div class="elementor-element elementor-element-6a8b1e18 elementor-widget__width-initial elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="6a8b1e18" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="102" height="94" viewbox="0 0 102 94" fill="none"><path d="M9.5498 64.7281V29.289C9.5498 28.5937 10.1148 28.0287 10.8101 28.0287H25.8558C26.551 28.0287 27.116 28.5937 27.116 29.289V55.6436C27.116 56.3389 26.551 56.9039 25.8558 56.9039C25.1605 56.9039 24.5955 56.3389 24.5955 55.6436V30.5493H12.0704V64.7281C12.0704 65.4234 11.5053 65.9884 10.8101 65.9884C10.1148 65.9884 9.5498 65.4234 9.5498 64.7281ZM101.235 19.9881L98.8009 42.9484C98.7505 43.4315 98.425 43.841 97.9671 44.0028C97.5092 44.1645 96.9987 44.049 96.6564 43.7066L92.0605 39.1108L54.8276 76.3417C54.5913 76.5778 54.271 76.7108 53.937 76.7113H28.62L11.7007 93.6306C11.5838 93.7477 11.445 93.8406 11.2922 93.904C11.1393 93.9674 10.9755 94 10.8101 94C10.6446 94 10.4808 93.9674 10.328 93.904C10.1752 93.8406 10.0364 93.7477 9.91948 93.6306L0.368633 84.0798C-0.122878 83.5883 -0.122878 82.7901 0.368633 82.2965L21.6128 61.0523C21.8491 60.8161 22.1693 60.6832 22.5034 60.6826H47.8183L80.7243 27.7766L76.1285 23.1808C75.9601 23.0128 75.8429 22.8004 75.7904 22.5684C75.738 22.3364 75.7525 22.0942 75.8323 21.8701C75.9116 21.6458 76.0526 21.4486 76.2392 21.301C76.4258 21.1535 76.6502 21.0617 76.8867 21.0362L99.847 18.6018C100.225 18.5619 100.601 18.6942 100.872 18.9631C101.005 19.096 101.107 19.2571 101.17 19.4344C101.233 19.6118 101.255 19.801 101.235 19.9881ZM98.5636 21.2715L79.777 23.2648L83.3982 26.886C83.8897 27.3776 83.8897 28.1757 83.3982 28.6693L49.2319 62.8356C48.9956 63.0718 48.6754 63.2047 48.3413 63.2053H23.0264L3.04253 83.1892L10.8101 90.9567L27.2085 74.5584C27.4447 74.3222 27.765 74.1892 28.0991 74.1887H53.4139L91.1678 36.4348C91.4041 36.1988 91.7245 36.0662 92.0584 36.0662C92.3924 36.0662 92.7127 36.1988 92.949 36.4348L96.5703 40.056L98.5636 21.2715ZM33.4847 56.9039C34.1799 56.9039 34.745 56.3389 34.745 55.6436V16.5349H47.2701V52.8416C47.2701 53.5368 47.8351 54.1019 48.5304 54.1019C49.2256 54.1019 49.7906 53.5368 49.7906 52.8416V15.2746C49.7906 14.5794 49.2256 14.0143 48.5304 14.0143H33.4847C32.7894 14.0143 32.2244 14.5794 32.2244 15.2746V55.6436C32.2244 56.3389 32.7894 56.9039 33.4847 56.9039ZM56.1614 46.475C56.8566 46.475 57.4217 45.91 57.4217 45.2148V2.52057H69.9468V30.167C69.9468 30.8622 70.5118 31.4273 71.2071 31.4273C71.9023 31.4273 72.4673 30.8622 72.4673 30.167V1.26028C72.4673 0.565027 71.9023 0 71.2071 0H56.1614C55.4661 0 54.9011 0.565027 54.9011 1.26028V45.2148C54.9011 45.91 55.464 46.475 56.1614 46.475Z" fill="#EAA73F"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Next-Level Performance Creative						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-242d2a4b e-con-full e-flex e-con e-child" data-id="242d2a4b" data-element_type="container">
+				<div class="elementor-element elementor-element-169601f3 elementor-widget__width-initial elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="169601f3" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="94" height="94" viewbox="0 0 94 94" fill="none"><path d="M46.4291 23.2146C46.4291 10.414 36.0151 0 23.2146 0C10.414 0 0 10.414 0 23.2146C0 36.0151 10.414 46.4291 23.2146 46.4291C36.0151 46.4291 46.4291 36.0151 46.4291 23.2146ZM2.66397 23.2146C2.66397 11.883 11.883 2.66397 23.2146 2.66397C34.5461 2.66397 43.7652 11.883 43.7652 23.2146C43.7652 34.5461 34.5461 43.7652 23.2146 43.7652C11.883 43.7652 2.66397 34.5461 2.66397 23.2146ZM41.0411 23.2146C41.0411 13.3851 33.0442 5.38807 23.2146 5.38807C13.3849 5.38807 5.38807 13.3849 5.38807 23.2146C5.38807 33.0442 13.3849 41.0411 23.2146 41.0411C33.044 41.0411 41.0411 33.0442 41.0411 23.2146ZM8.05203 23.2146C8.05203 14.8539 14.8539 8.05203 23.2146 8.05203C31.5752 8.05203 38.3771 14.8539 38.3771 23.2146C38.3771 31.5752 31.5752 38.3771 23.2146 38.3771C14.8539 38.3771 8.05203 31.5752 8.05203 23.2146ZM23.2665 34.835C22.9189 34.8348 22.5852 34.6988 22.3365 34.456C22.0878 34.2131 21.9439 33.8827 21.9355 33.5352L21.9085 32.415C20.4482 32.1185 19.4981 31.3309 18.5903 30.4743C18.4631 30.3542 18.3607 30.2103 18.2891 30.0507C18.2175 29.8911 18.178 29.719 18.1729 29.5441C18.1678 29.3692 18.1972 29.1951 18.2594 29.0316C18.3217 28.8681 18.4155 28.7185 18.5355 28.5912C18.6556 28.464 18.7995 28.3616 18.9591 28.29C19.1187 28.2184 19.2908 28.1789 19.4657 28.1738C19.6405 28.1687 19.8147 28.1981 19.9782 28.2604C20.1417 28.3226 20.2913 28.4164 20.4186 28.5364C21.4659 29.5246 22.0457 29.8754 23.2148 29.8754C24.9254 29.8754 26.3173 28.6964 26.3173 27.2474C26.3173 25.7984 24.9252 24.6194 23.2146 24.6194C20.0349 24.6194 17.448 22.2455 17.448 19.3275C17.448 16.8376 19.3317 14.7439 21.8598 14.183L21.8305 12.9579C21.822 12.6048 21.9542 12.2627 22.198 12.007C22.4418 11.7513 22.7771 11.603 23.1303 11.5945C23.857 11.573 24.4762 12.1589 24.4937 12.8944L24.5252 14.2163C25.9042 14.5544 27.5291 15.3507 28.2618 16.4656C28.3579 16.6118 28.4243 16.7754 28.4571 16.9472C28.4899 17.119 28.4886 17.2956 28.4532 17.4669C28.4177 17.6382 28.3489 17.8009 28.2506 17.9456C28.1523 18.0902 28.0265 18.2142 27.8803 18.3102C27.7342 18.4063 27.5705 18.4727 27.3987 18.5055C27.2269 18.5383 27.0503 18.537 26.879 18.5015C26.7077 18.4661 26.5451 18.3973 26.4004 18.299C26.2557 18.2007 26.1318 18.0749 26.0357 17.9287C25.6883 17.4003 24.08 16.6995 23.2146 16.6995C21.5039 16.6995 20.112 17.8785 20.112 19.3277C20.112 20.7767 21.5037 21.9557 23.2146 21.9557C26.3942 21.9557 28.9811 24.3296 28.9811 27.2476C28.9811 29.7363 27.0992 31.8295 24.5728 32.3914L24.5989 33.471C24.6031 33.6459 24.5728 33.8199 24.5098 33.9831C24.4468 34.1462 24.3523 34.2954 24.2316 34.4221C24.1109 34.5487 23.9665 34.6503 23.8066 34.7211C23.6466 34.792 23.4743 34.8306 23.2994 34.8348L23.2665 34.835ZM83.1822 37.8466C83.0056 37.5407 82.9577 37.1771 83.0491 36.8359C83.1406 36.4947 83.3638 36.2038 83.6697 36.0271L89.4918 32.6656C89.6433 32.5767 89.811 32.5187 89.985 32.4949C90.159 32.4711 90.3361 32.482 90.5059 32.5269C90.6757 32.5718 90.835 32.6499 90.9745 32.7566C91.1141 32.8633 91.2311 32.9965 91.319 33.1486C91.4068 33.3008 91.4637 33.4688 91.4863 33.643C91.509 33.8172 91.4969 33.9941 91.4509 34.1636C91.4049 34.3332 91.3258 34.4919 91.2181 34.6307C91.1105 34.7696 90.9765 34.8857 90.8238 34.9726L85.0017 38.3341C84.6957 38.5107 84.3322 38.5585 83.991 38.4671C83.6498 38.3757 83.3589 38.1525 83.1822 37.8466ZM74.2334 29.9154L77.7793 23.774C77.8661 23.6213 77.9823 23.4873 78.1211 23.3797C78.2599 23.272 78.4187 23.1929 78.5882 23.1469C78.7577 23.1009 78.9347 23.0888 79.1089 23.1115C79.2831 23.1341 79.4511 23.191 79.6032 23.2788C79.7553 23.3667 79.8886 23.4837 79.9953 23.6233C80.102 23.7628 80.18 23.9221 80.2249 24.0919C80.2698 24.2617 80.2807 24.4387 80.2569 24.6128C80.2331 24.7868 80.1751 24.9545 80.0863 25.106L76.5404 31.2474C76.453 31.399 76.3366 31.5318 76.1978 31.6384C76.0591 31.7449 75.9007 31.8231 75.7317 31.8683C75.5627 31.9136 75.3864 31.9251 75.213 31.9022C75.0395 31.8793 74.8723 31.8225 74.7209 31.7349C74.5694 31.6474 74.4366 31.531 74.3301 31.3923C74.2236 31.2535 74.1455 31.0951 74.1002 30.9261C74.055 30.7572 74.0434 30.5809 74.0663 30.4075C74.0891 30.2341 74.1459 30.0669 74.2334 29.9154ZM94 48.2304C94 48.5836 93.8597 48.9224 93.6099 49.1722C93.3601 49.422 93.0213 49.5624 92.668 49.5624H85.5763C85.2231 49.5624 84.8843 49.422 84.6345 49.1722C84.3847 48.9224 84.2444 48.5836 84.2444 48.2304C84.2444 47.8771 84.3847 47.5383 84.6345 47.2885C84.8843 47.0387 85.2231 46.8984 85.5763 46.8984H92.668C93.0213 46.8984 93.3601 47.0387 93.6099 47.2885C93.8597 47.5383 94 47.8771 94 48.2304ZM76.6235 49.4372C79.7525 47.5377 80.8097 43.4636 78.9707 40.278C77.1314 37.0925 73.0743 35.9708 69.865 37.7313L63.6281 26.9287C62.8268 25.5406 61.5279 24.5462 59.971 24.1293C58.4142 23.7122 56.7924 23.9238 55.4042 24.7252C54.0161 25.5267 53.0219 26.8256 52.6048 28.3823C52.1877 29.939 52.3993 31.561 53.2008 32.9491L53.3878 33.273C49.7077 40.2236 43.2434 47.3288 35.0373 53.4514C34.8284 53.2878 34.5753 53.1905 34.3106 53.172C34.0459 53.1535 33.7817 53.2146 33.5521 53.3475L25.6671 57.9C23.0418 59.4158 21.1612 61.8731 20.3717 64.8197C19.5823 67.766 19.9822 70.8345 21.4978 73.4599C23.0134 76.0852 25.471 77.9658 28.4175 78.7553C29.3906 79.0172 30.3939 79.1502 31.4017 79.151C33.3721 79.151 35.313 78.6365 37.0577 77.6292L37.5903 77.3217L49.0707 92.6836C49.6415 93.448 50.4538 93.8982 51.4195 93.9855C51.5276 93.9952 51.6347 94.0002 51.7407 94.0002C52.5666 94.0002 53.3256 93.7049 53.952 93.1367L56.3465 90.9636C57.6184 89.8096 57.7992 87.8913 56.7671 86.5021L52.3648 80.5766L53.8399 79.4993C54.4802 79.0315 54.9004 78.329 55.0229 77.5207C55.1584 76.6269 54.9204 75.6894 54.3699 74.9484L50.5408 69.7942C58.2499 67.0469 65.7658 65.6973 72.2457 65.9361L72.4327 66.2599C73.2342 67.6482 74.5329 68.6425 76.0898 69.0596C76.6037 69.1979 77.1336 69.2682 77.6659 69.2687C78.7163 69.2683 79.748 68.9906 80.6568 68.4638C82.0449 67.6623 83.0391 66.3636 83.4562 64.8065C83.8733 63.2496 83.6617 61.6278 82.8602 60.2397L76.6235 49.4372ZM74.1753 39.7005C74.6958 39.8385 75.1837 40.0783 75.6108 40.4061C76.038 40.7338 76.3959 41.143 76.6638 41.61C77.7684 43.5233 77.1464 45.9628 75.2898 47.1269L71.1991 40.0415C72.1167 39.5546 73.1663 39.4301 74.1753 39.7005ZM29.1073 76.1821C26.848 75.5766 24.9652 74.1367 23.8052 72.1275C22.6452 70.1185 22.3398 67.7679 22.9451 65.5089C23.5504 63.2496 24.9903 61.3666 26.9993 60.207L33.7308 56.3205L42.4574 71.4356L35.7259 75.322C33.7169 76.4821 31.3661 76.787 29.1073 76.1821ZM54.5567 88.991L52.1622 91.1638C52.01 91.3022 51.8644 91.3514 51.6597 91.3324C51.4517 91.3136 51.32 91.2432 51.2049 91.0892L39.9137 75.9805L43.9153 73.6703L54.629 88.0909C54.8437 88.3796 54.8132 88.7581 54.5567 88.991ZM52.2318 76.5373C52.358 76.707 52.4181 76.9308 52.3894 77.1215C52.3658 77.2773 52.2929 77.3308 52.2689 77.3481L50.7766 78.4382L45.7502 71.6727C46.478 71.3611 47.21 71.0597 47.9463 70.7687L52.2318 76.5373ZM44.3446 69.3764L36.4577 55.7157C44.4932 49.75 50.9548 42.8362 54.9409 35.9628L70.6929 63.246C62.7471 63.2614 53.5286 65.4004 44.3446 69.3764ZM80.8832 64.1169C80.6501 64.9863 80.0968 65.7108 79.3248 66.1564C78.5532 66.6022 77.6491 66.7191 76.7795 66.4864C75.9101 66.2533 75.1857 65.6997 74.7401 64.9279L55.508 31.6169C55.0623 30.8449 54.9451 29.9411 55.1782 29.0717C55.4113 28.2021 55.9646 27.4779 56.7364 27.0322C57.2417 26.7394 57.8153 26.5852 58.3993 26.5853C58.6931 26.5853 58.9894 26.6241 59.2817 26.7023C60.1512 26.9354 60.8755 27.4887 61.3211 28.2607L80.5532 61.5717C80.9991 62.3435 81.1163 63.2475 80.8832 64.1169Z" fill="#EAA73F"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Sponsored Media						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6d96190e e-con-full e-flex e-con e-child" data-id="6d96190e" data-element_type="container">
+				<div class="elementor-element elementor-element-6de6a15a elementor-widget__width-initial elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="6de6a15a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="91" height="94" viewbox="0 0 91 94" fill="none"><path d="M31.3333 55.4068V65.8001C31.3333 66.2156 31.4983 66.6141 31.7921 66.9079C32.0859 67.2017 32.4844 67.3667 32.8999 67.3667C33.3154 67.3667 33.7139 67.2017 34.0077 66.9079C34.3015 66.6141 34.4666 66.2156 34.4666 65.8001V54.8334C34.4665 54.463 34.3355 54.1046 34.0969 53.8214L18.9786 35.9536C18.6537 35.5686 18.4869 35.0747 18.5119 34.5716C18.5369 34.0685 18.7518 33.5936 19.1132 33.2428C19.4746 32.8919 19.9556 32.6912 20.4593 32.6811C20.9629 32.671 21.4516 32.8523 21.8268 33.1884L34.9867 45.0324C35.274 45.2908 35.6468 45.4337 36.0333 45.4334H54.8332C55.2204 45.4336 55.5938 45.2901 55.8813 45.0308L69.0413 33.1884C69.4165 32.8523 69.9052 32.671 70.4088 32.6811C70.9124 32.6912 71.3934 32.8919 71.7549 33.2428C72.1163 33.5936 72.3312 34.0685 72.3561 34.5716C72.3811 35.0747 72.2143 35.5686 71.8895 35.9536L56.7712 53.8214C56.5319 54.1044 56.4004 54.4628 56.3999 54.8334V65.8001C56.3999 66.2156 56.5649 66.6141 56.8587 66.9079C57.1525 67.2017 57.551 67.3667 57.9665 67.3667C58.382 67.3667 58.7805 67.2017 59.0743 66.9079C59.3681 66.6141 59.5332 66.2156 59.5332 65.8001V55.4068L74.2818 37.9777C75.1216 36.9865 75.5535 35.7132 75.49 34.4156C75.4265 33.118 74.8724 31.893 73.9398 30.9885C73.0073 30.084 71.7659 29.5676 70.467 29.5438C69.1681 29.52 67.9086 29.9906 66.9435 30.8603L54.2332 42.3001H52.4206C53.6362 40.9495 54.4344 39.2756 54.7184 37.4808C55.0025 35.686 54.7602 33.8474 54.021 32.1874C53.2818 30.5274 52.0773 29.1173 50.5533 28.1277C49.0293 27.1381 47.2511 26.6114 45.434 26.6114C43.6169 26.6114 41.8387 27.1381 40.3147 28.1277C38.7907 29.1173 37.5862 30.5274 36.847 32.1874C36.1078 33.8474 35.8655 35.686 36.1496 37.4808C36.4336 39.2756 37.2318 40.9495 38.4475 42.3001H36.6349L23.9229 30.8603C22.9579 29.9906 21.6984 29.52 20.3995 29.5438C19.1006 29.5676 17.8592 30.084 16.9266 30.9885C15.9941 31.893 15.44 33.118 15.3765 34.4156C15.313 35.7132 15.7449 36.9865 16.5847 37.9777L31.3333 55.4068ZM39.1666 36.0335C39.1666 34.794 39.5341 33.5824 40.2227 32.5519C40.9113 31.5213 41.89 30.7181 43.0351 30.2438C44.1802 29.7695 45.4402 29.6454 46.6558 29.8872C47.8714 30.129 48.988 30.7259 49.8644 31.6023C50.7408 32.4787 51.3377 33.5953 51.5795 34.8109C51.8213 36.0265 51.6972 37.2865 51.2229 38.4316C50.7486 39.5767 49.9453 40.5554 48.9148 41.244C47.8843 41.9326 46.6727 42.3001 45.4332 42.3001C43.7717 42.2985 42.1787 41.6377 41.0039 40.4628C39.829 39.2879 39.1682 37.695 39.1666 36.0335ZM38.8078 15.6778L37.7801 21.6687C37.7309 21.9566 37.7632 22.2525 37.8733 22.523C37.9835 22.7936 38.167 23.0279 38.4032 23.1996C38.6395 23.3714 38.919 23.4736 39.2103 23.4949C39.5016 23.5162 39.7931 23.4556 40.0517 23.32L45.4332 20.4922L50.8147 23.32C51.0734 23.4556 51.3648 23.5162 51.6561 23.4949C51.9474 23.4736 52.227 23.3714 52.4632 23.1996C52.6995 23.0279 52.883 22.7936 52.9931 22.523C53.1032 22.2525 53.1355 21.9566 53.0864 21.6687L52.0571 15.6778L56.4108 11.4368C56.6203 11.2327 56.7685 10.974 56.8386 10.6901C56.9087 10.4061 56.8979 10.1082 56.8074 9.83005C56.7169 9.5519 56.5503 9.30465 56.3266 9.11626C56.1029 8.92788 55.8308 8.80589 55.5413 8.76412L49.5269 7.88992L46.8385 2.44106C46.6947 2.19641 46.4894 1.99358 46.2431 1.85266C45.9967 1.71173 45.7178 1.6376 45.434 1.6376C45.1502 1.6376 44.8713 1.71173 44.625 1.85266C44.3786 1.99358 44.1734 2.19641 44.0295 2.44106L41.3395 7.88992L35.3236 8.76412C35.0342 8.80614 34.7624 8.9283 34.5388 9.11678C34.3153 9.30526 34.1489 9.55254 34.0586 9.83064C33.9683 10.1087 33.9576 10.4066 34.0278 10.6904C34.098 10.9743 34.2462 11.2328 34.4556 11.4368L38.8078 15.6778ZM42.6038 10.8728C42.8553 10.8365 43.0941 10.7394 43.2996 10.5901C43.5051 10.4408 43.6712 10.2437 43.7835 10.0159L45.4332 6.67419L47.0829 10.0159C47.1953 10.2437 47.3614 10.4408 47.5669 10.5901C47.7724 10.7394 48.0112 10.8365 48.2626 10.8728L51.949 11.4086L49.281 14.0093C49.0994 14.1868 48.9636 14.4056 48.8853 14.6471C48.807 14.8886 48.7884 15.1456 48.8313 15.3958L49.4611 19.0696L46.1617 17.3353C45.937 17.2173 45.687 17.1557 45.4332 17.1557C45.1794 17.1557 44.9294 17.2173 44.7047 17.3353L41.4038 19.0696L42.0351 15.3958C42.078 15.1456 42.0595 14.8886 41.9812 14.6471C41.9029 14.4056 41.7671 14.1868 41.5855 14.0093L38.9159 11.4086L42.6038 10.8728ZM62.6665 10.9668H68.9332C69.3487 10.9668 69.7472 11.1319 70.041 11.4257C70.3348 11.7195 70.4998 12.118 70.4998 12.5335C70.4998 12.949 70.3348 13.3475 70.041 13.6413C69.7472 13.9351 69.3487 14.1002 68.9332 14.1002H62.6665C62.251 14.1002 61.8525 13.9351 61.5587 13.6413C61.2649 13.3475 61.0999 12.949 61.0999 12.5335C61.0999 12.118 61.2649 11.7195 61.5587 11.4257C61.8525 11.1319 62.251 10.9668 62.6665 10.9668ZM58.2297 5.56969C58.1155 5.39852 58.0362 5.20654 57.9962 5.00469C57.9562 4.80285 57.9563 4.5951 57.9966 4.39332C58.0369 4.19153 58.1166 3.99966 58.231 3.82866C58.3455 3.65767 58.4925 3.51089 58.6637 3.39673L63.3637 0.263401C63.7094 0.0327954 64.1325 -0.0510358 64.5401 0.0303485C64.9476 0.111733 65.3061 0.351666 65.5367 0.697366C65.7673 1.04307 65.8511 1.46622 65.7697 1.87372C65.6883 2.28123 65.4484 2.63972 65.1027 2.87033L60.4027 6.00365C60.2315 6.11786 60.0396 6.19724 59.8377 6.23724C59.6359 6.27724 59.4281 6.27709 59.2263 6.23679C59.0245 6.19649 58.8327 6.11683 58.6617 6.00237C58.4907 5.88791 58.3439 5.74088 58.2297 5.56969ZM58.6637 21.6703C58.4925 21.5561 58.3455 21.4093 58.2311 21.2383C58.1166 21.0673 58.037 20.8755 57.9967 20.6737C57.9564 20.4719 57.9562 20.2642 57.9962 20.0623C58.0362 19.8605 58.1156 19.6685 58.2297 19.4973C58.3439 19.3262 58.4907 19.1791 58.6617 19.0647C58.8327 18.9503 59.0246 18.8706 59.2263 18.8303C59.4281 18.79 59.6359 18.7899 59.8377 18.8298C60.0395 18.8698 60.2315 18.9492 60.4027 19.0634L65.1027 22.1967C65.4484 22.4273 65.6883 22.7858 65.7697 23.1933C65.8511 23.6008 65.7673 24.0239 65.5367 24.3696C65.3061 24.7153 64.9476 24.9553 64.5401 25.0367C64.1325 25.1181 63.7094 25.0342 63.3637 24.8036L58.6637 21.6703ZM20.3666 12.5335C20.3666 12.118 20.5317 11.7195 20.8255 11.4257C21.1193 11.1319 21.5178 10.9668 21.9333 10.9668H28.1999C28.6154 10.9668 29.0139 11.1319 29.3077 11.4257C29.6015 11.7195 29.7666 12.118 29.7666 12.5335C29.7666 12.949 29.6015 13.3475 29.3077 13.6413C29.0139 13.9351 28.6154 14.1002 28.1999 14.1002H21.9333C21.5178 14.1002 21.1193 13.9351 20.8255 13.6413C20.5317 13.3475 20.3666 12.949 20.3666 12.5335ZM24.1971 2.87033C23.8514 2.63972 23.6115 2.28123 23.5301 1.87372C23.4487 1.46622 23.5325 1.04307 23.7631 0.697366C23.9938 0.351666 24.3522 0.111733 24.7598 0.0303485C25.1673 -0.0510358 25.5904 0.0327954 25.9361 0.263401L30.6361 3.39673C30.8073 3.51091 30.9543 3.65769 31.0687 3.82869C31.1832 3.99969 31.2628 4.19155 31.3031 4.39333C31.3434 4.59511 31.3436 4.80285 31.3036 5.00469C31.2636 5.20653 31.1843 5.39852 31.0701 5.56969C30.9559 5.74086 30.8091 5.88787 30.6381 6.00232C30.4671 6.11676 30.2752 6.19641 30.0735 6.23671C29.8717 6.277 29.6639 6.27716 29.4621 6.23718C29.2603 6.19719 29.0683 6.11784 28.8971 6.00365L24.1971 2.87033ZM32.6367 19.4973C32.7509 19.6685 32.8303 19.8605 32.8703 20.0623C32.9103 20.2642 32.9102 20.4719 32.8699 20.6737C32.8296 20.8755 32.7499 21.0674 32.6354 21.2384C32.521 21.4093 32.374 21.5561 32.2028 21.6703L27.5028 24.8036C27.1571 25.0342 26.7339 25.1181 26.3264 25.0367C25.9189 24.9553 25.5604 24.7153 25.3298 24.3696C25.0992 24.0239 25.0154 23.6008 25.0968 23.1933C25.1781 22.7858 25.4181 22.4273 25.7638 22.1967L30.4638 19.0634C30.6349 18.9489 30.8269 18.8694 31.0287 18.8293C31.2306 18.7892 31.4384 18.7893 31.6403 18.8296C31.8421 18.8699 32.034 18.9496 32.205 19.0642C32.376 19.1788 32.5227 19.326 32.6367 19.4973ZM80.5876 72.1012C81.8124 70.7536 82.6194 69.0794 82.9106 67.2818C83.2018 65.4842 82.9646 63.6408 82.2279 61.9755C81.4911 60.3102 80.2865 58.8948 78.7604 57.9012C77.2344 56.9076 75.4526 56.3787 73.6316 56.3787C71.8106 56.3787 70.0288 56.9076 68.5028 57.9012C66.9767 58.8948 65.7721 60.3102 65.0354 61.9755C64.2986 63.6408 64.0614 65.4842 64.3526 67.2818C64.6438 69.0794 65.4508 70.7536 66.6756 72.1012C64.4827 72.246 62.3835 73.0446 60.6488 74.3939C58.9141 75.7433 57.6235 77.5814 56.9435 79.6713C55.539 78.9076 53.9835 78.4626 52.3877 78.3678C53.6129 77.0205 54.4204 75.3462 54.712 73.5485C55.0035 71.7508 54.7666 69.9071 54.03 68.2415C53.2933 66.5759 52.0887 65.1602 50.5626 64.1665C49.0364 63.1727 47.2544 62.6436 45.4332 62.6436C43.612 62.6436 41.8301 63.1727 40.3039 64.1665C38.7778 65.1602 37.5732 66.5759 36.8365 68.2415C36.0999 69.9071 35.8629 71.7508 36.1545 73.5485C36.446 75.3462 37.2535 77.0205 38.4788 78.3678C36.8829 78.4626 35.3275 78.9076 33.923 79.6713C33.2431 77.5809 31.9524 75.7422 30.2174 74.3926C28.4824 73.043 26.3827 72.2443 24.1893 72.0996C25.4139 70.7519 26.2208 69.0776 26.5118 67.28C26.8028 65.4824 26.5654 63.639 25.8284 61.9738C25.0915 60.3086 23.8867 58.8932 22.3605 57.8998C20.8344 56.9064 19.0525 56.3777 17.2315 56.3779C15.4105 56.3781 13.6288 56.9073 12.1029 57.901C10.5769 58.8947 9.37249 60.3103 8.63591 61.9757C7.89933 63.6411 7.66234 65.4845 7.95373 67.2821C8.24512 69.0796 9.05235 70.7538 10.2773 72.1012C7.49622 72.2775 4.88642 73.5054 2.97769 75.5358C1.06897 77.5661 0.00436712 80.2467 0 83.0334V86.1667C0 86.5822 0.165059 86.9807 0.458865 87.2745C0.752671 87.5683 1.15116 87.7333 1.56666 87.7333C1.98217 87.7333 2.38065 87.5683 2.67446 87.2745C2.96827 86.9807 3.13333 86.5822 3.13333 86.1667V83.0334C3.13581 80.9566 3.96191 78.9656 5.4304 77.4971C6.89889 76.0286 8.88988 75.2025 10.9666 75.2H23.4999C25.3561 75.2077 27.1492 75.8749 28.5588 77.0825C29.9685 78.2902 30.903 79.9595 31.1954 81.7926C29.273 83.8195 28.2009 86.5064 28.1999 89.3V92.4333C28.1999 92.8488 28.365 93.2473 28.6588 93.5411C28.9526 93.8349 29.3511 94 29.7666 94C30.1821 94 30.5806 93.8349 30.8744 93.5411C31.1682 93.2473 31.3333 92.8488 31.3333 92.4333V89.3C31.3358 87.2233 32.1618 85.2323 33.6303 83.7638C35.0988 82.2953 37.0898 81.4692 39.1666 81.4667H51.6999C53.7766 81.4692 55.7676 82.2953 57.2361 83.7638C58.7046 85.2323 59.5307 87.2233 59.5332 89.3V92.4333C59.5332 92.8488 59.6983 93.2473 59.9921 93.5411C60.2859 93.8349 60.6844 94 61.0999 94C61.5154 94 61.9139 93.8349 62.2077 93.5411C62.5015 93.2473 62.6665 92.8488 62.6665 92.4333V89.3C62.6656 86.5064 61.5935 83.8195 59.6711 81.7926C59.9635 79.9595 60.898 78.2902 62.3077 77.0825C63.7173 75.8749 65.5103 75.2077 67.3665 75.2H79.8998C81.9766 75.2025 83.9676 76.0286 85.4361 77.4971C86.9046 78.9656 87.7307 80.9566 87.7331 83.0334V86.1667C87.7331 86.5822 87.8982 86.9807 88.192 87.2745C88.4858 87.5683 88.8843 87.7333 89.2998 87.7333C89.7153 87.7333 90.1138 87.5683 90.4076 87.2745C90.7014 86.9807 90.8665 86.5822 90.8665 86.1667V83.0334C90.8621 80.2467 89.7975 77.5661 87.8888 75.5358C85.98 73.5054 83.3687 72.2775 80.5876 72.1012ZM17.2333 59.5334C18.4727 59.5334 19.6843 59.9009 20.7149 60.5895C21.7454 61.2781 22.5486 62.2568 23.0229 63.4019C23.4972 64.547 23.6213 65.807 23.3795 67.0226C23.1377 68.2382 22.5409 69.3548 21.6645 70.2313C20.7881 71.1077 19.6715 71.7045 18.4559 71.9463C17.2402 72.1881 15.9802 72.064 14.8352 71.5897C13.6901 71.1154 12.7114 70.3122 12.0228 69.2816C11.3342 68.2511 10.9666 67.0395 10.9666 65.8001C10.9683 64.1385 11.6291 62.5456 12.8039 61.3707C13.9788 60.1958 15.5718 59.5351 17.2333 59.5334ZM45.4332 65.8001C46.6727 65.8001 47.8843 66.1676 48.9148 66.8562C49.9453 67.5448 50.7486 68.5235 51.2229 69.6686C51.6972 70.8137 51.8213 72.0737 51.5795 73.2893C51.3377 74.5049 50.7408 75.6215 49.8644 76.4979C48.988 77.3743 47.8714 77.9712 46.6558 78.213C45.4402 78.4548 44.1802 78.3307 43.0351 77.8563C41.89 77.382 40.9113 76.5788 40.2227 75.5483C39.5341 74.5177 39.1666 73.3061 39.1666 72.0667C39.1682 70.4052 39.829 68.8122 41.0039 67.6374C42.1787 66.4625 43.7717 65.8017 45.4332 65.8001ZM73.6332 59.5334C74.8726 59.5334 76.0842 59.9009 77.1147 60.5895C78.1453 61.2781 78.9485 62.2568 79.4228 63.4019C79.8971 64.547 80.0212 65.807 79.7794 67.0226C79.5376 68.2382 78.9408 69.3548 78.0644 70.2313C77.188 71.1077 76.0714 71.7045 74.8557 71.9463C73.6401 72.1881 72.3801 72.064 71.235 71.5897C70.0899 71.1154 69.1112 70.3122 68.4226 69.2816C67.7341 68.2511 67.3665 67.0395 67.3665 65.8001C67.3682 64.1385 68.0289 62.5456 69.2038 61.3707C70.3787 60.1958 71.9717 59.5351 73.6332 59.5334Z" fill="#EAA73F"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Customer Experience Lead						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-89cfcbd animated-slow e-flex e-con-boxed e-con e-parent" data-id="89cfcbd" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-b9998d4 elementor-widget__width-initial animated-slow testimonail-title elementor-invisible elementor-widget elementor-widget-heading" data-id="b9998d4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Listen to what our clients say  <br><span class="mp-gradient-text">about tallking heads</span></h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-16eca2b2 e-con-full e-flex e-con e-child" data-id="16eca2b2" data-element_type="container">
+		<div class="elementor-element elementor-element-745a5cdf e-con-full e-flex e-con e-child" data-id="745a5cdf" data-element_type="container">
+				<div class="elementor-element elementor-element-23a59f3c elementor-widget elementor-widget-video" data-id="23a59f3c" data-element_type="widget" data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;\/wp-content\/uploads\/2025\/08\/Untitled-1.jpg&quot;,&quot;id&quot;:5174,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;&quot;,&quot;source&quot;:&quot;library&quot;},&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="e-hosted-video elementor-wrapper elementor-open-inline">
+					<video class="elementor-video" src="/wp-content/uploads/Talking-Heads-Vsl-Made-Him-Over-1-Million.webm" controls="" preload="metadata" controlslist="nodownload"></video>
+						<div class="elementor-custom-embed-image-overlay" style="background-image: url(/wp-content/uploads/2025/08/Untitled-1.jpg);">
+																<div class="elementor-custom-embed-play" role="button" aria-label="Play Video" tabindex="0">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-play-circle" viewbox="0 0 512 512" xmlns="https://www.w3.org/2000/svg"><path d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"></path></svg>						</div>
+									</div>
+					</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-344e94df e-con-full e-flex e-con e-child" data-id="344e94df" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-6acc910 elementor-widget elementor-widget-heading" data-id="6acc910" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Bogdan V.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1973e1ae elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="1973e1ae" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><b>Our VSL made him more than $1 Million.</b></p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-279ee459 e-con-full e-flex e-con e-child" data-id="279ee459" data-element_type="container">
+				<div class="elementor-element elementor-element-5e935f23 elementor-widget elementor-widget-video" data-id="5e935f23" data-element_type="widget" data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;\/wp-content\/uploads\/2025\/08\/Untitled-2.jpg&quot;,&quot;id&quot;:5175,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;&quot;,&quot;source&quot;:&quot;library&quot;},&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="e-hosted-video elementor-wrapper elementor-open-inline">
+					<video class="elementor-video" src="/wp-content/uploads/2025/08/cfgnb_testimonial-720p.mp4" controls="" preload="metadata" controlslist="nodownload"></video>
+						<div class="elementor-custom-embed-image-overlay" style="background-image: url(/wp-content/uploads/2025/08/Untitled-2.jpg);">
+																<div class="elementor-custom-embed-play" role="button" aria-label="Play Video" tabindex="0">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-play-circle" viewbox="0 0 512 512" xmlns="https://www.w3.org/2000/svg"><path d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"></path></svg>						</div>
+									</div>
+					</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-57ea90ca e-con-full e-flex e-con e-child" data-id="57ea90ca" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-6f9a90ad elementor-widget elementor-widget-heading" data-id="6f9a90ad" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">David O.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-efd471d elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="efd471d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><b>Our strategy helped increase their funds from under $60 million to almost $80 million.</b></p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-25f5c70e e-con-full e-flex e-con e-child" data-id="25f5c70e" data-element_type="container">
+				<div class="elementor-element elementor-element-2b8d74b6 elementor-widget elementor-widget-video" data-id="2b8d74b6" data-element_type="widget" data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;\/wp-content\/uploads\/2025\/08\/Untitled-3.jpg&quot;,&quot;id&quot;:5176,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;Dave Z&quot;,&quot;source&quot;:&quot;library&quot;},&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="e-hosted-video elementor-wrapper elementor-open-inline">
+					<video class="elementor-video" src="/wp-content/uploads/2025/08/testimonial_d._zitting-720p.mp4" controls="" preload="metadata" controlslist="nodownload"></video>
+						<div class="elementor-custom-embed-image-overlay" style="background-image: url(/wp-content/uploads/2025/08/Untitled-3.jpg);">
+																<div class="elementor-custom-embed-play" role="button" aria-label="Play Video about Dave Z" tabindex="0">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-play-circle" viewbox="0 0 512 512" xmlns="https://www.w3.org/2000/svg"><path d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"></path></svg>						</div>
+									</div>
+					</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-2f1705c3 e-con-full e-flex e-con e-child" data-id="2f1705c3" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-10515177 elementor-widget elementor-widget-heading" data-id="10515177" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Dave Z.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1b09def4 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="1b09def4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>It was a pleasure working with the team. You are in great hands with those guys.</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-41a2663 e-con-full e-flex e-con e-child" data-id="41a2663" data-element_type="container">
+				<div class="elementor-element elementor-element-0af798b elementor-widget elementor-widget-video" data-id="0af798b" data-element_type="widget" data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;\/wp-content\/uploads\/2025\/08\/Untitled-5.jpg&quot;,&quot;id&quot;:5178,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;John G&quot;,&quot;source&quot;:&quot;library&quot;},&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="e-hosted-video elementor-wrapper elementor-open-inline">
+					<video class="elementor-video" src="/wp-content/uploads/2025/08/immediate_increase_with_clients_and_investors.mp4" controls="" preload="metadata" controlslist="nodownload"></video>
+						<div class="elementor-custom-embed-image-overlay" style="background-image: url(/wp-content/uploads/2025/08/Untitled-5.jpg);">
+																<div class="elementor-custom-embed-play" role="button" aria-label="Play Video about John G" tabindex="0">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-play-circle" viewbox="0 0 512 512" xmlns="https://www.w3.org/2000/svg"><path d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"></path></svg>						</div>
+									</div>
+					</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-adde93c e-con-full e-flex e-con e-child" data-id="adde93c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-8fefe25 elementor-widget elementor-widget-heading" data-id="8fefe25" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">John G.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-95d6876 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="95d6876" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>You can’t go wrong working with the Talking Heads team.</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-c485aae e-con-full e-flex e-con e-child" data-id="c485aae" data-element_type="container">
+				<div class="elementor-element elementor-element-1a7349c elementor-widget elementor-widget-video" data-id="1a7349c" data-element_type="widget" data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;\/wp-content\/uploads\/2025\/08\/Untitled-4.jpg&quot;,&quot;id&quot;:5177,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;Demar Z Testimonial&quot;,&quot;source&quot;:&quot;library&quot;},&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="e-hosted-video elementor-wrapper elementor-open-inline">
+					<video class="elementor-video" src="/wp-content/uploads/2025/08/helped_grow_from_0_to_2_million_mth-720p.mp4" controls="" preload="metadata" controlslist="nodownload"></video>
+						<div class="elementor-custom-embed-image-overlay" style="background-image: url(/wp-content/uploads/2025/08/Untitled-4.jpg);">
+																<div class="elementor-custom-embed-play" role="button" aria-label="Play Video about Demar Z Testimonial" tabindex="0">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-play-circle" viewbox="0 0 512 512" xmlns="https://www.w3.org/2000/svg"><path d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"></path></svg>						</div>
+									</div>
+					</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-90adee9 e-con-full e-flex e-con e-child" data-id="90adee9" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-f46f32f elementor-widget elementor-widget-heading" data-id="f46f32f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Demar Z.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f50cf52 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="f50cf52" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">Our video strategy took his sales from $0 to $1 MILLION per month</span></p>								</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-1ece095 e-flex e-con-boxed e-con e-parent" data-id="1ece095" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-8e3922f elementor-widget elementor-widget-video" data-id="8e3922f" data-element_type="widget" data-settings="{&quot;video_type&quot;:&quot;vimeo&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-wrapper elementor-open-inline">
+			<iframe class="elementor-video-iframe" allowfullscreen allow="clipboard-write" title="vimeo Video Player" src="https://player.vimeo.com/video/1104575446?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0&amp;h=929e122c6b#t="></iframe>		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-2ca0bfe2 e-flex e-con-boxed e-con e-parent" data-id="2ca0bfe2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3c44612 e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="3c44612" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+				<div class="elementor-element elementor-element-29091c20 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="29091c20" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Our <span class="mp-gradient-text">Process</span></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6e6d876d elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="6e6d876d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Jump on a call with us and let’s brainstorm and collaborate. We’ll develop a message that is easy to understand, builds trust, and inspires your customers to take action!</p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-29e730f0 e-con-full e-flex e-con e-child" data-id="29e730f0" data-element_type="container">
+		<div class="elementor-element elementor-element-6206d943 e-con-full e-flex e-con e-child" data-id="6206d943" data-element_type="container">
+				<div class="elementor-element elementor-element-3a5e43af elementor-widget elementor-widget-heading" data-id="3a5e43af" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Step 1</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6575765d elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="6575765d" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="59" height="60" viewbox="0 0 59 60" fill="none"><path d="M46.6535 36.6016C45.4439 35.3421 43.9848 34.6687 42.4385 34.6687C40.9046 34.6687 39.4331 35.3296 38.1736 36.5891L34.2329 40.5173C33.9087 40.3427 33.5844 40.1806 33.2727 40.0185C32.8237 39.794 32.3997 39.582 32.0381 39.3576C28.3468 37.0131 24.9923 33.9578 21.7749 30.0047C20.2161 28.0344 19.1686 26.3758 18.4079 24.6923C19.4304 23.757 20.3782 22.7843 21.301 21.849C21.6502 21.4998 21.9994 21.1382 22.3485 20.789C24.9673 18.1702 24.9673 14.7782 22.3485 12.1594L18.9441 8.755C18.5575 8.36842 18.1585 7.96936 17.7843 7.57031C17.0361 6.79714 16.2505 5.99903 15.4399 5.2508C14.2303 4.05363 12.7837 3.41764 11.2623 3.41764C9.74088 3.41764 8.26936 4.05363 7.02231 5.2508L6.99737 5.27574L2.75741 9.55311C1.16119 11.1493 0.250842 13.0947 0.0513142 15.3519C-0.247977 18.9933 0.824484 22.3852 1.64754 24.605C3.66775 30.0546 6.68561 35.1051 11.1875 40.5173C16.6495 47.0394 23.2215 52.1897 30.7287 55.8186C33.5969 57.1779 37.4253 58.7866 41.7027 59.0609C41.9646 59.0734 42.2389 59.0859 42.4884 59.0859C45.369 59.0859 47.7883 58.0508 49.6838 55.9932C49.6963 55.9682 49.7212 55.9558 49.7337 55.9308C50.3822 55.1452 51.1304 54.4344 51.916 53.6737C52.4523 53.1624 53.001 52.6261 53.5372 52.065C54.7718 50.7805 55.4202 49.2841 55.4202 47.7502C55.4202 46.2039 54.7593 44.7199 53.4998 43.4728L46.6535 36.6016ZM51.1179 49.733C51.1055 49.733 51.1055 49.7455 51.1179 49.733C50.6316 50.2568 50.1328 50.7306 49.5965 51.2544C48.7859 52.0276 47.9629 52.8381 47.1897 53.7485C45.9302 55.0953 44.4462 55.7313 42.5008 55.7313C42.3138 55.7313 42.1142 55.7313 41.9272 55.7188C38.2235 55.4819 34.7816 54.0353 32.2002 52.8007C25.1419 49.3838 18.9441 44.5328 13.7938 38.3849C9.54135 33.2595 6.69808 28.5207 4.81504 23.4328C3.65528 20.3276 3.23129 17.9083 3.41834 15.6262C3.54305 14.1672 4.10422 12.9576 5.13927 11.9225L9.3917 7.67007C10.0028 7.09643 10.6512 6.78467 11.2872 6.78467C12.0729 6.78467 12.7089 7.25854 13.1079 7.6576L13.1453 7.69501C13.906 8.40583 14.6293 9.14159 15.39 9.92723C15.7766 10.3263 16.1756 10.7253 16.5747 11.1369L19.9791 14.5413C21.301 15.8632 21.301 17.0853 19.9791 18.4072C19.6175 18.7688 19.2683 19.1304 18.9067 19.4796C17.8592 20.5521 16.8615 21.5497 15.7766 22.5224C15.7516 22.5474 15.7267 22.5598 15.7142 22.5848C14.6418 23.6572 14.8413 24.7047 15.0658 25.4156L15.1032 25.5278C15.9886 27.6727 17.2356 29.6929 19.1311 32.0997L19.1436 32.1122C22.5855 36.3522 26.2144 39.6568 30.2174 42.1884C30.7287 42.5126 31.2525 42.7745 31.7513 43.0239C32.2002 43.2483 32.6242 43.4603 32.9859 43.6848C33.0357 43.7098 33.0856 43.7472 33.1355 43.7721C33.5595 43.9841 33.9585 44.0839 34.3701 44.0839C35.4051 44.0839 36.0536 43.4354 36.2656 43.2234L40.5305 38.9585C40.9545 38.5345 41.6279 38.0232 42.4135 38.0232C43.1867 38.0232 43.8227 38.5096 44.2093 38.9336L44.2342 38.9585L51.1055 45.8297C52.3899 47.1017 52.3899 48.4111 51.1179 49.733ZM31.8885 14.055C35.1557 14.6037 38.1237 16.15 40.4931 18.5194C42.8625 20.8888 44.3963 23.8568 44.9575 27.124C45.0947 27.9471 45.8055 28.5207 46.6161 28.5207C46.7159 28.5207 46.8031 28.5082 46.9029 28.4958C47.8257 28.3461 48.4368 27.4732 48.2871 26.5504C47.6137 22.5972 45.7432 18.9933 42.8874 16.1375C40.0317 13.2818 36.4277 11.4112 32.4746 10.7378C31.5517 10.5882 30.6913 11.1992 30.5292 12.1096C30.3671 13.0199 30.9656 13.9053 31.8885 14.055ZM58.9743 26.064C57.8645 19.5544 54.7967 13.631 50.0829 8.91712C45.369 4.20328 39.4456 1.13554 32.936 0.0256661C32.0256 -0.13645 31.1652 0.487074 31.003 1.39742C30.8534 2.32023 31.4645 3.1807 32.3873 3.34281C38.1985 4.32798 43.4985 7.08396 47.7135 11.2865C51.9285 15.5015 54.672 20.8015 55.6572 26.6127C55.7944 27.4358 56.5052 28.0094 57.3158 28.0094C57.4155 28.0094 57.5028 27.997 57.6026 27.9845C58.5129 27.8473 59.1365 26.9744 58.9743 26.064Z" fill="#EAA73F"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Schedule a Call						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3b121306 e-con-full e-flex e-con e-child" data-id="3b121306" data-element_type="container">
+				<div class="elementor-element elementor-element-30375f2 elementor-widget elementor-widget-heading" data-id="30375f2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Step  2</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-48b919ea elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="48b919ea" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="64" height="59" viewbox="0 0 64 59" fill="none"><path d="M62.372 36.263C61.897 35.744 61.2803 35.3757 60.5981 35.2034C59.9159 35.0312 59.1982 35.0626 58.5337 35.2938C56.765 33.7841 54.0395 33.1338 51.5028 33.775C49.8958 31.3277 45.9591 30.2534 42.9905 31.2825C41.95 29.7603 40.127 28.7119 38.0439 28.4281C38.123 26.596 38.5336 24.3104 39.7063 21.8247C41.682 23.1399 44.0309 23.8094 46.4409 23.8207C50.2046 23.8207 54.0044 22.0746 56.1226 17.9355C58.9657 12.3793 59.1082 10.5291 59.2349 8.89835C59.3435 7.50506 59.4362 6.30177 61.5567 2.3368C61.9118 1.71027 61.5205 0.83947 60.808 0.700368C60.0446 0.530731 42.0688 -3.36413 36.3814 9.21048C34.2689 13.8811 35.436 17.8031 37.9534 20.3839C37.0464 22.1964 36.417 24.1349 36.0863 26.1346C34.9664 24.4988 33.7779 22.911 32.5239 21.3757C34.5935 19.1003 34.8999 15.806 33.3042 12.1486C28.793 1.80074 12.5158 3.77192 11.8259 3.859C10.9393 3.94948 10.5096 5.11771 11.1451 5.75441C12.7623 7.47905 12.9014 9.53618 13.062 11.9179C13.2826 15.1636 13.5314 18.8402 17.8458 21.8394C20.0861 23.3966 22.8037 24.1804 25.3856 24.1804C27.3522 24.1804 29.2329 23.7178 30.7721 22.8029C32.2731 24.6561 33.6824 26.5817 34.9949 28.5728C33.2646 28.989 31.7752 29.9503 30.8682 31.2655C27.7707 30.2081 23.679 31.4668 22.2055 34.1143C21.7678 34.2421 21.3453 34.4173 20.9456 34.6368L15.0671 38.0171H11.2627V36.7731C11.2627 35.5268 10.2483 34.5112 9.00093 34.5112H1.13091C0.830975 34.5112 0.543324 34.6304 0.331237 34.8425C0.11915 35.0546 0 35.3422 0 35.6421V54.3361C0 54.6361 0.11915 54.9237 0.331237 55.1358C0.543324 55.3479 0.830975 55.467 1.13091 55.467H9.00206C10.2483 55.467 11.2639 54.4526 11.2639 53.2052V52.1568H14.5469L35.6757 58.7682C36.1711 58.9231 36.6823 59 37.1912 59C38.2881 59 39.3772 58.6438 40.2786 57.9641L61.879 41.6201C63.5787 40.4123 63.8207 37.766 62.372 36.263ZM38.442 10.1424C41.3936 3.61812 48.5941 2.30061 53.9309 2.30061C55.9439 2.30061 57.6923 2.48834 58.847 2.65458C57.1913 5.99417 57.0884 7.32412 56.981 8.72419C56.8645 10.2125 56.7458 11.7528 54.1085 16.9052C51.2959 22.3121 44.9323 22.6129 40.7909 19.8433C42.5811 16.9663 45.4581 13.9286 50.0395 11.0991C51.2902 10.2984 50.1277 8.41545 48.8509 9.17542C44.135 12.0886 41.077 15.2654 39.1182 18.3302C37.5203 16.4144 36.8508 13.6595 38.442 10.1424ZM19.1373 19.9813C13.5427 16.1543 16.6052 10.882 14.0595 5.96137C18.297 5.79512 28.2298 6.1672 31.2324 13.0533C32.404 15.7415 32.3215 18.0372 31.0379 19.6443C29.4297 17.7851 23.0808 11.5639 21.8809 14.3787C21.785 14.6628 21.8059 14.9733 21.9388 15.242C22.0718 15.5106 22.306 15.7155 22.59 15.8116C24.7545 16.5422 27.1328 18.6626 29.2759 21.0523C26.469 22.4998 22.2077 22.1164 19.1362 19.9813H19.1373ZM30.892 33.7004C31.4518 33.9797 32.188 33.6992 32.4187 33.1168C32.9423 31.8728 34.2745 30.9771 35.8838 30.7023C36.0139 32.358 36.3249 33.3713 36.3362 33.4086C36.4294 33.6931 36.6316 33.9291 36.8985 34.0648C37.1654 34.2005 37.4752 34.2248 37.76 34.1324C39.2178 33.3724 38.2135 32.6362 38.114 30.7363C39.6554 31.0506 40.9447 31.9441 41.4343 33.1338C41.6617 33.7219 42.4069 34.008 42.9701 33.7219C43.7507 33.3474 44.606 33.1549 45.4717 33.1587C47.4859 33.1587 49.284 34.1369 49.9467 35.5924C50.0654 35.8534 50.2789 36.0595 50.5438 36.1691C50.8088 36.2787 51.1055 36.2836 51.3739 36.1827C53.1223 35.5257 55.0381 35.7428 56.4099 36.548L49.5973 41.075C49.5083 40.2257 49.1441 39.4287 48.5602 38.8056C47.9763 38.1825 47.2046 37.7674 46.3629 37.6235L25.4523 33.9797C26.9451 33.0263 29.2386 32.8748 30.892 33.7004ZM2.26182 53.2052V36.7719H9.00206V53.2041L2.26182 53.2052ZM60.5207 39.8118L38.9147 56.1591C38.1796 56.7133 37.2228 56.8829 36.3532 56.6092L15.0581 49.947C14.9486 49.9129 14.8346 49.8954 14.7199 49.895H11.2639V40.2789C11.7276 40.2201 15.6518 40.4316 15.9345 40.1285L22.0686 36.6023C22.8602 36.1521 23.7832 35.9895 24.681 36.142L45.9795 39.8537C47.9473 40.2156 47.7132 43.1616 45.69 43.1729H27.2177C25.7362 43.1966 25.7282 45.4098 27.2177 45.4347H32.3068L37.0464 49.4653C37.5527 49.8913 38.1825 50.1432 38.8428 50.1839C39.5032 50.2247 40.1592 50.052 40.714 49.6915L58.9544 37.5749C60.4235 36.6272 61.9061 38.785 60.5207 39.8141V39.8118ZM43.0346 45.4347L39.4711 47.8017C39.3272 47.8978 39.1558 47.9443 38.983 47.9338C38.8102 47.9234 38.6456 47.8568 38.5143 47.744L35.7979 45.4347H43.0346Z" fill="#EAA73F"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Develop a Video Strategy						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-10fbfe7e e-con-full e-flex e-con e-child" data-id="10fbfe7e" data-element_type="container">
+				<div class="elementor-element elementor-element-371d162b elementor-widget elementor-widget-heading" data-id="371d162b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Step 3</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2615b46e elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="2615b46e" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="60" height="59" viewbox="0 0 60 59" fill="none"><path d="M43.4543 15.6346C44.3885 8.00541 38.9416 1.03849 31.3125 0.104401C23.6825 -0.830384 16.7163 4.61694 15.7821 12.2462C15.3782 15.5454 16.1574 18.8508 17.98 21.6121L15.982 26.5582C15.9131 26.729 15.8966 26.9164 15.9347 27.0965C15.9728 27.2766 16.0638 27.4413 16.196 27.5695C16.3282 27.6976 16.4957 27.7834 16.6769 27.8159C16.8581 27.8484 17.0449 27.8261 17.2134 27.7518L22.0236 25.632C23.7908 26.7801 25.8197 27.5189 27.9239 27.7766C28.4967 27.8467 29.0652 27.8809 29.6283 27.8808C36.5648 27.8806 42.5902 22.691 43.4543 15.6346ZM29.6269 26.0295C29.139 26.0295 28.6451 25.9999 28.1489 25.9392C26.1707 25.6969 24.2703 24.965 22.6527 23.8226C22.5222 23.7304 22.37 23.6736 22.2111 23.6576C22.0521 23.6417 21.8917 23.6672 21.7455 23.7317L18.5516 25.1392L19.8824 21.8446C19.9407 21.7003 19.9616 21.5436 19.9433 21.389C19.9249 21.2344 19.8679 21.087 19.7775 20.9603C18.0175 18.4948 17.251 15.4799 17.6194 12.4712C18.4297 5.85495 24.4741 1.13209 31.0875 1.94169C34.2925 2.33423 37.1528 3.95125 39.1415 6.49495C41.1303 9.03877 42.0094 12.2048 41.617 15.4098C40.8675 21.5295 35.6428 26.03 29.6269 26.0295ZM30.8755 13.9404C30.8755 14.6432 30.3057 15.213 29.6029 15.213C28.9001 15.213 28.3303 14.6432 28.3303 13.9404C28.3303 13.2375 28.9 12.6678 29.6029 12.6678C30.3059 12.6678 30.8755 13.2375 30.8755 13.9404ZM37.0763 13.9404C37.0763 14.6432 36.5066 15.213 35.8037 15.213C35.1009 15.213 34.5311 14.6432 34.5311 13.9404C34.5311 13.2375 35.1009 12.6678 35.8037 12.6678C36.5066 12.6678 37.0763 13.2375 37.0763 13.9404ZM24.7052 13.9404C24.7052 14.6432 24.1355 15.213 23.4326 15.213C22.7298 15.213 22.16 14.6432 22.16 13.9404C22.16 13.2375 22.7298 12.6678 23.4326 12.6678C24.1355 12.6678 24.7052 13.2375 24.7052 13.9404ZM22.5653 46.5411C21.2089 45.5255 19.7118 44.7716 18.1266 44.2916C20.2624 42.9128 21.6805 40.5134 21.6805 37.7874C21.6805 33.5205 18.2091 30.0492 13.9422 30.0492C9.67523 30.0492 6.20392 33.5205 6.20392 37.7874C6.20392 40.5132 7.62183 42.9127 9.75772 44.2915C8.1724 44.7715 6.67513 45.5253 5.31876 46.541C2.89781 48.3538 1.0744 50.9352 0.184273 53.8099C-0.197623 55.0428 0.0201075 56.3422 0.781355 57.375C1.54272 58.4078 2.71965 59 4.01041 59H23.8735C25.1643 59 26.3414 58.4077 27.1027 57.3748C27.864 56.342 28.0816 55.0426 27.6997 53.8097C26.8097 50.9353 24.9863 48.3539 22.5653 46.5411ZM8.05497 37.7876C8.05497 34.5414 10.696 31.9004 13.9422 31.9004C17.1884 31.9004 19.8294 34.5414 19.8294 37.7876C19.8294 41.0334 17.189 43.674 13.9434 43.6746H13.941C10.6954 43.6739 8.05497 41.0333 8.05497 37.7876ZM25.6128 56.2766C25.2041 56.8311 24.5701 57.1492 23.8737 57.1492H4.01041C3.31384 57.1492 2.68008 56.8311 2.27134 56.2767C1.86272 55.7224 1.74645 55.0228 1.95238 54.3574C3.58814 49.0753 8.40575 45.5261 13.9409 45.5257H13.9433C19.4783 45.5263 24.2959 49.0753 25.9317 54.3575C26.1377 55.0228 26.0215 55.7222 25.6128 56.2766ZM59.0521 53.8099C58.162 50.9353 56.3385 48.3538 53.9176 46.5411C52.5613 45.5255 51.0641 44.7716 49.4788 44.2916C51.6146 42.9128 53.0326 40.5134 53.0326 37.7874C53.0326 33.5205 49.5613 30.0492 45.2943 30.0492C41.0274 30.0492 37.5561 33.5205 37.5561 37.7874C37.5561 40.5132 38.974 42.9127 41.1099 44.2915C39.5246 44.7715 38.0273 45.5253 36.671 46.541C34.25 48.3538 32.4266 50.9352 31.5365 53.8099C31.1546 55.0428 31.3723 56.3422 32.1335 57.375C32.8949 58.4078 34.0718 59 35.3626 59H55.2257C56.5165 59 57.6934 58.4077 58.4547 57.3749C59.2163 56.3423 59.434 55.0429 59.0521 53.8099ZM39.4073 37.7876C39.4073 34.5414 42.0483 31.9004 45.2945 31.9004C48.5406 31.9004 51.1816 34.5414 51.1816 37.7876C51.1816 41.0334 48.5412 43.674 45.2957 43.6746H45.2933C42.0477 43.6739 39.4073 41.0333 39.4073 37.7876ZM56.965 56.2767C56.5563 56.8311 55.9224 57.1492 55.226 57.1492H35.3627C34.6661 57.1492 34.0324 56.8311 33.6236 56.2767C33.215 55.7224 33.0988 55.0228 33.3047 54.3574C34.9404 49.0753 39.7581 45.5261 45.2932 45.5257H45.2956C50.8305 45.5263 55.6481 49.0753 57.284 54.3574C57.4899 55.0228 57.3737 55.7224 56.965 56.2767Z" fill="#EAA73F"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Collaborate on the message						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3a4eb89f e-con-full e-flex e-con e-child" data-id="3a4eb89f" data-element_type="container">
+				<div class="elementor-element elementor-element-53e9866e elementor-widget elementor-widget-heading" data-id="53e9866e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Step 4</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-23e60bf8 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="23e60bf8" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="62" height="73" viewbox="0 0 62 73" fill="none"><path d="M34.5111 42.8344C34.1734 43.4176 33.4214 43.6172 32.8381 43.2795C32.2549 42.9418 32.0554 42.1898 32.393 41.6065C32.9302 40.6856 32.6079 39.5038 31.6717 38.9359C30.1368 38.015 29.0164 39.1201 28.8476 40.4247C28.7401 41.1614 28.9857 41.9135 29.7071 42.3125L41.6174 48.897L43.8276 45.0752C41.5714 40.2405 39.2691 34.7612 34.6953 32.1212C27.8499 28.1614 19.0707 30.5097 15.1108 37.3704L15.0954 37.3857C11.1663 44.2311 13.4685 52.9336 20.3599 56.9549C24.5961 59.3953 29.922 58.9041 34.8795 58.4437L36.1687 58.3209L38.0412 55.0824L26.1923 48.4979C23.491 46.9938 22.2938 50.7541 24.3659 51.9513C25.2407 52.4578 26.3765 52.0127 26.8676 51.1532C27.2053 50.57 27.9574 50.3704 28.5406 50.7081C29.1238 51.0458 29.3234 51.7978 28.9857 52.3811C27.7732 54.4838 24.9798 55.3126 22.9231 53.9466C19.9916 52.0127 20.3599 47.9761 22.7696 46.3492C23.9668 45.551 25.5784 45.3669 27.3588 46.3492L39.2537 52.949L40.3742 50.9997L28.5099 44.4306C25.5477 42.7883 25.87 38.7517 28.1415 36.956C29.3387 36.0351 30.9656 35.7281 32.7921 36.7564C34.9409 37.9229 35.7543 40.6856 34.5111 42.8344ZM45.4698 42.8651C47.0047 41.8674 49.4451 42.4353 51.0413 43.433C51.7934 43.9088 52.2845 44.2618 52.8677 44.8757H57.9787C58.7615 44.8757 59.5443 44.3692 59.5443 43.6325V24.2015H24.811V27.9772C28.4946 27.3786 32.4084 27.9925 35.9078 30.0032C40.7579 32.8119 43.229 38.0304 45.4698 42.8651ZM54.157 47.3161C54.2951 48.3291 53.9575 48.897 53.4817 49.7258L56.1676 52.949C57.5336 54.5912 58.4085 56.6786 57.3495 58.5358L54.5407 63.3858C53.4817 65.2276 51.2255 65.5192 49.1227 65.1509L44.9787 64.4449L44.7024 64.9207C43.3825 67.2229 40.2974 66.6397 38.2254 65.4272C36.5831 64.4756 34.8948 62.7565 35.0176 60.884C29.6917 61.3752 23.9975 61.8817 19.1014 59.0729C11.0588 54.4531 8.31148 44.0623 12.962 36.1425C15.1261 32.3975 18.5181 29.7883 22.3399 28.5604V17.3408L20.8818 11.9075C20.7129 11.2475 21.0967 10.5875 21.7566 10.4033L57.6718 0.779915C58.3317 0.595734 58.9917 0.994791 59.1759 1.63942L60.68 7.22622C60.8642 7.8862 60.4652 8.54618 59.8205 8.73036L32.8995 15.9441H60.7721C61.4475 15.9441 62 16.4966 62 17.1719V43.6018C62 45.7199 60.0968 47.3008 57.9787 47.3008H54.157V47.3161ZM46.621 45.1213L37.5654 60.8073C37.1203 61.5901 38.6398 62.8486 39.4686 63.3244C39.883 63.5547 40.3281 63.7542 40.7579 63.877C41.5867 64.1225 42.3388 64.1226 42.5997 63.6928L50.9492 49.2346L51.6552 48.0068C52.131 47.1933 50.412 45.8427 49.8288 45.5204C49.3376 45.2441 49 45.0752 48.4781 44.9218C47.6339 44.6915 46.8665 44.6762 46.621 45.1213ZM0.928923 39.7801C0.268944 39.6266 -0.130112 38.9513 0.0387194 38.3066C0.192203 37.6466 0.86753 37.2476 1.52751 37.4164L7.11431 38.7824C7.77429 38.9513 8.17334 39.6112 8.00451 40.2712C7.85103 40.9312 7.1757 41.3302 6.51572 41.1614L0.928923 39.7801ZM22.0636 71.3363C21.9101 71.9963 21.2348 72.3953 20.5748 72.2265C19.9148 72.0576 19.5158 71.3977 19.6846 70.753L21.066 65.1662C21.2194 64.5063 21.8948 64.1072 22.5547 64.2607C23.2147 64.4295 23.6138 65.0895 23.445 65.7495L22.0636 71.3363ZM4.95019 59.9324C4.36695 60.2855 3.61488 60.0859 3.27722 59.518C2.92421 58.9348 3.10839 58.1827 3.69163 57.8297L8.61845 54.8521C9.20168 54.4991 9.95375 54.6833 10.3068 55.2666C10.6598 55.8498 10.4602 56.6019 9.89236 56.9549L4.95019 59.9324ZM12.3327 22.682C11.9797 22.0988 12.1639 21.3467 12.7472 20.9937C13.3304 20.6407 14.0825 20.8402 14.4355 21.4081L17.413 26.3349C17.7661 26.9181 17.5665 27.6702 16.9986 28.0232C16.4154 28.3762 15.6633 28.1767 15.3103 27.6088L12.3327 22.682ZM46.2833 62.1887L49.5218 62.7412C50.5194 62.91 51.9468 62.9561 52.4226 62.158L55.2314 57.3079C55.6765 56.5251 54.9244 55.2819 54.2798 54.5145L52.1771 51.9974L46.2833 62.1887ZM49.1074 21.7458C49.2762 21.5462 52.8217 18.8142 53.3282 18.4152H47.4651L43.2136 21.7458H49.1074ZM57.2881 18.4152L57.2267 18.4766L53.0366 21.7458H59.5443V18.4152H57.2881ZM39.2691 21.7458C39.4533 21.5462 42.9834 18.8142 43.5052 18.4152H37.6422L33.3907 21.7458H39.2691ZM29.4462 21.7458C29.615 21.5462 33.1605 18.8142 33.6823 18.4152H24.8263V21.7458H29.4462ZM47.5265 6.07509C47.5112 6.07509 47.4958 6.05975 47.4805 6.05975L41.7709 7.59458L46.6363 9.74335L52.3459 8.20851L47.5265 6.07509ZM51.2715 5.04676L56.1369 7.19552L57.9941 6.68903L57.1346 3.46588L51.2715 5.04676ZM38.0412 8.62292C38.0259 8.62292 38.0105 8.60757 37.9952 8.60757L32.2856 10.1424L37.151 12.2912L42.8606 10.7563L38.0412 8.62292ZM28.5406 11.1707C28.5253 11.1554 28.5099 11.1554 28.4946 11.1554L23.5831 12.4754L24.4426 15.6985L33.3753 13.3042L28.5406 11.1707Z" fill="#EAA73F"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Produce AWESOME videos that rock						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-19fb6cc0 e-con-full e-flex e-con e-child" data-id="19fb6cc0" data-element_type="container">
+				<div class="elementor-element elementor-element-210700e1 elementor-widget elementor-widget-heading" data-id="210700e1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Step 5</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6d705968 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="6d705968" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="62" height="65" viewbox="0 0 62 65" fill="none"><path d="M0.000128311 59.9586L0.821073 61.8066L30.2819 49.5908L35.4144 50.2069L37.2619 55.8526L34.7984 58.2138C33.8746 59.0349 33.5669 60.3691 34.0801 61.6012L35.1066 64.1674L52.1462 57.4951L51.2224 55.0315C50.8118 53.7996 49.6827 53.0813 48.3485 53.0813H44.9607L43.1132 48.6671L47.6298 46.409C49.0667 45.6904 49.6828 44.0478 49.1696 42.6109L43.3186 26.9055C42.7027 25.2631 40.9574 24.5443 39.3149 25.0576C39.3149 25.0576 39.2126 25.0576 39.2126 25.1602L34.9012 27.0079L34.2853 25.4682L36.6464 22.6969C38.2884 20.8488 39.3149 18.5908 39.6232 16.1272L42.6 12.5345C44.5503 10.2761 44.1397 6.88873 41.8811 4.93799C41.4707 4.63029 41.0602 4.32247 40.6497 4.11704C39.5205 3.60379 38.3912 3.50101 37.1596 3.80922L36.8514 2.88498C36.3382 1.24297 34.4907 0.421507 32.951 1.03754L11.2916 8.83895C9.64925 9.45498 8.82804 11.1998 9.44407 12.7395V12.8422L9.95733 14.1766C7.28842 15.4084 6.05636 18.4879 6.98008 21.1571C7.69889 23.2101 9.54634 24.6471 11.7021 24.9548L16.5269 25.468C18.4772 26.9055 20.8379 27.8294 23.1992 28.0343L26.5864 28.3426L27.2023 29.8824C26.4837 30.2928 25.9705 31.0115 25.7655 31.9354L25.0466 35.4254L0 45.5876L0.718808 47.5379L15.0898 41.7898L18.5799 52.2599L0.000128311 59.9586ZM49.1696 55.6476L49.3749 56.2631L36.2354 61.4984L35.9277 60.8825C35.825 60.4719 35.9277 60.0613 36.1331 59.7536L39.6232 56.4686L44.0369 55.0315H48.1429C48.6562 55.0315 48.9644 55.2366 49.1694 55.6476H49.1696ZM42.7026 53.1836L39.0072 54.4156L37.6729 50.5151C38.2884 50.6173 38.8016 50.5151 39.3149 50.2069L41.0602 49.3859L42.7026 53.1836ZM39.9311 26.7001C40.4443 26.4945 41.0602 26.7001 41.2656 27.2133L42.0867 29.369L37.0568 31.0115L37.6729 32.9619L42.7027 31.3193L43.9342 34.6043L39.11 36.2463L39.7259 38.197L44.653 36.5546L45.8849 39.8391L41.163 41.3788L41.7789 43.3295L46.6032 41.6871L47.1164 43.0213C47.322 43.5346 47.1164 44.0478 46.6032 44.2534L38.4938 48.2566C38.2885 48.3593 38.0835 48.3593 37.8779 48.3593L30.898 47.5378L27.0996 36.144L27.8185 32.3458C27.9211 32.038 28.1262 31.7298 28.4344 31.627L39.9311 26.7001ZM39.8281 5.96449C41.4707 6.6833 42.2921 8.63352 41.5735 10.3788C41.4708 10.6865 41.2656 10.8921 41.0602 11.1998L39.8281 12.7395C39.7259 11.713 39.5205 10.7892 39.2126 9.76267L37.8779 5.75957C38.5967 5.6568 39.2126 5.75957 39.8283 5.96449H39.8281ZM9.03309 20.6439C8.41757 18.8985 9.13587 17.0511 10.7784 16.2295L12.2155 19.72C12.7288 20.9515 13.4473 22.1836 14.2685 23.2101L12.1126 23.0045C10.6756 22.9019 9.44407 21.978 9.03309 20.6439ZM23.6097 26.0841C19.401 25.6735 15.7054 23.0045 14.1656 19.0012L11.4971 12.2263C11.2916 11.713 11.4971 11.0971 12.0103 10.8921L33.6691 3.09054C33.9775 2.98776 34.1824 2.98776 34.4907 3.09054C34.6956 3.19319 34.9012 3.39823 35.004 3.70644L37.2619 10.4815C38.4939 14.2793 37.6729 18.3853 35.1066 21.362L31.9245 25.0576L32.8482 27.5212L29.1528 29.0609L28.1263 26.4947L23.6097 26.0841ZM17.0401 40.9683L19.401 40.0445L21.9673 47.8462L23.9174 47.2301L21.2488 39.2235L25.3549 37.5811L28.845 47.9488L20.5302 51.4389L17.0401 40.9683ZM50.7092 18.7958V19.8223H52.7622V18.7958C52.7622 15.9218 55.0208 13.6633 57.8947 13.6633V11.6102C55.0208 11.6102 52.7622 9.35233 52.7622 6.47774V5.45124H50.7092V6.47774C50.7092 9.35233 48.4511 11.6102 45.5767 11.6102V13.6633C48.4511 13.6633 50.7092 15.9218 50.7092 18.7958ZM51.7357 10.1733C52.3516 11.1998 53.1728 12.0212 54.1993 12.6369C53.1728 13.2528 52.3516 14.0742 51.7357 15.1007C51.1198 14.0742 50.2986 13.2528 49.2721 12.6368C50.2986 12.0212 51.1198 11.1998 51.7357 10.1733Z" fill="#EAA73F"></path><path d="M5.54267 39.3262V40.3527H7.59567V39.3262C7.59567 36.4522 9.85423 34.1936 12.7282 34.1936V32.1406C9.85423 32.1406 7.59567 29.8827 7.59567 27.0081V25.9816H5.54267V27.0081C5.54267 29.8827 3.28462 32.1406 0.410156 32.1406V34.1936C3.28462 34.1936 5.54267 36.4522 5.54267 39.3262ZM6.56917 30.7037C7.18507 31.7302 8.00627 32.5516 9.03277 33.1673C8.00627 33.7832 7.18507 34.6046 6.56917 35.6311C5.95327 34.6046 5.13207 33.7832 4.10556 33.1671C5.13207 32.5516 5.95327 31.7302 6.56917 30.7037ZM56.8678 27.0081V25.9816H54.8148V27.0081C54.8148 29.8827 52.5567 32.1406 49.6822 32.1406V34.1936C52.5567 34.1936 54.8148 36.4522 54.8148 39.3262V40.3527H56.8678V39.3262C56.8678 36.4522 59.1263 34.1936 62.0003 34.1936V32.1406C59.1263 32.1406 56.8678 29.8827 56.8678 27.0081ZM55.8413 35.6311C55.2254 34.6046 54.4042 33.7832 53.3777 33.1671C54.4042 32.5516 55.2254 31.7302 55.8413 30.7037C56.4572 31.7302 57.2784 32.5516 58.3049 33.1673C57.2784 33.7832 56.4572 34.6046 55.8413 35.6311ZM30.4869 19.1045L31.924 20.5414C37.5698 14.8957 32.3345 6.27305 32.0267 5.96484L30.2815 7.09412C30.3841 7.09412 35.0034 14.5878 30.4869 19.1045Z" fill="#EAA73F"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Enjoy sweet success.						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-505c143b e-con-full e-flex e-con e-child" data-id="505c143b" data-element_type="container">
+				<div class="elementor-element elementor-element-7ec03049 elementor-align-right main-button elementor-widget elementor-widget-button" data-id="7ec03049" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="14" height="13" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg>			</span>
+									<span class="elementor-button-text">Talk with us</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-44f80571 e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="44f80571" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
+				<div class="elementor-element elementor-element-572a4ec elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="572a4ec" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="video-wrapper-talking" onclick="playCustomVideo(this)">
+  <div class="video-overlay" style="background:url(https://videoagency.mindpath.tech/wp-content/uploads/2025/07/thumb.jpg;);background-size: cover;"></div>
+
+  <video playsinline preload="metadata">
+    <source src="/wp-content/uploads/2025/08/video_drives_sales.mp4" type="video/mp4">
+    
+  </source></video>
+</div>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-28004d1c e-flex e-con-boxed e-con e-parent" data-id="28004d1c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-303b2b19 e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="303b2b19" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+		<div class="elementor-element elementor-element-7b97d288 e-con-full e-flex e-con e-child" data-id="7b97d288" data-element_type="container">
+				<div class="elementor-element elementor-element-7d41d73d video-counter elementor-widget elementor-widget-counter" data-id="7d41d73d" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+			<div class="elementor-counter-title">Award and top ranking</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="100" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix">+</span>
+			</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-47df8384 e-con-full e-flex e-con e-child" data-id="47df8384" data-element_type="container">
+				<div class="elementor-element elementor-element-2c15ec73 video-counter elementor-widget elementor-widget-counter" data-id="2c15ec73" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+			<div class="elementor-counter-title">videos created</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="30" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix">K+</span>
+			</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6a47344e e-con-full e-flex e-con e-child" data-id="6a47344e" data-element_type="container">
+				<div class="elementor-element elementor-element-18ca05c8 video-counter elementor-widget elementor-widget-counter" data-id="18ca05c8" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+			<div class="elementor-counter-title">views archived for clients</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="10" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix">B</span>
+			</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-4a03dd5d e-con-full e-flex e-con e-child" data-id="4a03dd5d" data-element_type="container">
+				<div class="elementor-element elementor-element-5f493a7f video-counter elementor-widget elementor-widget-counter" data-id="5f493a7f" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+			<div class="elementor-counter-title">satisfied customer</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="99.9" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix">%</span>
+			</div>
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-4a976d50 e-con-full e-flex e-con e-child" data-id="4a976d50" data-element_type="container">
+		<div class="elementor-element elementor-element-2f0d1de e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="2f0d1de" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+				<div class="elementor-element elementor-element-544dbf7d elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="544dbf7d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Boost Social<br>  Media <span class="mp-gradient-text">Results</span></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-61001cd7 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="61001cd7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Grow your brand’s online presence with our expert social media marketing services. We help businesses increase engagement, gain targeted followers, and drive more website traffic through data-driven content and ad campaigns. Whether you’re on Instagram, Facebook, LinkedIn, or YouTube, our team ensures optimized posts, consistent branding, and measurable growth to help you stand out in a competitive digital world. Perfect for businesses looking to generate leads, boost sales, and build long-term customer relationships.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-412cc3b2 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="412cc3b2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Ready to Create a Video Like This?  <span class="mp-gradient-text"> <a href="/contact">  Let’s Talk <img decoding="async" src="/wp-content/uploads/2025/06/Group-20.svg"></a></span></h3>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1e394288 e-con-full video-wrapper animated-slow e-flex elementor-invisible e-con e-child" data-id="1e394288" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInDown&quot;}">
+		<div class="elementor-element elementor-element-9a2e530 e-con-full video-frame home-frame animated-slow e-flex elementor-invisible e-con e-child" data-id="9a2e530" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInDown&quot;,&quot;animation_delay&quot;:1000}">
+				<div class="elementor-element elementor-element-75a511a5 elementor-widget elementor-widget-html" data-id="75a511a5" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="phone-frame">
+    <div class="side-one"></div>
+    <div class="side-two"></div>
+    <div class="side-three"> </div>
+	<div class="side-four"> </div>
+	<div class="side-bottom"> </div>
+     <video src="/wp-content/uploads/2025/08/monica_social-phone_trim-720p.mp4" autoplay muted loop></video>
+  </div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-69834375 e-con-full video-frame home-frame animated-slow e-flex elementor-invisible e-con e-child" data-id="69834375" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInDown&quot;,&quot;animation_delay&quot;:1200}">
+				<div class="elementor-element elementor-element-37fd1e40 elementor-widget elementor-widget-html" data-id="37fd1e40" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="phone-frame">
+    <div class="side-one"></div>
+    <div class="side-two"></div>
+    <div class="side-three"> </div>
+	<div class="side-four"> </div>
+	<div class="side-bottom"> </div>
+     <video src="/wp-content/uploads/2025/07/social_phone-derek-540p.mp4" autoplay muted loop></video>
+  </div>				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1f1f1b3a elementor-widget elementor-widget-button" data-id="1f1f1b3a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">We are making videos for  all platforms.</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-26b2e91a e-con-full e-flex e-con e-parent" data-id="26b2e91a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-a81030e elementor-widget__width-inherit elementor-widget elementor-widget-html" data-id="a81030e" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<style>
+:root{
+  --th-radius:20px;
+  --th-width:1400px;
+  --th-height:250px;
+  --th-autoplay-ms:2500;
+  --th-speed-ms:600;
+  --th-ease:cubic-bezier(.22,.61,.36,1);
+}
+
+/* container + viewport (unchanged) */
+.th-hero-slider{
+  width:100%;
+  max-width:var(--th-width);
+  margin:0 auto;
+  padding:0 12px;
+  box-sizing:border-box;
+  font-family:"Goli", sans-serif;
+}
+.thh-viewport{
+  position:relative;
+  width:100%;
+  aspect-ratio:1400 / 250;  /* 1400x250 banner ratio */
+  min-height:var(--th-height);
+  overflow:hidden;
+  border-radius:var(--th-radius);
+}
+
+/* track + slides (unchanged) */
+.thh-track{
+  display:flex;
+  gap:0;
+  height:100%;
+  transform:translateX(0);
+  transition:transform calc(var(--th-speed-ms)*1ms) var(--th-ease);
+  will-change:transform;
+}
+.thh-slide{
+  position:relative;
+  flex:0 0 100%;
+  height:100%;
+  background:#0b0b0b;
+  border-radius:var(--th-radius);
+  overflow:hidden;
+}
+
+/* video background */
+.thh-bg{ position:absolute; inset:0; z-index:0; }
+.thh-bg video{
+  width:100%; height:100%; object-fit:cover;
+}
+
+/* ✅ Vimeo iframe “cover” fix (wasn’t filling horizontally) */
+.thh-bg iframe{
+  position:absolute; top:50%; left:50%;
+  transform:translate(-50%, -50%);
+  /* make sure either dimension always covers the banner box */
+  min-width:100%; min-height:100%;
+  width:auto; height:auto;
+  border:0; pointer-events:none;
+}
+
+/* overlay */
+.thh-slide::before{
+  content:""; position:absolute; inset:0; z-index:1;
+  background:rgba(0,0,0,.25); transition:background .25s ease;
+}
+.thh-slide:hover::before{ background:rgba(0,0,0,.15); }
+
+/* text + arrow */
+.thh-inner{
+  position:absolute; inset:0; z-index:2;
+  display:flex; align-items:flex-end; justify-content:space-between;
+  padding:14px 20px;
+}
+.thh-title{ margin:0; font-weight:600; font-size:22px; line-height:1.3; }
+.thh-title a{ color:#fff; text-decoration:none; }
+.thh-cta{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:46px; height:46px; border-radius:50%;
+  background:#5ea3ff;
+  box-shadow:0 4px 10px rgba(94,163,255,.35);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.thh-cta:hover{ transform:translateY(-1px); box-shadow:0 8px 14px rgba(94,163,255,.45); }
+
+/* ✅ Responsive text/CTA so the short banner doesn’t feel crowded */
+@media (max-width:1024px){
+  .thh-inner{ padding:10px 14px; }
+  .thh-title{ font-size:18px; line-height:1.25; }
+  .thh-cta{ width:40px; height:40px; }
+}
+@media (max-width:640px){
+  .thh-inner{ padding:8px 12px; }
+  .thh-title{ font-size:16px; line-height:1.2; }
+  .thh-cta{ width:36px; height:36px; }
+}
+</style>
+<style>
+/* tiny global bleed to kill micro-pillarboxes */
+.thh-bg video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transform:scale(var(--th-video-bleed, 1.02)); /* 2% default */
+  transform-origin:center;
+}
+
+/* keep the Vimeo slide covered (from our earlier patch) */
+.thh-bg iframe{
+  position:absolute; top:50%; left:50%;
+  height:100%; width:calc(100% * 16 / 9);
+  transform:translate(-50%, -50%) scale(var(--th-iframe-scale, 1));
+  transform-origin:center; border:0; pointer-events:none;
+}
+</style>
+
+
+<div class="th-hero-slider" id="thHeroSlider">
+  <div class="thh-viewport" data-pause-on-hover="true">
+    <div class="thh-track">
+
+      <!-- 1 -->
+<!-- Custom Animated Videos — using local file -->
+<article class="thh-slide" data-bleed="1.02">
+  <div class="thh-bg">
+    <video autoplay muted loop playsinline preload="metadata" src="/wp-content/uploads/EyeQue.mp4">
+    </video>
+  </div>
+  <div class="thh-inner">
+    <h3 class="thh-title">
+      <a href="/our-services/3d-and-2d-animation/">Custom Animated Videos</a>
+    </h3>
+    <a class="thh-cta" href="/our-services/3d-and-2d-animation/" aria-label="Open Custom Animated Videos">
+      <svg xmlns="https://www.w3.org/2000/svg" width="20" height="18" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg>
+    </a>
+  </div>
+</article>
+
+    
+
+      <!-- 2 -->
+      <article class="thh-slide">
+        <div class="thh-bg"><video src="/wp-content/uploads/2025/07/app-walkthrough-1.webm" autoplay muted loop playsinline></video></div>
+        <div class="thh-inner">
+          <h3 class="thh-title"><a href="/our-services/motion-graphics/">App Walkthrough</a></h3>
+          <a class="thh-cta" href="/our-services/motion-graphics/" aria-label="Open App Walkthrough">
+            <svg xmlns="https://www.w3.org/2000/svg" width="20" height="18" viewbox="0 0 14 13" fill="none">
+              <path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- (continue same pattern for other slides) -->
+
+      <article class="thh-slide"><div class="thh-bg"><video src="/wp-content/uploads/2025/07/gutters.webm" autoplay muted loop playsinline></video></div><div class="thh-inner"><h3 class="thh-title"><a href="/our-services/3d-and-2d-animation/">3D and 2D Animation</a></h3><a class="thh-cta" href="/our-services/3d-and-2d-animation/"><svg xmlns="https://www.w3.org/2000/svg" width="20" height="18" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg></a></div></article>
+
+      <article class="thh-slide"><div class="thh-bg"><video src="/wp-content/uploads/2025/07/e-learning-1.webm" autoplay muted loop playsinline></video></div><div class="thh-inner"><h3 class="thh-title"><a href="/our-services/elearning-videos/">Elearning Videos</a></h3><a class="thh-cta" href="/our-services/elearning-videos/"><svg xmlns="https://www.w3.org/2000/svg" width="20" height="18" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg></a></div></article>
+
+      <article class="thh-slide"><div class="thh-bg"><video src="/wp-content/uploads/2025/07/corporate-1.webm" autoplay muted loop playsinline></video></div><div class="thh-inner"><h3 class="thh-title"><a href="/our-services/vsl-and-presentations/">Corporate Videos</a></h3><a class="thh-cta" href="/our-services/vsl-and-presentations/"><svg xmlns="https://www.w3.org/2000/svg" width="20" height="18" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg></a></div></article>
+
+      <article class="thh-slide"><div class="thh-bg"><video src="/wp-content/uploads/2025/08/capital_financing-1.webm" autoplay muted loop playsinline></video></div><div class="thh-inner"><h3 class="thh-title"><a href="/our-services/vsl-and-presentations/">VSL and Presentations</a></h3><a class="thh-cta" href="/our-services/vsl-and-presentations/"><svg xmlns="https://www.w3.org/2000/svg" width="20" height="18" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg></a></div></article>
+
+      <article class="thh-slide"><div class="thh-bg"><video src="/wp-content/uploads/2025/07/product-demo-1.webm" autoplay muted loop playsinline></video></div><div class="thh-inner"><h3 class="thh-title"><a href="/our-services/product-demos/">Product Demos</a></h3><a class="thh-cta" href="/our-services/product-demos/"><svg xmlns="https://www.w3.org/2000/svg" width="20" height="18" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg></a></div></article>
+
+      <article class="thh-slide"><div class="thh-bg"><video src="/wp-content/uploads/2025/07/whiteboard-2.webm" autoplay muted loop playsinline></video></div><div class="thh-inner"><h3 class="thh-title"><a href="/our-services/whiteboard-videos/">Whiteboard Videos</a></h3><a class="thh-cta" href="/our-services/whiteboard-videos/"><svg xmlns="https://www.w3.org/2000/svg" width="20" height="18" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg></a></div></article>
+
+      <article class="thh-slide"><div class="thh-bg"><video src="/wp-content/uploads/2025/07/motion-design-2h.webm" autoplay muted loop playsinline></video></div><div class="thh-inner"><h3 class="thh-title"><a href="/our-services/motion-graphics/">Motion Graphics</a></h3><a class="thh-cta" href="/our-services/motion-graphics/"><svg xmlns="https://www.w3.org/2000/svg" width="20" height="18" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg></a></div></article>
+
+      <article class="thh-slide"><div class="thh-bg"><video src="/wp-content/uploads/2025/08/let_them_eat_cake.webm" autoplay muted loop playsinline></video></div><div class="thh-inner"><h3 class="thh-title"><a href="/our-services/funny-ads/">Funny Ads</a></h3><a class="thh-cta" href="/our-services/funny-ads/"><svg xmlns="https://www.w3.org/2000/svg" width="20" height="18" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg></a></div></article>
+
+    </div>
+  </div>
+</div>
+
+
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-df65d40 e-flex e-con-boxed e-con e-parent" data-id="df65d40" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4eabc22a e-con-full e-flex e-con e-child" data-id="4eabc22a" data-element_type="container">
+		<div class="elementor-element elementor-element-791dc4a e-con-full e-flex e-con e-child" data-id="791dc4a" data-element_type="container">
+				<div class="elementor-element elementor-element-22fcefbe elementor-widget__width-initial animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="22fcefbe" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Award-winning
+<span class="mp-gradient-text">video agency</span></h2>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7b5b9878 e-con-full e-flex e-con e-child" data-id="7b5b9878" data-element_type="container">
+				<div class="elementor-element elementor-element-2554753f elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="2554753f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Trusted by over 4,000<br>clients worldwide</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-7a6a6da elementor-widget elementor-widget-image" data-id="7a6a6da" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="173" height="53" src="/wp-content/uploads/2025/06/Group-165.png" class="attachment-full size-full wp-image-242" alt="">															</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-38d22db1 e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="38d22db1" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+		<div class="elementor-element elementor-element-5141c58b e-con-full e-flex e-con e-child" data-id="5141c58b" data-element_type="container">
+		<div class="elementor-element elementor-element-6b065f41 e-con-full e-flex e-con e-child" data-id="6b065f41" data-element_type="container">
+		<div class="elementor-element elementor-element-2acb8d2d e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="2acb8d2d" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInDown&quot;}">
+				<div class="elementor-element elementor-element-6401c049 gallery-spacing-custom elementor-widget__width-initial elementor-widget elementor-widget-image-gallery" data-id="6401c049" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-image-gallery">
+			<div id="gallery-1" class="gallery galleryid-6564 gallery-columns-4 gallery-size-full"><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="6401c049" data-elementor-lightbox-title="002" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjUxNiwidXJsIjoiaHR0cHM6XC9cL3RhbGtpbmdoZWFkcy5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzA3XC8wMDIucG5nIiwic2xpZGVzaG93IjoiNjQwMWMwNDkifQ%3D%3D" href="/wp-content/uploads/2025/07/002.png"><img fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/002.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/002.png 300w, /wp-content/uploads/2025/07/002-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px"></a>
+			</div></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="6401c049" data-elementor-lightbox-title="001" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjUxNSwidXJsIjoiaHR0cHM6XC9cL3RhbGtpbmdoZWFkcy5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzA3XC8wMDEucG5nIiwic2xpZGVzaG93IjoiNjQwMWMwNDkifQ%3D%3D" href="/wp-content/uploads/2025/07/001.png"><img loading="lazy" decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/001.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/001.png 300w, /wp-content/uploads/2025/07/001-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px"></a>
+			</div></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="6401c049" data-elementor-lightbox-title="w2-banner" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjUwMywidXJsIjoiaHR0cHM6XC9cL3RhbGtpbmdoZWFkcy5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzA3XC93Mi1iYW5uZXIucG5nIiwic2xpZGVzaG93IjoiNjQwMWMwNDkifQ%3D%3D" href="/wp-content/uploads/2025/07/w2-banner.png"><img loading="lazy" decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/w2-banner.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/w2-banner.png 300w, /wp-content/uploads/2025/07/w2-banner-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px"></a>
+			</div></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="6401c049" data-elementor-lightbox-title="Telly_46th_ProudTelly_Badge" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTk4NCwidXJsIjoiaHR0cHM6XC9cL3RhbGtpbmdoZWFkcy5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzA3XC9UZWxseV80NnRoX1Byb3VkVGVsbHlfQmFkZ2UucG5nIiwic2xpZGVzaG93IjoiNjQwMWMwNDkifQ%3D%3D" href="/wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge.png"><img loading="lazy" decoding="async" width="600" height="600" src="/wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge.png 600w, /wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge-300x300.png 300w, /wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge-150x150.png 150w" sizes="(max-width: 600px) 100vw, 600px"></a>
+			</div></figure>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-78b4e27a e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="78b4e27a" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInDown&quot;}">
+				<div class="elementor-element elementor-element-5aaf0db6 gallery-spacing-custom elementor-widget__width-initial elementor-widget elementor-widget-image-gallery" data-id="5aaf0db6" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-image-gallery">
+			<div id="gallery-2" class="gallery galleryid-6564 gallery-columns-3 gallery-size-full"><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="5aaf0db6" data-elementor-lightbox-title="Telly_46th_badge_evergreen_bronze" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTk4MCwidXJsIjoiaHR0cHM6XC9cL3RhbGtpbmdoZWFkcy5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzA3XC9UZWxseV80NnRoX2JhZGdlX2V2ZXJncmVlbl9icm9uemUucG5nIiwic2xpZGVzaG93IjoiNWFhZjBkYjYifQ%3D%3D" href="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_bronze.png"><img loading="lazy" decoding="async" width="317" height="173" src="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_bronze.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_bronze.png 317w, /wp-content/uploads/2025/07/Telly_46th_badge_evergreen_bronze-300x164.png 300w" sizes="(max-width: 317px) 100vw, 317px"></a>
+			</div></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="5aaf0db6" data-elementor-lightbox-title="Telly_46th_badge_evergreen_silver" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTk3OCwidXJsIjoiaHR0cHM6XC9cL3RhbGtpbmdoZWFkcy5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzA3XC9UZWxseV80NnRoX2JhZGdlX2V2ZXJncmVlbl9zaWx2ZXIucG5nIiwic2xpZGVzaG93IjoiNWFhZjBkYjYifQ%3D%3D" href="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_silver.png"><img loading="lazy" decoding="async" width="317" height="172" src="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_silver.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_silver.png 317w, /wp-content/uploads/2025/07/Telly_46th_badge_evergreen_silver-300x163.png 300w" sizes="(max-width: 317px) 100vw, 317px"></a>
+			</div></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="5aaf0db6" data-elementor-lightbox-title="Telly_46th_badge_evergreen_gold" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTk3OSwidXJsIjoiaHR0cHM6XC9cL3RhbGtpbmdoZWFkcy5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzA3XC9UZWxseV80NnRoX2JhZGdlX2V2ZXJncmVlbl9nb2xkLnBuZyIsInNsaWRlc2hvdyI6IjVhYWYwZGI2In0%3D" href="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_gold.png"><img loading="lazy" decoding="async" width="317" height="173" src="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_gold.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_gold.png 317w, /wp-content/uploads/2025/07/Telly_46th_badge_evergreen_gold-300x164.png 300w" sizes="(max-width: 317px) 100vw, 317px"></a>
+			</div></figure>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-5e5e386b e-con-full e-flex e-con e-child" data-id="5e5e386b" data-element_type="container">
+				<div class="elementor-element elementor-element-32d5435d elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="32d5435d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">About Us</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3568d22 elementor-widget elementor-widget-text-editor" data-id="3568d22" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Since 2001 we have been passionately helping businesses improve their websites with video. We understand the business of Online Video and we specialize in web video using a Video Spokesperson. We pride ourselves on our talented, professional spokespeople and video artists.</p><p>We shoot and build all our videos here at our studio to maintain quality and precision. We do not outsource our filming to any other studios. We film it all HERE!.</p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-6ef5aec1 e-con-full e-flex e-con e-child" data-id="6ef5aec1" data-element_type="container">
+				<div class="elementor-element elementor-element-42af4b9b elementor-align-right main-button elementor-widget elementor-widget-button" data-id="42af4b9b" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/about">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg xmlns="https://www.w3.org/2000/svg" width="14" height="13" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg>			</span>
+									<span class="elementor-button-text">Read More</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-688f39b e-flex e-con-boxed e-con e-parent" data-id="688f39b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-572355bb e-con-full e-flex e-con e-child" data-id="572355bb" data-element_type="container">
+		<div class="elementor-element elementor-element-bf37398 e-con-full e-flex e-con e-child" data-id="bf37398" data-element_type="container">
+				<div class="elementor-element elementor-element-1385b63b elementor-widget__width-initial animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="1385b63b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Our Client <span class="mp-gradient-text">Reviews</span></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3ef2ced4 elementor-widget elementor-widget-image" data-id="3ef2ced4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="173" height="53" src="/wp-content/uploads/2025/06/Group-165.png" class="attachment-full size-full wp-image-242" alt="">															</div>
+				</div>
+				<div class="elementor-element elementor-element-4dc2311c elementor-widget elementor-widget-text-editor" data-id="4dc2311c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									More than 25k+ happy clients								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-249c7e2e e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="249c7e2e" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
+				<div class="elementor-element elementor-element-3fe48029 elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile elementor-view-default elementor-widget elementor-widget-icon" data-id="3fe48029" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="https://www.w3.org/2000/svg" width="75" height="57" viewbox="0 0 75 57" fill="none"><path d="M43.8031 56.25V33.1531C43.8031 15.3281 55.4625 3.24688 71.875 0L74.9844 6.72188C67.3844 9.5875 62.5 18.0906 62.5 25H75V56.25H43.8031ZM0 56.25V33.1531C0 15.3281 11.7125 3.24688 28.125 0L31.2375 6.72188C23.6344 9.5875 18.75 18.0906 18.75 25H31.1969V56.25H0Z" fill="#589DFD"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4845259 elementor-testimonial--align-left testimonial-slider elementor-testimonial--layout-image_above elementor-testimonial--skin-default elementor-pagination-type-bullets elementor-widget elementor-widget-testimonial-carousel" data-id="4845259" data-element_type="widget" data-settings="{&quot;slides_per_view&quot;:&quot;1&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="testimonial-carousel.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-swiper">
+					<div class="elementor-main-swiper swiper" role="region" aria-roledescription="carousel" aria-label="Slides">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide" role="group" aria-roledescription="slide">
+									<div class="elementor-testimonial">
+							<div class="elementor-testimonial__content">
+					<div class="elementor-testimonial__text">
+						Talking Heads knows how to write and design highly effective videos. Within a couple days of uploading our new branded video, we saw an immediate increase in sales on Amazon alone of over 30%. We also used the video for our detail page as well as for Amazon Video Advertising which was so cost effective and with the right videos done by WTH it's a slam dunk! The team also is very responsive and knows the landscape of production, clearly pros here! I recommend Website Talking Heads to anyone considering using them!					</div>
+					<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">David Rifkin</span></cite>				</div>
+						<div class="elementor-testimonial__footer">
+									<div class="elementor-testimonial__image">
+						<img decoding="async" src="/wp-content/uploads/2025/08/5-star.png" alt="David Rifkin">
+											</div>
+											</div>
+		</div>
+								</div>
+									</div>
+							</div>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+		
+			</div>
+
+	
+</main>
+
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
+    </body>
+</html>
