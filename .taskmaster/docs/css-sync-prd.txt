@@ -1,0 +1,108 @@
+# CSS Sync PRD: Match talkingheadstudio.com to talkingheads.com
+
+## Project Overview
+Sync CSS styling from https://talkingheads.com/ to http://talkingheadstudio.com/index.php to achieve visual parity between the two sites.
+
+## Objectives
+1. Make the local site (talkingheadstudio.com) visually match the reference site (talkingheads.com) exactly
+2. Identify and extract all missing CSS declarations from the reference site
+3. Add missing CSS to css/main.css while preserving existing styles
+4. Create a backup before making changes
+5. Verify visual equivalence after changes
+
+## Scope
+
+### In Scope
+- CSS analysis and comparison between local and remote sites
+- Extraction of missing CSS selectors and declarations
+- Adding missing CSS to css/main.css
+- Creating backup file (css/main.backup.before-talkingheads-sync.css)
+- Visual verification of changes
+
+### Out of Scope
+- HTML structure changes (unless absolutely necessary for pixel-perfect matching)
+- JavaScript modifications
+- Image or asset replacements
+- Content changes
+
+## Technical Requirements
+
+### Analysis Phase
+1. Inspect local project:
+   - Analyze index.php structure
+   - Identify all CSS files linked (css/main.css, css/plugins.css, etc.)
+   - Document CSS load order
+   - Map HTML structure, classes, and IDs
+
+2. Inspect remote reference site:
+   - Fetch and analyze HTML from https://talkingheads.com/
+   - Identify all CSS files used (including cached/minified files)
+   - Document CSS load order
+   - Map HTML structure, classes, and IDs
+   - Extract all CSS rules that affect the main page
+
+3. Compare structures:
+   - Compare DOM structure between local and remote
+   - Identify class/ID differences that could affect styling
+   - Note structural differences in header, navigation, hero, content, footer
+
+### CSS Diffing Phase
+1. For each CSS file used by talkingheads.com:
+   - Extract all selectors and declarations used on the main page
+   - Compare against local CSS (css/main.css and other linked files)
+   - Identify missing selectors
+   - Identify missing declarations within existing selectors
+
+2. Prioritize above-the-fold elements:
+   - Header and navigation styling
+   - Hero section styling
+   - Main content area styling
+   - Footer styling
+
+### Implementation Phase
+1. Create backup:
+   - Copy css/main.css to css/main.backup.before-talkingheads-sync.css
+
+2. Add missing CSS:
+   - Add all missing selectors/declarations to css/main.css
+   - Preserve logical grouping (keep related selectors together)
+   - Add comment blocks: "/* Synced from talkingheads.com to match layout and styling */"
+   - Avoid duplication (skip if selector already exists with identical properties)
+   - Resolve conflicts by preferring talkingheads.com styles for visual parity
+
+3. Maintain code quality:
+   - Respect existing code style in css/main.css
+   - Keep formatting consistent
+   - Add clear comments for newly added sections
+
+### Verification Phase
+1. Visual comparison:
+   - Compare local and remote sites side-by-side
+   - Verify header, navigation, hero, content, and footer match
+   - Check responsive behavior at different breakpoints
+
+2. Document limitations:
+   - Note any differences that cannot be resolved via CSS alone
+   - Document missing assets (images, fonts) that affect visual parity
+   - List any HTML structure differences that prevent exact matching
+
+## Success Criteria
+- Local site (talkingheadstudio.com/index.php) visually matches talkingheads.com
+- All above-the-fold elements have matching styling
+- Backup file created successfully
+- No existing functionality broken
+- CSS changes are well-documented with comments
+
+## Constraints
+- Do not remove existing styles unless they clearly conflict
+- Do not modify HTML structure unless explicitly approved
+- Only modify css/main.css (and create backup)
+- Do not introduce new frameworks or libraries
+- Maintain existing code style and formatting
+
+## Deliverables
+1. Backup file: css/main.backup.before-talkingheads-sync.css
+2. Updated css/main.css with all missing CSS from talkingheads.com
+3. Documentation of changes made
+4. List of any remaining visual differences and their causes
+
