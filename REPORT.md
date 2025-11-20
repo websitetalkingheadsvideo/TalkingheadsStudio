@@ -1,3 +1,105 @@
+# Session Report: CSS Analysis and File Usage Audit
+
+**Date:** January 2025  
+**Project:** Talking Heads Studio Website  
+**Objective:** Analyze index.php CSS loading and identify missing/broken styles compared to reference site
+
+## Summary
+
+Conducted comprehensive CSS analysis of `index.php` to identify missing stylesheets, broken selectors, and unused CSS files. Discovered that most CSS files in `/css/` directory are redundant duplicates of styles already in `main.css`, with only `variables.css` providing unique functionality.
+
+## Work Completed
+
+### 1. **CSS Loading Analysis**
+   - **Analyzed:** `index.php` and `includes/head.php` for CSS file loading
+   - **Found:** Only `css/main.css` is loaded from local files
+   - **Found:** 8 other CSS files exist but are never loaded:
+     - `reset.css` (empty)
+     - `variables.css` (contains `:root` CSS variables)
+     - `typography.css` (Goli font @font-face declarations)
+     - `layout.css` (layout utilities)
+     - `components.css` (component base styles)
+     - `header.css` (header styles)
+     - `footer.css` (footer styles)
+     - `responsive.css` (empty)
+
+### 2. **CSS File Usage Verification**
+   - **Verified:** Most styles in separate CSS files are **duplicated** in `main.css`
+   - **Critical Finding:** `variables.css` uses `:root` scope while `main.css` uses `.elementor-kit-5` scope
+   - **Impact:** CSS variables may not work if `.elementor-kit-5` class is missing from HTML
+   - **Conclusion:** Only `variables.css` needs to be loaded (provides global CSS variables)
+
+### 3. **Missing CSS Selectors Identified**
+   - **Found Missing:**
+     - `.skip-link` - No styles found (accessibility issue)
+     - `.screen-reader-text` - No styles found (accessibility issue)
+     - `.elementor-invisible` - No styles in local CSS (may be in Elementor CSS)
+     - `.animated-slow` - No styles found
+     - `.elementor-background-video-container` - Missing positioning styles
+     - `.elementor-background-video-embed` - Missing styles
+
+### 4. **Class Name Mismatch Found**
+   - **Issue:** `css/layout.css` line 27 uses `.elementor-element` instead of `.th`
+   - **Impact:** CSS variables won't apply after class normalization
+   - **Status:** Needs fixing if `layout.css` is to be used
+
+### 5. **Index.php CSS Extraction Verification**
+   - **Verified:** `index.php` CSS was already extracted in commit `b87d339`
+   - **Confirmed:** All classes used in `index.php` have corresponding CSS in `main.css`:
+     - `.th-root`, `.th-grid`, `.th-card` styles exist
+     - `.inline-style-1` through `.inline-style-7` exist
+     - `.main-button`, `.mp-gradient-text` styles exist
+   - **Conclusion:** Recent refactoring correctly excluded `index.php` (already done)
+
+## Files Created
+
+1. **CSS_ANALYSIS_REPORT.md**
+   - Comprehensive analysis of missing CSS components
+   - Comparison between `index.php` and reference site
+   - Detailed list of missing selectors and broken paths
+   - Recommended fixes with code snippets
+
+2. **CSS_FILES_USAGE_ANALYSIS.md**
+   - File-by-file analysis of CSS files in `/css/` directory
+   - Verification of which files are actually needed
+   - Comparison of duplicate styles vs unique styles
+   - Recommendation: Only load `variables.css` in addition to `main.css`
+
+## Key Findings
+
+### Critical Issues
+1. **CSS Variable Scope Problem**
+   - `main.css` defines variables in `.elementor-kit-5` scope
+   - HTML doesn't have `.elementor-kit-5` class
+   - Variables won't work without `variables.css` (uses `:root`)
+
+2. **Missing Accessibility Styles**
+   - `.skip-link` and `.screen-reader-text` have no CSS
+   - These are standard WordPress accessibility classes
+   - Need to be added to `css/reset.css` or `css/main.css`
+
+3. **Class Name Mismatch**
+   - `layout.css` still uses `.elementor-element` (should be `.th`)
+   - Won't work after class normalization
+
+### Redundant Files
+- 7 out of 8 CSS files are completely duplicated in `main.css`
+- Only `variables.css` provides unique functionality
+- Loading other files would create duplicate CSS declarations
+
+## Recommendations
+
+1. **Load `css/variables.css`** before `main.css` to ensure CSS variables work globally
+2. **Add missing accessibility styles** (`.skip-link`, `.screen-reader-text`)
+3. **Fix `layout.css`** class name (`.elementor-element` → `.th`) if it's to be used
+4. **Don't load redundant CSS files** (typography, layout, components, header, footer, responsive)
+
+## Version
+
+**v0.1.2** - CSS analysis and file usage audit
+
+---
+
 # Session Report: Front-End CSS Refactoring and Class Normalization
 
 **Date:** January 2025  
