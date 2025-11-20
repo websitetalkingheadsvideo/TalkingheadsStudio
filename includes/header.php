@@ -9,7 +9,7 @@ if (!defined("PATH_PREFIX")) {
 }
 
 // Get current page URL for active menu item highlighting
-$current_path = $_SERVER["REQUEST_URI"] ?? "/";
+$current_path = (isset($_SERVER["REQUEST_URI"]) && $_SERVER["REQUEST_URI"]) ? $_SERVER["REQUEST_URI"] : "/";
 $current_path = rtrim($current_path, "/");
 if (empty($current_path)) {
     $current_path = "/";
