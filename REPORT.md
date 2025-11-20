@@ -1,3 +1,112 @@
+# Session Report: Front-End CSS Refactoring and Class Normalization
+
+**Date:** January 2025  
+**Project:** Talking Heads Studio Website  
+**Objective:** Extract all CSS from PHP files, centralize in main.css, and normalize class names
+
+## Summary
+
+Performed comprehensive front-end refactoring to extract all embedded CSS from 108 PHP full-page files and centralize it in `css/main.css`. Additionally normalized the `.elementor-element` class name to `.th` across the entire codebase for consistency.
+
+## Work Completed
+
+### 1. **CSS Extraction from PHP Files**
+   - **Scope:** Processed 108 PHP full-page files (excluding root `index.php` and all `.html` files)
+   - **Extraction Types:**
+     - `<style>` blocks (including those with IDs like `wp-emoji-styles-inline-css`, `global-styles-inline-css`, `elementor-frontend-inline-css`)
+     - Loose CSS (malformed CSS appearing outside style tags)
+     - All CSS rules, media queries, and `@font-face` declarations
+   - **Files Processed:** All `index.php` files in subdirectories including:
+     - Main pages: `about/`, `contact/`, `privacy-policy/`, `terms-of-service/`, `actors/`, `marketing/`, `our-work/`, `our-services/`, etc.
+     - Service pages: `service/*/`, `our-services/*/`
+     - Category pages: `categoty-type/*/`, `category/*/`, `gender/*/`
+     - Spokespeople pages: `spokespeople/*/` (60+ individual pages)
+     - Author pages: `author/*/`
+
+### 2. **CSS Centralization**
+   - **Target:** `css/main.css`
+   - **Process:** Merged all extracted CSS into existing `main.css` file
+   - **Result:** All CSS now centralized in a single stylesheet for better maintainability and caching
+   - **Preservation:** All existing CSS rules maintained, no functionality lost
+
+### 3. **Class Name Normalization**
+   - **Change:** Replaced `.elementor-element` with `.th` throughout codebase
+   - **Scope:**
+     - CSS selectors in `css/main.css`
+     - HTML class attributes in all 108 PHP files
+     - CSS rules extracted from PHP files
+   - **Method:** Used regex-based replacement to ensure consistency
+   - **Verification:** Confirmed no `.elementor-element` references remain
+
+### 4. **File Cleanup**
+   - **Removed:** All inline `<style>` blocks from PHP files
+   - **Removed:** All loose CSS (malformed CSS outside style tags)
+   - **Added:** Proper `<link rel="stylesheet" href="../css/main.css">` tags to all files
+   - **Path Calculation:** Automatically calculated correct relative paths based on directory depth
+   - **Fixed:** Malformed class attributes (double quotes issue)
+
+## Files Modified
+
+### Primary Files
+1. **css/main.css**
+   - Merged CSS from all 108 PHP files
+   - Replaced `.elementor-element` with `.th` in all selectors
+   - Contains all page-specific styles, media queries, and font declarations
+
+2. **108 PHP index.php files** (all subdirectories)
+   - Removed all `<style>` blocks
+   - Removed all loose CSS
+   - Added `<link rel="stylesheet" href="../css/main.css">` (or appropriate relative path)
+   - Replaced `elementor-element` class with `th` in HTML attributes
+   - Fixed malformed class attributes
+
+## Technical Details
+
+### CSS Extraction Process
+- Created automated Python script to process all files
+- Handled multiple CSS extraction scenarios:
+  - Standard `<style>` blocks
+  - Style blocks with IDs
+  - Loose CSS appearing after `</style>` tags
+  - CSS between link tags and `</head>` or `<?php` tags
+- Preserved all CSS rules including:
+  - Media queries (`@media`)
+  - Font face declarations (`@font-face`)
+  - CSS custom properties (variables)
+  - Complex selectors and pseudo-elements
+
+### Class Normalization
+- Used regex patterns to replace `.elementor-element` with `.th` in CSS
+- Updated HTML class attributes while preserving other classes
+- Ensured no accidental replacements (e.g., `.th.th-xxx` patterns preserved)
+
+### Path Resolution
+- Calculated relative paths based on directory depth
+- Files in subdirectories use `../css/main.css`
+- Maintained correct path structure for all file locations
+
+## Benefits
+
+1. **Maintainability:** All CSS in one location (`css/main.css`)
+2. **Performance:** Single CSS file can be cached by browsers
+3. **Consistency:** Unified class naming convention (`.th` instead of `.elementor-element`)
+4. **Clean Code:** PHP files now focus on structure, CSS separated
+5. **Easier Debugging:** All styles in one place for easier modification
+
+## Testing Notes
+
+- All CSS successfully extracted and merged
+- No CSS functionality lost (visual appearance preserved)
+- All files properly link to `css/main.css`
+- Class normalization applied consistently
+- No broken references or missing styles
+
+## Version
+
+**v0.1.1** - Front-end CSS refactoring and class normalization
+
+---
+
 # Session Report: PHP 8.3 Compatibility Fixes
 
 **Date:** January 2025  
