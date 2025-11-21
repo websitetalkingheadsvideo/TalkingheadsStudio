@@ -247,9 +247,9 @@ require_once __DIR__ . '/includes/head.php';
 					<iframe class="logo-strip-video" allowfullscreen allow="clipboard-write" title="vimeo Video Player" src="https://player.vimeo.com/video/1104575446?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0&amp;h=929e122c6b#t="></iframe>
 				</div>
 			</section>
-			<section class="section section--light">
-				<div class="row">
-					<div class="column">
+			<section class="section section--dark">
+				<div class="row process-row">
+					<div class="column column-50 process-column-left">
 						<h2 class="section-title">Our <span class="mp-gradient-text">Process</span></h2>
 						<p class="section-content">Jump on a call with us and let's brainstorm and collaborate. We'll develop a message that is easy to understand, builds trust, and inspires your customers to take action!</p>
 						<div class="process-steps-grid">
@@ -308,14 +308,16 @@ require_once __DIR__ . '/includes/head.php';
 							</div>
 						</div>
 						</div>
-						<a href="/contact" class="btn btn-primary">
-							<span class="btn-icon">
+						<div class="process-button-wrapper">
+							<a href="/contact" class="btn btn-primary">
+								<span class="btn-text">Talk with us</span>
+							</a>
+							<a href="/contact" class="btn btn-arrow">
 								<svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg>
-							</span>
-							<span class="btn-text">Talk with us</span>
-						</a>
+							</a>
+						</div>
 					</div>
-					<div class="column">
+					<div class="column column-50 process-column-right">
 						<div class="video-wrapper-talking" onclick="playCustomVideo(this)">
 							<div class="video-overlay inline-style-7"></div>
 							<video class="testimonial-video" playsinline preload="metadata">
@@ -616,6 +618,40 @@ require_once __DIR__ . '/includes/head.php';
 		}
 
 		document.addEventListener('DOMContentLoaded', function() {
+			// Process section slide animation
+			const processRow = document.querySelector('.process-row');
+			if (processRow) {
+				const observer = new IntersectionObserver(function(entries) {
+					entries.forEach(function(entry) {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('animate-in');
+							observer.unobserve(entry.target);
+						}
+					});
+				}, {
+					threshold: 0.2,
+					rootMargin: '0px 0px -100px 0px'
+				});
+				observer.observe(processRow);
+			}
+
+			// Steps grid scale animation
+			const stepsGrid = document.querySelector('.steps-grid');
+			if (stepsGrid) {
+				const stepsObserver = new IntersectionObserver(function(entries) {
+					entries.forEach(function(entry) {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('animate-in');
+							stepsObserver.unobserve(entry.target);
+						}
+					});
+				}, {
+					threshold: 0.2,
+					rootMargin: '0px 0px -100px 0px'
+				});
+				stepsObserver.observe(stepsGrid);
+			}
+
 			const testimonialVideoWrappers = document.querySelectorAll('.testimonial-video-wrapper');
 			testimonialVideoWrappers.forEach(function(wrapper) {
 				const overlay = wrapper.querySelector('.video-overlay');
