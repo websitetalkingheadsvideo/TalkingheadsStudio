@@ -434,18 +434,22 @@
 }
 
 .process-steps-grid {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 0;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+	margin-top: 40px;
 }
 
 .process-step {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	flex: 0 0 auto;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	cursor: pointer;
+}
+
+.process-step:hover {
+	transform: translateY(-8px);
 }
 
 .process-step-number {
@@ -453,22 +457,41 @@
 	font-size: 20px;
 	font-weight: 400;
 	color: #FFFFFF;
-	margin: 0 0 15px 0;
+	margin: 0 0 20px 0;
+	opacity: 0.8;
+	transition: opacity 0.3s ease;
+}
+
+.process-step:hover .process-step-number {
+	opacity: 1;
 }
 
 .icon-box {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	width: 100%;
+	transition: all 0.3s ease;
 }
 
 .icon-box-icon {
-	margin-bottom: 15px;
+	margin-bottom: 20px;
+	transition: transform 0.3s ease;
+}
+
+.process-step:hover .icon-box-icon {
+	transform: scale(1.1);
 }
 
 .icon-box-icon .icon {
 	display: inline-block;
 	font-size: 59px;
+	transition: all 0.3s ease;
+}
+
+.process-step:hover .icon-box-icon .icon svg path {
+	fill: #EAA73F;
+	transition: fill 0.3s ease;
 }
 
 .icon-box-title {
@@ -478,6 +501,32 @@
 	line-height: 35px;
 	color: #FFFFFF;
 	margin: 0;
+	transition: color 0.3s ease;
+}
+
+.process-step:hover .icon-box-title {
+	color: #EAA73F;
+}
+
+.section-content {
+	font-family: "Goli", Sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #FFFFFF;
+	margin: 20px 0 0 0;
+	text-align: center;
+	max-width: 94%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.process-steps-grid + .btn-primary {
+	margin-top: 50px;
+	display: block;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* TH Icon Box Classes (replacing Elementor) */
@@ -768,12 +817,17 @@
 	}
 	
 	.process-steps-grid {
-		flex-direction: column;
+		grid-template-columns: 1fr 1fr;
 		gap: 30px;
+		margin-top: 30px;
 	}
 	
 	.process-step {
 		align-items: center;
+	}
+	
+	.process-step:hover {
+		transform: translateY(-5px);
 	}
 	
 	.icon-box {
@@ -786,7 +840,8 @@
 	}
 	
 	.icon-box-title {
-		font-size: 18px;
+		font-size: 20px;
+		line-height: 28px;
 	}
 }
 
@@ -828,16 +883,32 @@
 		flex: 0 0 100%;
 	}
 	
+	.process-steps-grid {
+		grid-template-columns: 1fr;
+		gap: 30px;
+		margin-top: 25px;
+	}
+	
+	.process-step {
+		align-items: center;
+	}
+	
 	.process-step-number {
-		font-size: 26px;
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	
+	.icon-box-icon {
+		margin-bottom: 15px;
 	}
 	
 	.icon-box-icon .icon {
-		font-size: 48px;
+		font-size: 42px;
 	}
 	
 	.icon-box-title {
 		font-size: 18px;
+		line-height: 26px;
 	}
 }
 

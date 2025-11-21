@@ -49,6 +49,7 @@ if (!isset($og_image)) {
 <!DOCTYPE html>
 <html lang="en-US">
 <head><meta charset="UTF-8">
+	<link rel="icon" type="image/svg+xml" href="/images/Talking Heads Logo.svg">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
