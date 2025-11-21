@@ -47,7 +47,7 @@ if (!defined('PATH_PREFIX')) {
 // Site configuration
 define('SITE_NAME', 'Video Agency');
 define('SITE_DESCRIPTION', '| Your Video Spokesperson');
-define('SITE_VERSION', '0.1.4');
+define('SITE_VERSION', '0.1.5');
 // SITE_URL will be auto-detected from HTTP_HOST to avoid hardcoded domains
 if (!defined('SITE_URL')) {
     $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';

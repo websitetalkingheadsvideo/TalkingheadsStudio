@@ -1,16 +1,33 @@
 /**
  * Header Styles
- * Header and navigation styles
+ * Header and navigation styles matching talkingheads.com
  */
 
-/* Header specific styles will be extracted here */
-.site-header .site-branding {
-	flex-direction: column;
-	align-items: stretch;
+/* Override nav link color to match talkingheads.com - orange by default */
+.th-nav-link {
+	color: #EAA73F !important;
 }
 
-.site-header {
-	padding-inline-end: 0px;
-	padding-inline-start: 0px;
+.th-nav-link:hover,
+.th-nav-link:focus {
+	color: #FFFFFF !important;
+}
+
+.th-nav-link-active {
+	color: #EAA73F !important;
+}
+
+/* Override CTA button font size to match talkingheads.com - 14px instead of 18px */
+.th-cta-button-link {
+	font-size: 14px !important;
+}
+
+/* Increase spacing between nav links to match talkingheads.com */
+.th-nav-list {
+	gap: 30px !important;
+}
+
+.th-nav-link {
+	padding: 10px 15px !important;
 }
 

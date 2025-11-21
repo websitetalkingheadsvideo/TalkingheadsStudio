@@ -71,3 +71,4 @@ fix_*.php
 extract_*.py
 temp_*.txt
 temp_*.html
+sync_config.jsonc
