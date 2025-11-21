@@ -1,5 +1,27 @@
 /**
  * Reset/Normalize CSS
- * Base reset styles from hello-elementor theme
+ * Base reset styles to remove default browser spacing
  */
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+main#content {
+	margin-top: 0;
+	padding-top: 0;
+}

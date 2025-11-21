@@ -31,8 +31,6 @@ require_once __DIR__ . '/includes/head.php';
 
 <body>
 
-<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-
 <?php require_once __DIR__ . '/includes/header.php'; ?>
 
 <main id="content" class="site-main post-6564 page type-page status-publish hentry">
