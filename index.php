@@ -472,77 +472,6 @@ require_once __DIR__ . '/includes/head.php';
 </div>
 				</div>
 			</section>
-			<section class="section section--light">
-				<div class="section-inner">
-					<div class="awards-header">
-						<h2 class="section-title">Award-winning
-<span class="mp-gradient-text">video agency</span></h2>
-						
-					</div>
-					<div class="awards-galleries">
-						<div class="awards-gallery">
-							<div class="gallery galleryid-6564 gallery-columns-4 gallery-size-full">
-							<figure class="gallery-item">
-								<div class="gallery-icon landscape">
-									<a href="/wp-content/uploads/2025/07/002.png"><img fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/002.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/002.png 300w, /wp-content/uploads/2025/07/002-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px"></a>
-								</div>
-							</figure>
-							<figure class="gallery-item">
-								<div class="gallery-icon landscape">
-									<a href="/wp-content/uploads/2025/07/001.png"><img loading="lazy" decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/001.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/001.png 300w, /wp-content/uploads/2025/07/001-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px"></a>
-								</div>
-							</figure>
-							<figure class="gallery-item">
-								<div class="gallery-icon landscape">
-									<a href="/wp-content/uploads/2025/07/w2-banner.png"><img loading="lazy" decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/w2-banner.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/w2-banner.png 300w, /wp-content/uploads/2025/07/w2-banner-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px"></a>
-								</div>
-							</figure>
-							<figure class="gallery-item">
-								<div class="gallery-icon landscape">
-									<a href="/wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge.png"><img loading="lazy" decoding="async" width="600" height="600" src="/wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge.png 600w, /wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge-300x300.png 300w, /wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge-150x150.png 150w" sizes="(max-width: 600px) 100vw, 600px"></a>
-								</div>
-							</figure>
-						</div>
-						</div>
-						<div class="awards-gallery">
-							<div id="gallery-2" class="gallery galleryid-6564 gallery-columns-3 gallery-size-full">
-							<figure class="gallery-item">
-								<div class="gallery-icon landscape">
-									<a href="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_bronze.png"><img loading="lazy" decoding="async" width="317" height="173" src="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_bronze.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_bronze.png 317w, /wp-content/uploads/2025/07/Telly_46th_badge_evergreen_bronze-300x164.png 300w" sizes="(max-width: 317px) 100vw, 317px"></a>
-								</div>
-							</figure>
-							<figure class="gallery-item">
-								<div class="gallery-icon landscape">
-									<a href="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_silver.png"><img loading="lazy" decoding="async" width="317" height="172" src="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_silver.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_silver.png 317w, /wp-content/uploads/2025/07/Telly_46th_badge_evergreen_silver-300x163.png 300w" sizes="(max-width: 317px) 100vw, 317px"></a>
-								</div>
-							</figure>
-							<figure class="gallery-item">
-								<div class="gallery-icon landscape">
-									<a href="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_gold.png"><img loading="lazy" decoding="async" width="317" height="173" src="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_gold.png" class="attachment-full size-full" alt="" srcset="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_gold.png 317w, /wp-content/uploads/2025/07/Telly_46th_badge_evergreen_gold-300x164.png 300w" sizes="(max-width: 317px) 100vw, 317px"></a>
-								</div>
-							</figure>
-						</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="section section--light">
-				<div class="section-inner">
-					<div class="about-content">
-						<h3 class="section-subtitle">About Us</h3>
-						<p>Since 2001 we have been passionately helping businesses improve their websites with video. We understand the business of Online Video and we specialize in web video using a Video Spokesperson. We pride ourselves on our talented, professional spokespeople and video artists.</p>
-						<p>We shoot and build all our videos here at our studio to maintain quality and precision. We do not outsource our filming to any other studios. We film it all HERE!.</p>
-					</div>
-					<div class="about-cta">
-						<a class="btn btn-link" href="/about">
-							<span class="btn-icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg>
-							</span>
-							<span class="btn-text">Read More</span>
-						</a>
-					</div>
-				</div>
-			</section>
 			<section class="section section--dark awards-section">
 				<div class="section-inner">
 					<div class="awards-row-container">
@@ -775,6 +704,75 @@ require_once __DIR__ . '/includes/head.php';
 				}
 			});
 		});
+
+		// Hero Slider Initialization
+		(function() {
+			const root = document.getElementById('thHeroSlider');
+			if (!root) return;
+
+			const viewport = root.querySelector('.thh-viewport');
+			const track = root.querySelector('.thh-track');
+			if (!viewport || !track) return;
+
+			const slides = Array.from(track.children);
+			if (slides.length === 0) return;
+
+			// Clone first slide for infinite loop
+			track.appendChild(slides[0].cloneNode(true));
+
+			let index = 0;
+			let timer = null;
+			let paused = false;
+			const css = getComputedStyle(document.documentElement);
+			const speed = parseInt(css.getPropertyValue('--th-speed-ms')) || 600;
+			const delay = parseInt(css.getPropertyValue('--th-autoplay-ms')) || 2500;
+
+			const getWidth = () => viewport.clientWidth;
+			
+			const go = (i) => {
+				index = i;
+				track.style.transition = `transform ${speed}ms var(--th-ease)`;
+				track.style.transform = `translateX(${-index * getWidth()}px)`;
+			};
+
+			const next = () => {
+				if (paused) return;
+				go(index + 1);
+				if (index > slides.length - 1) {
+					setTimeout(() => {
+						track.style.transition = 'none';
+						index = 0;
+						track.style.transform = 'translateX(0)';
+					}, speed + 20);
+				}
+			};
+
+			const start = () => {
+				stop();
+				timer = setInterval(next, delay);
+			};
+
+			const stop = () => {
+				if (timer) clearInterval(timer);
+			};
+
+			// Pause on hover
+			viewport.addEventListener('mouseenter', () => paused = true);
+			viewport.addEventListener('mouseleave', () => paused = false);
+
+			// Handle resize
+			let resizeTimeout;
+			window.addEventListener('resize', () => {
+				clearTimeout(resizeTimeout);
+				resizeTimeout = setTimeout(() => {
+					track.style.transition = 'none';
+					track.style.transform = `translateX(${-index * getWidth()}px)`;
+				}, 120);
+			});
+
+			// Start the slider
+			start();
+		})();
 	</script>
     </body>
 </html>
