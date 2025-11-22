@@ -32,7 +32,6 @@
 
 .th-logo img {
 	width: 340px;
-	height: 133px;
 	max-width: 100%;
 	height: auto;
 	display: block;
@@ -1175,7 +1174,7 @@ z-index: -1;border-radius: 0px 0px 40px 40px;left: 0px;}
 .side-two {position: absolute;left: -9px;top: 140px;background: #514f4f;width: 3px;height: 50px;}
 .side-three {position: absolute;left: -9px;top: 210px;background: #514f4f;width: 3px;height: 50px;}
 .side-four {position: absolute;right: -9px;top: 150px;background: #514f4f;width: 3px;height: 70px;}
-.side-bottom {position: absolute;position: absolute;right: 0;bottom: -8px;background: #000000;width: 50px;height: 8px;left: 0;margin: 0 auto;}
+.side-bottom {position: absolute;right: 0;bottom: -8px;background: #000000;width: 50px;height: 8px;left: 0;margin: 0 auto;}
 .phone-frame video {width: 100%;height: 100%;object-fit: cover;border-radius: 38px;}	
 .video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
 top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
@@ -1695,9 +1694,6 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
 
 }
 
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}
 .our-spokespeople video {height: 450px;border-radius: 30px;}
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}
 .main-button-schedule .th-button-link .th-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
@@ -2500,11 +2496,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 }
 .text-center{text-align:center}
 
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
-.our-spokespeople video {height: 450px;border-radius: 30px;} 	
+.our-spokespeople video {height: 450px;border-radius: 30px;}
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
 display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}
@@ -3080,11 +3072,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 }
 .text-center{text-align:center}
 
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
-.our-spokespeople video {height: 450px;border-radius: 30px;} 	
+.our-spokespeople video {height: 450px;border-radius: 30px;}
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
 display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}
@@ -3698,11 +3686,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 }
 .text-center{text-align:center}
 
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
-.our-spokespeople video {height: 450px;border-radius: 30px;} 	
+.our-spokespeople video {height: 450px;border-radius: 30px;}
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
 display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}
@@ -4021,11 +4005,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 }
 .text-center{text-align:center}
 
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
-.our-spokespeople video {height: 450px;border-radius: 30px;} 	
+.our-spokespeople video {height: 450px;border-radius: 30px;}
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
 display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}
@@ -4504,10 +4484,6 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 	display: block;
 }
 .text-center{text-align:center}
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
 .our-spokespeople video {height: 450px;border-radius: 30px;} 	
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
@@ -4868,11 +4844,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 }
 .text-center{text-align:center}
 
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
-.our-spokespeople video {height: 450px;border-radius: 30px;} 	
+.our-spokespeople video {height: 450px;border-radius: 30px;}
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
 display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}
@@ -5232,11 +5204,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 }
 .text-center{text-align:center}
 
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
-.our-spokespeople video {height: 450px;border-radius: 30px;} 	
+.our-spokespeople video {height: 450px;border-radius: 30px;}
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
 display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}
@@ -5596,11 +5564,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 }
 .text-center{text-align:center}
 
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
-.our-spokespeople video {height: 450px;border-radius: 30px;} 	
+.our-spokespeople video {height: 450px;border-radius: 30px;}
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
 display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}
@@ -5960,11 +5924,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 }
 .text-center{text-align:center}
 
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
-.our-spokespeople video {height: 450px;border-radius: 30px;} 	
+.our-spokespeople video {height: 450px;border-radius: 30px;}
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
 display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}
@@ -6323,10 +6283,6 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 	display: block;
 }
 .text-center{text-align:center}
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
 .our-spokespeople video {height: 450px;border-radius: 30px;} 	
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
@@ -6686,10 +6642,6 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 	display: block;
 }
 .text-center{text-align:center}
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
 .our-spokespeople video {height: 450px;border-radius: 30px;} 	
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
@@ -7242,11 +7194,7 @@ position: relative;
 .modal a.close-modal {top: 24px !important;right: 16px !important;}	
 .spokepeople-video-heading a {color: #FFF;}	
 .actor-popup iframe {width:100%;height: 650px;}
-.actor-popup h2 {color: #fff;font-size: 24px;font-family: "Goli", Sans-serif;font-weight: 600;}
-.home-services {height:auto !important;}
-.video-frame:before {content: '';width: 87px;height: 30px;background: url(/wp-content/uploads/2025/07/iphone-icon.png) no-repeat;position: absolute;
-top: 30px;z-index: 1000000;left: 50%;right: 0;transform: translate(-50%, -50%);}	
-.our-spokespeople video {height: 450px;border-radius: 30px;} 	
+.our-spokespeople video {height: 450px;border-radius: 30px;}
 .main-button-schedule {position:relative;display: flex;align-items: center;width: 290px;}	
 .main-button-schedule .elementor-button-link .elementor-button-icon  {position: absolute;right: -3px;width: 58px;height: 58px;border-radius: 100px;background: #eaa73f;top: 2px;
 display: flex;align-items: center;justify-content: center;transition: all 0.2s ease;}

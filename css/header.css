@@ -6,6 +6,7 @@
 /* Override nav link color to match talkingheads.com - orange by default */
 .th-nav-link {
 	color: #EAA73F !important;
+	padding: 10px 15px !important;
 }
 
 .th-nav-link:hover,
@@ -25,9 +26,5 @@
 /* Increase spacing between nav links to match talkingheads.com */
 .th-nav-list {
 	gap: 30px !important;
-}
-
-.th-nav-link {
-	padding: 10px 15px !important;
 }
 
