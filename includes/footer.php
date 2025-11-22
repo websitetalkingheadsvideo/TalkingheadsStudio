@@ -137,3 +137,4 @@ var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce"
 </script>
 <script src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.33.1" id="elementor-pro-frontend-js"></script>
 <script src="/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.33.1" id="pro-elements-handlers-js"></script>
+<script src="js/video-player.js"></script>

@@ -574,7 +574,7 @@ Uses</span> </h3>				</div>
 		<div class="th th-01ca8c3 e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="01ca8c3" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
 				<div class="th th-3f8eeaa elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="3f8eeaa" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-					<div class="video-wrapper-talking" onclick="playCustomVideo(this)">
+					<div class="video-wrapper-talking">
   <div class="video-overlay" style="background:url(https://videoagency.mindpath.tech/wp-content/uploads/2025/07/thumb.jpg;);background-size: cover;"></div>
 
   <video playsinline preload="metadata">

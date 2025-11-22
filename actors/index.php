@@ -1335,7 +1335,7 @@ require_once __DIR__ . '/../includes/head.php';
 		<div class="th th-026d0bb e-con-full animated-slow e-flex elementor-invisible e-con e-child" data-id="026d0bb" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
 				<div class="th th-dd92006 elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="dd92006" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-					<div class="video-wrapper-talking" onclick="playCustomVideo(this)">
+					<div class="video-wrapper-talking">
   <div class="video-overlay" style="background:url(https://videoagency.mindpath.tech/wp-content/uploads/2025/07/thumb.jpg;);background-size: cover;"></div>
 
   <video playsinline preload="metadata">
