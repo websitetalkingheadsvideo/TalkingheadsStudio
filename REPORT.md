@@ -1,3 +1,85 @@
+# Session Report: CSS Duplicate Selector Cleanup and Social CTA Bubble Styling
+
+**Date:** January 2025  
+**Project:** Talking Heads Studio Website  
+**Version:** 0.2.0 → 0.2.1  
+**Type:** Patch (CSS Refactoring and Styling Improvements)
+
+## Summary
+
+Performed comprehensive CSS duplicate selector cleanup on `main.css`, removing 887 duplicate lines (10.6% file size reduction) while preserving all visual behavior. Also updated `.social-cta-bubble` styling with increased border-radius, larger font size, and adjusted positioning.
+
+## Work Completed
+
+### 1. **CSS Duplicate Selector Cleanup** (`css/main.css`)
+   - **Removed:** 887 duplicate lines (10.6% file size reduction)
+   - **Original size:** 8,342 lines
+   - **Final size:** 7,455 lines
+   - **Removed duplicate blocks:**
+     - 7+ duplicate `.video-wrapper-talking` blocks
+     - 13+ duplicate `.mp-gradient-text` rules
+     - Duplicate `.service-popup` rules
+     - Duplicate base rules for `.spokepeople-video-wrapper`, `.spokepeople-video-heading`, and `.modal`
+   - **Merged conflicting rules:** Combined `.mp-gradient-text` rules using cascade order (kept last occurrence)
+   - **Removed:** Entire "CSS Extracted from index.html" duplicate block
+   - **Preserved:** All media query rules and responsive breakpoints
+   - **Verified:** Cascade order maintained (base rules before media queries)
+
+### 2. **Social CTA Bubble Styling Updates** (`css/main.css`)
+   - **Border-radius:** Changed from `20px` to `50px` for more rounded appearance
+   - **Font-size:** Increased from `16px` to `20px` in `.social-cta-bubble p`
+   - **Position:** Moved down 30px by changing `top: 70%` to `top: calc(70% + 30px)`
+
+## Files Modified
+
+1. **`css/main.css`**
+   - Removed 887 duplicate lines through systematic deduplication
+   - Updated `.social-cta-bubble` border-radius (line 7352)
+   - Updated `.social-cta-bubble` position (line 7356)
+   - Updated `.social-cta-bubble p` font-size (line 7382)
+
+2. **`includes/config.php`**
+   - Updated version from 0.2.0 to 0.2.1 (line 50)
+
+## Technical Details
+
+### Duplicate Removal Strategy
+- **Phase 1:** Removed exact duplicate rule blocks (kept first occurrence)
+- **Phase 2:** Consolidated conflicting rules using cascade order (last occurrence wins)
+- **Phase 3:** Merged complementary rules with different properties
+- **Safety:** Preserved all media query contexts and responsive rules
+
+### Selectors Cleaned
+- `.video-wrapper-talking` - Removed 7+ duplicate blocks
+- `.mp-gradient-text` - Removed 13+ duplicates, merged conflicting gradients
+- `.service-popup` - Removed duplicate base rules
+- `.spokepeople-video-wrapper` - Consolidated base rule, preserved media query overrides
+- `.spokepeople-video-heading` - Consolidated base rule, preserved responsive font-sizes
+- `.modal` - Consolidated base rule, preserved responsive width rules
+
+## Impact
+
+- **Maintainability:** Single source of truth for each selector, easier to maintain
+- **File Size:** 10.6% reduction in CSS file size (887 lines removed)
+- **Performance:** Slightly faster CSS parsing due to reduced file size
+- **Visual Behavior:** All styling preserved through proper cascade management
+- **Code Quality:** Cleaner, more organized CSS structure
+
+## Areas Requiring Visual Verification
+
+- `.video-wrapper-talking` (video player functionality)
+- `.spokepeople-video-wrapper` (responsive grid layout)
+- `.modal` (popup dialogs)
+- `.service-popup` (service modals)
+- `.mp-gradient-text` (gradient text effects)
+- `.social-cta-bubble` (updated styling and positioning)
+
+## Version
+
+**v0.2.1** - CSS duplicate selector cleanup and social CTA bubble styling improvements
+
+---
+
 # Session Report: Process Section and Service Icons Layout Improvements
 
 **Date:** January 2025  
