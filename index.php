@@ -373,37 +373,41 @@ require_once __DIR__ . '/includes/head.php';
 			</section>
 			<section class="section section--dark">
 				<div class="section-inner">
-					<div class="social-media-content">
-						<h2 class="section-title">Boost Social<br>  Media <span class="mp-gradient-text">Results</span></h2>
-						<p>Grow your brand's online presence with our expert social media marketing services. We help businesses increase engagement, gain targeted followers, and drive more website traffic through data-driven content and ad campaigns. Whether you're on Instagram, Facebook, LinkedIn, or YouTube, our team ensures optimized posts, consistent branding, and measurable growth to help you stand out in a competitive digital world. Perfect for businesses looking to generate leads, boost sales, and build long-term customer relationships.</p>
-						<h3 class="section-subtitle">Ready to Create a Video Like This?  <span class="mp-gradient-text"> <a href="/contact">  Let's Talk <img decoding="async" src="/wp-content/uploads/2025/06/Group-20.svg"></a></span></h3>
-					</div>
-					<div class="social-videos-wrapper">
-						<div class="phone-video-frame">
-							<div class="phone-frame">
-								<div class="side-one"></div>
-								<div class="side-two"></div>
-								<div class="side-three"></div>
-								<div class="side-four"></div>
-								<div class="side-bottom"></div>
-								<video src="/wp-content/uploads/2025/08/monica_social-phone_trim-720p.mp4" autoplay muted loop></video>
+					<div class="row">
+						<div class="column column-50">
+							<div class="social-media-content">
+								<h2 class="section-title">Boost Social<br>  Media <span class="mp-gradient-text">Results</span></h2>
+								<p>Grow your brand's online presence with our expert social media marketing services. We help businesses increase engagement, gain targeted followers, and drive more website traffic through data-driven content and ad campaigns. Whether you're on Instagram, Facebook, LinkedIn, or YouTube, our team ensures optimized posts, consistent branding, and measurable growth to help you stand out in a competitive digital world. Perfect for businesses looking to generate leads, boost sales, and build long-term customer relationships.</p>
+								<h3 class="section-subtitle">Ready to Create a Video Like This?<br><span class="mp-gradient-text"><a href="/contact">Let's Talk <img decoding="async" src="/wp-content/uploads/2025/06/Group-20.svg"></a></span></h3>
 							</div>
 						</div>
-						<div class="phone-video-frame">
-							<div class="phone-frame">
-								<div class="side-one"></div>
-								<div class="side-two"></div>
-								<div class="side-three"></div>
-								<div class="side-four"></div>
-								<div class="side-bottom"></div>
-								<video src="/wp-content/uploads/2025/07/social_phone-derek-540p.mp4" autoplay muted loop></video>
+						<div class="column column-50">
+							<div class="social-videos-wrapper">
+								<div class="phone-video-frame">
+									<div class="phone-frame">
+										<div class="side-one"></div>
+										<div class="side-two"></div>
+										<div class="side-three"></div>
+										<div class="side-four"></div>
+										<div class="side-bottom"></div>
+										<video src="/wp-content/uploads/2025/08/monica_social-phone_trim-720p.mp4" autoplay muted loop playsinline></video>
+									</div>
+								</div>
+								<div class="phone-video-frame">
+									<div class="phone-frame pt-100">
+										<div class="side-one"></div>
+										<div class="side-two"></div>
+										<div class="side-three"></div>
+										<div class="side-four"></div>
+										<div class="side-bottom"></div>
+										<video src="/wp-content/uploads/2025/07/social_phone-derek-540p.mp4" autoplay muted loop playsinline></video>
+									</div>
+								</div>
+							</div>
+							<div class="social-cta-bubble">
+								<p>We are making videos for<br>all platforms.</p>
 							</div>
 						</div>
-					</div>
-					<div class="social-cta">
-						<a class="btn btn-secondary" role="button">
-							<span class="btn-text">We are making videos for  all platforms.</span>
-						</a>
 					</div>
 				</div>
 			</section>
@@ -473,10 +477,7 @@ require_once __DIR__ . '/includes/head.php';
 					<div class="awards-header">
 						<h2 class="section-title">Award-winning
 <span class="mp-gradient-text">video agency</span></h2>
-						<div class="awards-subheader">
-							<p>Trusted by over 4,000<br>clients worldwide</p>
-							<img decoding="async" width="173" height="53" src="/wp-content/uploads/2025/06/Group-165.png" class="attachment-full size-full wp-image-242" alt="">
-						</div>
+						
 					</div>
 					<div class="awards-galleries">
 						<div class="awards-gallery">
@@ -542,27 +543,104 @@ require_once __DIR__ . '/includes/head.php';
 					</div>
 				</div>
 			</section>
+			<section class="section section--dark awards-section">
+				<div class="section-inner">
+					<div class="awards-row-container">
+						<div class="row">
+							<div class="column column-50">
+								<div class="awards-column">
+									<h2 class="awards-heading">Award-winning <span class="mp-gradient-text">video agency</span></h2>
+									<div class="awards-gallery">
+										<figure class="award-item">
+											<a href="/wp-content/uploads/2025/07/002.png" data-elementor-open-lightbox="yes">
+												<img decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/002.png" alt="Award badge 002" class="award-image">
+											</a>
+										</figure>
+										<figure class="award-item">
+											<a href="/wp-content/uploads/2025/07/001.png" data-elementor-open-lightbox="yes">
+												<img decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/001.png" alt="Award badge 001" class="award-image">
+											</a>
+										</figure>
+										<figure class="award-item">
+											<a href="/wp-content/uploads/2025/07/w2-banner.png" data-elementor-open-lightbox="yes">
+												<img decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/w2-banner.png" alt="W2 Banner award" class="award-image">
+											</a>
+										</figure>
+										<figure class="award-item">
+											<a href="/wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge.png" data-elementor-open-lightbox="yes">
+												<img decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/Telly_46th_ProudTelly_Badge.png" alt="Telly 46th Proud Telly Badge" class="award-image">
+											</a>
+										</figure>
+										<figure class="award-item">
+											<a href="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_bronze.png" data-elementor-open-lightbox="yes">
+												<img decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_bronze.png" alt="Telly 46th Bronze Badge" class="award-image">
+											</a>
+										</figure>
+										<figure class="award-item">
+											<a href="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_silver.png" data-elementor-open-lightbox="yes">
+												<img decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_silver.png" alt="Telly 46th Silver Badge" class="award-image">
+											</a>
+										</figure>
+										<figure class="award-item">
+											<a href="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_gold.png" data-elementor-open-lightbox="yes">
+												<img decoding="async" width="300" height="300" src="/wp-content/uploads/2025/07/Telly_46th_badge_evergreen_gold.png" alt="Telly 46th Gold Badge" class="award-image">
+											</a>
+										</figure>
+									</div>
+								</div>
+							</div>
+							<div class="column column-50">
+				<div class="awards-subheader">
+							<p>Trusted by over 4,000<br>clients worldwide</p>
+							<img decoding="async" width="173" height="53" src="/wp-content/uploads/2025/06/Group-165.png" class="attachment-full size-full wp-image-242" alt="">
+						</div>
+								<div class="about-column">
+									<h3 class="about-heading">About Us</h3>
+									<div class="about-content-text">
+										<p>Since 2001 we have been passionately helping businesses improve their websites with video. We understand the business of Online Video and we specialize in web video using a Video Spokesperson. We pride ourselves on our talented, professional spokespeople and video artists.</p>
+										<p>We shoot and build all our videos here at our studio to maintain quality and precision. We do not outsource our filming to any other studios. We film it all HERE!.</p>
+									</div>
+									<div class="about-cta">
+										<a class="btn btn-link" href="/about">
+											<span class="btn-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewbox="0 0 14 13" fill="none"><path d="M11.3371 3.69204L2.02916 13L0.5 11.4708L9.80688 2.16288L1.60415 2.16288V0L13.5 0V11.8958H11.3371V3.69204Z" fill="white"></path></svg>
+											</span>
+											<span class="btn-text">Read More</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="section section--light">
 				<div class="section-inner">
-					<div class="reviews-header">
-						<h2 class="section-title">Our Client <span class="mp-gradient-text">Reviews</span></h2>
-						<img decoding="async" width="173" height="53" src="/wp-content/uploads/2025/06/Group-165.png" class="attachment-full size-full wp-image-242" alt="">
-						<p>More than 25k+ happy clients</p>
-					</div>
-					<div class="reviews-carousel">
-						<div class="testimonial-slider swiper" role="region" aria-roledescription="carousel" aria-label="Slides">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide" role="group" aria-roledescription="slide">
-									<div class="testimonial">
-										<div class="testimonial__content">
-											<div class="testimonial__text">
-												Talking Heads knows how to write and design highly effective videos. Within a couple days of uploading our new branded video, we saw an immediate increase in sales on Amazon alone of over 30%. We also used the video for our detail page as well as for Amazon Video Advertising which was so cost effective and with the right videos done by WTH it's a slam dunk! The team also is very responsive and knows the landscape of production, clearly pros here! I recommend Website Talking Heads to anyone considering using them!
-											</div>
-											<cite class="testimonial__cite"><span class="testimonial__name">David Rifkin</span></cite>
-										</div>
-										<div class="testimonial__footer">
-											<div class="testimonial__image">
-												<img decoding="async" src="/wp-content/uploads/2025/08/5-star.png" alt="David Rifkin">
+					<div class="row">
+						<div class="column column-50">
+							<div class="reviews-header">
+								<h2 class="section-title">Our Client <span class="mp-gradient-text">Reviews</span></h2>
+								<img decoding="async" width="173" height="53" src="/wp-content/uploads/2025/06/Group-165.png" class="attachment-full size-full wp-image-242" alt="">
+								<p>More than 25k+ happy clients</p>
+							</div>
+						</div>
+						<div class="column column-50">
+							<div class="reviews-carousel">
+								<div class="testimonial-slider swiper" role="region" aria-roledescription="carousel" aria-label="Slides">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide" role="group" aria-roledescription="slide">
+											<div class="testimonial">
+												<div class="testimonial__content">
+													<div class="testimonial__text">
+														Talking Heads knows how to write and design highly effective videos. Within a couple days of uploading our new branded video, we saw an immediate increase in sales on Amazon alone of over 30%. We also used the video for our detail page as well as for Amazon Video Advertising which was so cost effective and with the right videos done by WTH it's a slam dunk! The team also is very responsive and knows the landscape of production, clearly pros here! I recommend Website Talking Heads to anyone considering using them!
+													</div>
+													<cite class="testimonial__cite"><span class="testimonial__name">David Rifkin</span></cite>
+												</div>
+												<div class="testimonial__footer">
+													<div class="testimonial__image">
+														<img decoding="async" src="/wp-content/uploads/2025/08/5-star.png" alt="David Rifkin">
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -580,6 +658,7 @@ require_once __DIR__ . '/includes/head.php';
 </main>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
+	<script src="js/counters.js"></script>
 	<script>
 		let currentlyPlayingWrapper = null;
 
@@ -699,3 +778,4 @@ require_once __DIR__ . '/includes/head.php';
 	</script>
     </body>
 </html>
+

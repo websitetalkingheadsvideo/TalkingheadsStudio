@@ -1372,9 +1372,23 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -1872,9 +1886,23 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -2429,9 +2457,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -2995,9 +3037,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -3599,9 +3655,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -3908,9 +3978,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -4378,9 +4462,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -4727,9 +4825,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -5077,9 +5189,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -5427,9 +5553,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -5777,9 +5917,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -6127,9 +6281,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -6476,9 +6644,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -6823,9 +7005,23 @@ img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 15
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px; /* Negative margins to cancel column padding */
+  margin-right: -15px;
   margin-left: -15px;
 }
+
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-md-6 {
   position: relative;
   width: 100%;
@@ -7451,4 +7647,207 @@ border-radius: 20px !important;border-width: 2pt !important;border: 0px solid tr
 		}
 	}
 	.pt-100{top: 100px!important;}
+
+/* Our Client Reviews Section */
+.reviews-header {
+	text-align: left;
+}
+
+.reviews-header .section-title {
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.reviews-header img {
+	margin: 20px 0;
+	display: block;
+}
+
+.reviews-header p {
+	font-family: "Goli", Sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #838383;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.reviews-carousel {
+	width: 100%;
+}
+
+.reviews-header {
+	text-align: left;
+}
+
+.reviews-header .section-title {
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.reviews-header img {
+	margin: 20px 0;
+	display: block;
+}
+
+.reviews-header p {
+	font-family: "Goli", Sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #838383;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.reviews-carousel {
+	width: 100%;
+}
+
+.testimonial-slider {
+	position: relative;
+}
+
+.testimonial-slider .swiper-wrapper {
+	align-items: stretch;
+}
+
+.testimonial-slider .swiper-slide {
+	height: auto;
+	display: flex;
+}
+
+.testimonial {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background: transparent;
+	padding: 0;
+}
+
+.testimonial__content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.testimonial__text {
+	font-family: "Goli", Sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #838383;
+	line-height: 30px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.testimonial__cite {
+	display: block;
+	margin-top: auto;
+	text-align: left;
+	font-style: normal;
+}
+
+.testimonial__name {
+	font-family: "Goli", Sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	color: #FFFFFF;
+	line-height: 35px;
+	display: block;
+}
+
+.testimonial__footer {
+	margin-top: 30px;
+	text-align: left;
+}
+
+.testimonial__image {
+	display: inline-block;
+}
+
+.testimonial__image img {
+	width: 170px;
+	height: 24px;
+	display: block;
+}
+
+@media screen and (max-width: 1024px) {
+	.reviews-header .section-title {
+		margin-bottom: 20px;
+	}
+	
+	.reviews-header p {
+		font-size: 18px;
+	}
+	
+	.testimonial__text {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	
+	.testimonial__name {
+		font-size: 22px;
+		line-height: 32px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.column-50 {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+	}
+	
+	.reviews-header {
+		text-align: center;
+	}
+	
+	.reviews-header .section-title {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	
+	.reviews-header {
+		text-align: center;
+	}
+	
+	.reviews-header .section-title {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	
+	.reviews-header img {
+		margin: 15px auto;
+		max-width: 120px;
+		height: auto;
+	}
+	
+	.reviews-header p {
+		font-size: 16px;
+		margin-top: 15px;
+	}
+	
+	.reviews-carousel {
+		padding: 0;
+	}
+	
+	.testimonial__text {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+	
+	.testimonial__name {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	
+	.testimonial__footer {
+		margin-top: 20px;
+	}
+	
+	.testimonial__image img {
+		width: 140px;
+		height: 20px;
+	}
+}
 </style>

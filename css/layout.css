@@ -14,3 +14,47 @@ main#content .e-con-boxed .e-con-inner {
 	width: 100%;
 }
 
+/* Row and Column Layout */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.column {
+	padding-right: 15px;
+	padding-left: 15px;
+	flex: 1;
+}
+
+.column-50 {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+/* Process Section Slide Animation */
+.process-row {
+	overflow: hidden;
+}
+
+.process-column-left,
+.process-column-right {
+	opacity: 0;
+	transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.process-column-left {
+	transform: translateX(-100px);
+}
+
+.process-column-right {
+	transform: translateX(100px);
+}
+
+.process-row.animate-in .process-column-left,
+.process-row.animate-in .process-column-right {
+	opacity: 1;
+	transform: translateX(0);
+}
+
