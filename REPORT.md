@@ -1,3 +1,64 @@
+# Session Report: CSS Sync from talkingheads.com
+
+**Date:** February 2025  
+**Project:** Talking Heads Studio Website  
+**Version:** 0.2.5 → 0.2.6  
+**Type:** Patch (CSS Sync - Visual Parity)
+
+## Summary
+
+Extracted and integrated all CSS from https://talkingheads.com/ into the local site for visual parity. Fetched 22 unique stylesheet URLs from the reference site's Seraphinite cache, downloaded each file, concatenated them in load order, and linked the consolidated file from the head.
+
+## Work Completed
+
+### 1. **CSS Extraction** (PowerShell)
+   - Parsed talkingheads.com homepage HTML for `<link rel="stylesheet">` hrefs
+   - Identified 22 unique CSS URLs (Seraphinite Accelerator cached files)
+   - Common paths (e.g. Elementor post CSS) returned 404; cache paths succeeded
+
+### 2. **CSS Download** (`css/talkingheads-sync/`)
+   - Downloaded all 22 CSS files to `css/talkingheads-sync/`
+   - Preserved original filenames for reference
+
+### 3. **Consolidated Stylesheet** (`css/talkingheads.css`)
+   - Concatenated all files in load order into single ~196 KB file
+   - Added header comment: `/* Synced from https://talkingheads.com/ - 2025-02-17 */`
+   - Placed file separators between source files
+
+### 4. **Head Integration** (`includes/head.php`)
+   - Added `<link rel="stylesheet" href="/css/talkingheads.css">` after responsive.css
+   - Load order: base styles → talkingheads.css (last, for cascade overrides where selectors match)
+
+## Files Created
+
+1. **`css/talkingheads.css`** (~196 KB)
+   - Combined CSS from 22 talkingheads.com stylesheets
+   - Includes Elementor, Jet Engine, custom theme rules
+
+2. **`css/talkingheads-sync/`** (directory)
+   - 22 individual CSS files from talkingheads.com cache
+
+## Files Modified
+
+1. **`includes/head.php`**
+   - Added link to talkingheads.css after responsive.css
+
+2. **`includes/config.php`**
+   - Version 0.2.5 → 0.2.6
+
+## Technical Notes
+
+- talkingheads.com uses Elementor; most CSS targets `.elementor-*` classes
+- Local site uses semantic classes (`.hero`, `.section`, `.th-card`); partial overlap
+- Consolidated CSS provides: shared class styles, base styles, fonts, variables
+- Cache URLs may change when talkingheads.com cache is regenerated; re-extract if needed
+
+## Version
+
+**v0.2.6** - CSS sync from talkingheads.com for visual parity
+
+---
+
 # Session Report: JavaScript Refactoring - External Scripts Migration
 
 **Date:** January 2025  

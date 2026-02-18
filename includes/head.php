@@ -99,5 +99,7 @@ if (!isset($og_image)) {
 	<link rel="stylesheet" href="/css/header.css">
 	<link rel="stylesheet" href="/css/footer.css">
 	<link rel="stylesheet" href="/css/responsive.css">
+	<!-- Synced from talkingheads.com for visual parity -->
+	<link rel="stylesheet" href="/css/talkingheads.css">
 	
 	<!-- Close head tag and open body tag should be in the page file after inline CSS -->
