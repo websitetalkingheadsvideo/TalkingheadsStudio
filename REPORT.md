@@ -1,3 +1,45 @@
+# Session Report: Actors Page Layout – Match talkingheads.com
+
+**Date:** February 2025  
+**Project:** Talking Heads Studio Website  
+**Version:** 0.2.6 → 0.2.7  
+**Type:** Patch (Actors Page CSS - Visual Parity)
+
+## Summary
+
+Fixed actors page section layouts to match https://talkingheads.com/actors/: (1) "3 Easy Steps to Launch" – resolved overlap with explicit grid layout; (2) "Choose a REAL human for REAL conversions" – two-column layout (text left, video right), correct margins, responsive stacking.
+
+## Work Completed
+
+### 1. **3 Easy Steps to Launch Section** (`css/actors.css`)
+   - Section container: flex column, gap 48px, padding 80px 30px
+   - Title row: flex with space-between (heading + "Talk with us" button)
+   - Steps row: 3-column grid, step cards with padding and min-width: 0
+   - Responsive: steps stack to 1 column at ≤1024px; title stacks at ≤767px
+
+### 2. **Choose a REAL human for REAL conversions Section** (`css/actors.css`)
+   - Two-column layout: left = heading + paragraph + CTA; right = video
+   - Flex row with justify-content: space-between, 48px gap, 80px 30px padding
+   - Left column: flex column, gap 24px, responsive font sizes
+   - Right column: video wrapper with border-radius, overflow hidden
+   - Responsive: columns stack at ≤1024px; center text/button at ≤767px
+
+## Files Modified
+
+1. **`css/actors.css`**
+   - Added layout rules for `.th-8f31137` (3 Easy Steps)
+   - Added layout rules for `.th-1789033` (Choose a REAL human)
+   - Responsive breakpoints at 1024px and 767px
+
+2. **`includes/config.php`**
+   - Version 0.2.6 → 0.2.7
+
+## Version
+
+**v0.2.7** - Actors page layout fixes to match talkingheads.com
+
+---
+
 # Session Report: CSS Sync from talkingheads.com
 
 **Date:** February 2025  
