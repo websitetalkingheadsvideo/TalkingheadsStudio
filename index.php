@@ -185,7 +185,7 @@ require_once __DIR__ . '/includes/head.php';
 					</div>
 				</div>
 			</section>
-			<section class="section section--dark">
+			<section class="section section--dark" data-animate="from-bottom">
 				<div class="section-inner">
 					<h2 class="section-title">Listen to what our clients say <br><span class="mp-gradient-text">about talking heads</span></h2>
 					<div class="testimonials-grid">
@@ -242,7 +242,7 @@ require_once __DIR__ . '/includes/head.php';
 					</div>
 				</div>
 			</section>
-			<section class="section section--light section--full-width">
+			<section class="section section--light section--full-width" data-animate="fade-in">
 				<div class="section-inner section-inner--full-width">
 					<iframe class="logo-strip-video" allowfullscreen allow="clipboard-write" title="vimeo Video Player" src="https://player.vimeo.com/video/1104575446?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0&amp;h=929e122c6b#t="></iframe>
 				</div>
@@ -327,7 +327,7 @@ require_once __DIR__ . '/includes/head.php';
 					</div>
 				</div>
 			</section>
-			<section class="th-counters-section">
+			<section class="th-counters-section" data-animate="fade-in">
 				<div class="th-counters-grid">
 					<div class="th-counter-item video-counter">
 						<div class="th-counter">
@@ -371,7 +371,7 @@ require_once __DIR__ . '/includes/head.php';
 					</div>
 				</div>
 			</section>
-			<section class="section section--dark">
+			<section class="section section--dark" data-animate="from-left">
 				<div class="section-inner">
 					<div class="row">
 						<div class="column column-50">
@@ -411,7 +411,7 @@ require_once __DIR__ . '/includes/head.php';
 					</div>
 				</div>
 			</section>
-			<section class="section section--dark">
+			<section class="section section--dark" data-animate="fade-in">
 				<div class="section-inner">
 					<div class="th-hero-slider" id="thHeroSlider">
   <div class="thh-viewport" data-pause-on-hover="true">
@@ -472,7 +472,7 @@ require_once __DIR__ . '/includes/head.php';
 </div>
 				</div>
 			</section>
-			<section class="section section--dark awards-section">
+			<section class="section section--dark awards-section" data-animate="scale-up">
 				<div class="section-inner">
 					<div class="awards-row-container">
 						<div class="row">
@@ -543,7 +543,7 @@ require_once __DIR__ . '/includes/head.php';
 					</div>
 				</div>
 			</section>
-			<section class="section section--light">
+			<section class="section section--light" data-animate="from-bottom">
 				<div class="section-inner">
 					<div class="row">
 						<div class="column column-50">
@@ -587,10 +587,10 @@ require_once __DIR__ . '/includes/head.php';
 </main>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
-	<script src="js/counters.js"></script>
-	<script src="js/video-player.js"></script>
-	<script src="js/animations.js"></script>
-	<script src="js/hero-slider.js"></script>
+	<script src="/js/counters.js"></script>
+	<script src="/js/video-player.js"></script>
+	<script src="/js/animations.js"></script>
+	<script src="/js/hero-slider.js"></script>
     </body>
 </html>
 

@@ -1,0 +1,275 @@
+/**
+ * Actors page – layout to match https://talkingheads.com/actors/
+ * Scoped to .elementor-1147 (actors page)
+ */
+
+/* ----- Hero (already in main.css; ensure spacing) ----- */
+.elementor-1147 .th.th-a814b9d .th-ecaf3db .elementor-heading-title {
+	font-size: clamp(2rem, 5vw, 125px);
+	line-height: 1.1;
+}
+
+/* ----- Choose Your Perfect Spokesperson section ----- */
+.elementor-1147 .th.th-d1a17c7 .e-con-inner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 80px 30px;
+}
+.elementor-1147 .th.th-d1a17c7 .th-5dedb32 {
+	flex: 1 1 auto;
+	min-width: 200px;
+}
+.elementor-1147 .th.th-d1a17c7 .th-d639831 {
+	flex: 0 0 auto;
+}
+
+/* ----- Three columns: On-Location | Greenscreen | UGC ----- */
+.elementor-1147 .th.th-3e2b52b {
+	display: grid !important;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 36px;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 30px 60px;
+}
+.elementor-1147 .th.th-3e2b52b > .th {
+	display: flex !important;
+	flex-direction: column !important;
+	min-width: 0;
+}
+/* Each column: video container then gradient-line (title card) */
+.elementor-1147 .th.th-3e2b52b .sopkespeople {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+.elementor-1147 .th.th-3e2b52b .actor-video,
+.elementor-1147 .th.th-3e2b52b .e-hosted-video {
+	width: 100% !important;
+	max-width: 100%;
+}
+.elementor-1147 .th.th-3e2b52b .e-hosted-video video {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 9 / 16;
+	object-fit: cover;
+	border-radius: 20px;
+}
+.elementor-1147 .th.th-3e2b52b .gradient-line.border-line {
+	margin-top: -80px;
+	padding-top: 90px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 20px;
+	background-color: #2A2A2A;
+}
+.elementor-1147 .th.th-3e2b52b .gradient-line .elementor-heading-title {
+	margin: 0;
+	text-align: center;
+	font-size: clamp(1.25rem, 2vw, 38px);
+}
+
+/* ----- Ready for a Spokesperson Video CTA ----- */
+.elementor-1147 .th.th-1ab0b0a {
+	text-align: center;
+	padding: 60px 30px;
+}
+.elementor-1147 .th.th-1ab0b0a .elementor-heading-title a {
+	color: #EAA73F;
+	text-decoration: none;
+}
+.elementor-1147 .th.th-1ab0b0a .elementor-heading-title a:hover {
+	text-decoration: underline;
+}
+
+/* ----- Our Spokespeople section ----- */
+.elementor-1147 .our-spokepeople-wrapper .e-con-inner {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 80px 30px 100px;
+}
+.elementor-1147 .our-spokepeople-wrapper .th-5331659 {
+	margin-bottom: 24px;
+}
+.elementor-1147 .our-spokepeople-wrapper .th-df36c29 .elementor-widget-container {
+	margin-bottom: 40px;
+}
+/* Kill massive vertical space: force zero padding/margin on every wrapper around the grid */
+.elementor-1147 .our-spokepeople-wrapper .e-n-tabs-content {
+	padding: 0 !important;
+	margin: 0 !important;
+	min-height: 0 !important;
+}
+.elementor-1147 .our-spokepeople-wrapper .th-2099653.e-con,
+.elementor-1147 .our-spokepeople-wrapper .th-63c1a5f.e-con {
+	--padding-top: 0 !important;
+	--padding-bottom: 0 !important;
+	--margin-top: 0 !important;
+	--margin-bottom: 0 !important;
+	--row-gap: 0 !important;
+	--gap: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	min-height: 0 !important;
+}
+.elementor-1147 .our-spokepeople-wrapper .th-2099653 .e-con-inner,
+.elementor-1147 .our-spokepeople-wrapper .th-63c1a5f .e-con-inner {
+	padding: 0 !important;
+	margin: 0 !important;
+	min-height: 0 !important;
+}
+.elementor-1147 .our-spokepeople-wrapper .category-gender,
+.elementor-1147 .our-spokepeople-wrapper .category-gender .elementor-widget-container {
+	padding: 0 !important;
+	margin: 0 !important;
+	min-height: 0 !important;
+}
+/* Grid of spokesperson cards (shortcode output) – tight row spacing */
+.elementor-1147 .our-spokepeople-wrapper .elementor-shortcode {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 20px;
+	row-gap: 16px;
+	justify-content: flex-start;
+}
+.elementor-1147 .our-spokepeople-wrapper .spokepeople-video-wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: calc((100% - 80px) / 5);
+	min-width: 140px;
+	border-radius: 20px;
+	overflow: visible;
+	margin: 0 !important;
+}
+/* Modal is inside each wrapper with 650px iframe – was in flow, causing huge gaps between rows */
+.elementor-1147 .our-spokepeople-wrapper .spokepeople-video-wrapper .modal.actor-popup {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+	pointer-events: none;
+}
+.elementor-1147 .our-spokepeople-wrapper .spokepeople-video-wrapper a {
+	text-decoration: none;
+	color: inherit;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.elementor-1147 .our-spokepeople-wrapper .spokepeople-video-wrapper video {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 2 / 3;
+	object-fit: cover;
+	border-radius: 20px;
+	display: block;
+}
+.elementor-1147 .our-spokepeople-wrapper .spokepeople-video-heading {
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-family: "Goli", sans-serif;
+	font-size: 22px;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+	text-transform: capitalize;
+}
+.elementor-1147 .our-spokepeople-wrapper .spokepeople-video-wrapper:hover .spokepeople-video-heading {
+	color: #EAA73F;
+}
+
+/* Tabs (Women / Men) – align right, spacing; override main.css negative top */
+.elementor-1147 .our-spokepeople-wrapper .e-n-tabs-heading {
+	position: relative;
+	top: 0;
+	display: flex;
+	justify-content: flex-end;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+.elementor-1147 .our-spokepeople-wrapper .e-n-tab-title {
+	padding: 10px 28px;
+	border-radius: 50px;
+	border: 1px solid #fff;
+	background: transparent;
+	color: #fff;
+	font-family: "Goli", sans-serif;
+	font-size: 20px;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.elementor-1147 .our-spokepeople-wrapper .e-n-tab-title:hover,
+.elementor-1147 .our-spokepeople-wrapper .e-n-tab-title[aria-selected="true"] {
+	background: #EAA73F;
+	border-color: #EAA73F;
+	color: #fff;
+}
+
+/* ----- Responsive: match talkingheads.com breakpoints ----- */
+@media (max-width: 1024px) {
+	.elementor-1147 .th.th-3e2b52b {
+		grid-template-columns: 1fr;
+		gap: 48px;
+		padding: 0 20px 40px;
+	}
+	.elementor-1147 .th.th-3e2b52b .gradient-line.border-line {
+		margin-top: -60px;
+		padding-top: 70px;
+		padding-bottom: 40px;
+	}
+	.elementor-1147 .our-spokepeople-wrapper .elementor-shortcode {
+		column-gap: 20px;
+		row-gap: 16px;
+	}
+	.elementor-1147 .our-spokepeople-wrapper .spokepeople-video-wrapper {
+		width: calc((100% - 40px) / 3);
+	}
+}
+
+@media (max-width: 767px) {
+	.elementor-1147 .th.th-d1a17c7 .e-con-inner {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 50px 20px;
+	}
+	.elementor-1147 .th.th-d1a17c7 .th-d639831 {
+		width: 100%;
+	}
+	.elementor-1147 .th.th-d1a17c7 .th-298f7e6 {
+		justify-content: center;
+	}
+	.elementor-1147 .th.th-3e2b52b .gradient-line.border-line {
+		margin-top: -40px;
+		padding-top: 50px;
+		padding: 30px 20px;
+	}
+	.elementor-1147 .our-spokepeople-wrapper .e-con-inner {
+		padding: 50px 20px 80px;
+	}
+	.elementor-1147 .our-spokepeople-wrapper .elementor-shortcode {
+		column-gap: 16px;
+		row-gap: 12px;
+	}
+	.elementor-1147 .our-spokepeople-wrapper .spokepeople-video-wrapper {
+		width: calc((100% - 16px) / 2);
+	}
+	.elementor-1147 .our-spokepeople-wrapper .e-n-tabs-heading {
+		justify-content: center;
+	}
+	.elementor-1147 .our-spokepeople-wrapper .spokepeople-video-heading {
+		font-size: 18px;
+	}
+}

@@ -1,3 +1,46 @@
+/* Hide skip-to-content link site-wide */
+a.skip-link.screen-reader-text {
+	display: none !important;
+}
+
+/* Actors page: prevent content under header and fix hero text overlap */
+body.page .site-main .page-content {
+	padding-top: 0;
+}
+.elementor-1147 .th.th-a814b9d {
+	padding-top: 100px !important;
+	padding-bottom: 60px !important;
+	min-height: 520px !important;
+}
+.elementor-1147 .th.th-a814b9d .e-con-inner {
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: center !important;
+	justify-content: center !important;
+	gap: 28px !important;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}
+.elementor-1147 .th.th-a814b9d .e-con-inner > .elementor-background-video-container {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+}
+.elementor-1147 .th.th-a814b9d .e-con-inner > .th {
+	margin: 0;
+	flex-shrink: 0;
+}
+.elementor-1147 .th.th-a814b9d .th-ecaf3db .elementor-heading-title {
+	margin: 0;
+	line-height: 1.15;
+	text-align: center;
+}
+.elementor-1147 .th.th-a814b9d .th-3ffabf8 {
+	margin-top: 0.5rem;
+}
+
 /* Header Styles */
 .th-header {
 	position: relative;
@@ -468,6 +511,175 @@
 .steps-grid.animate-in .icon-box:nth-child(3),
 .steps-grid.animate-in .icon-box:nth-child(4) {
 	transition-delay: 0s;
+}
+
+/* ============================================
+   Section Reveal Animations
+   ============================================ */
+
+/* Base hidden state for animated sections */
+section[data-animate] {
+	opacity: 0;
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Revealed state */
+section[data-animate].animate-in {
+	opacity: 1;
+}
+
+/* Fallback: Ensure sections become visible after a short delay if JS hasn't triggered */
+/* This prevents sections from staying permanently hidden */
+section[data-animate]:not(.animate-in) {
+	animation: sectionFallback 0.1s ease-out 1s forwards;
+}
+
+@keyframes sectionFallback {
+	to {
+		opacity: 1;
+		transform: translateX(0) translateY(0) scale(1);
+	}
+}
+
+/* Override fallback when properly animated */
+section[data-animate].animate-in {
+	animation: none;
+}
+
+/* Animation: Slide from left */
+section[data-animate="from-left"] {
+	transform: translateX(-60px);
+}
+
+section[data-animate="from-left"].animate-in {
+	transform: translateX(0);
+}
+
+/* Animation: Slide from right */
+section[data-animate="from-right"] {
+	transform: translateX(60px);
+}
+
+section[data-animate="from-right"].animate-in {
+	transform: translateX(0);
+}
+
+/* Animation: Slide/fade from bottom */
+section[data-animate="from-bottom"] {
+	transform: translateY(40px);
+}
+
+section[data-animate="from-bottom"].animate-in {
+	transform: translateY(0);
+}
+
+/* Animation: Scale up */
+section[data-animate="scale-up"] {
+	transform: scale(0.95);
+}
+
+section[data-animate="scale-up"].animate-in {
+	transform: scale(1);
+}
+
+/* Animation: Fade in only */
+section[data-animate="fade-in"] {
+	transform: none;
+}
+
+/* Two-column layout animations */
+section[data-animate] .column-50:first-child {
+	opacity: 0;
+	transition: opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s;
+}
+
+section[data-animate] .column-50:last-child {
+	opacity: 0;
+	transition: opacity 0.8s ease-out 0.4s, transform 0.8s ease-out 0.4s;
+}
+
+section[data-animate="from-left"] .column-50:first-child {
+	transform: translateX(-60px);
+}
+
+section[data-animate="from-left"] .column-50:last-child {
+	transform: translateX(60px);
+}
+
+section[data-animate="from-left"].animate-in .column-50:first-child,
+section[data-animate="from-left"].animate-in .column-50:last-child {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* Testimonials grid animation */
+.testimonials-grid {
+	opacity: 0;
+	transform: translateY(40px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section[data-animate="from-bottom"].animate-in .testimonials-grid {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Awards gallery animation */
+.awards-gallery {
+	opacity: 0;
+	transform: scale(0.95);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section[data-animate="scale-up"].animate-in .awards-gallery {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Reviews carousel animation */
+.reviews-carousel {
+	opacity: 0;
+	transform: translateY(40px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section[data-animate="from-bottom"].animate-in .reviews-carousel {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Social media content animations */
+.social-media-content {
+	opacity: 0;
+	transform: translateX(-60px);
+	transition: opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s;
+}
+
+.social-videos-wrapper {
+	opacity: 0;
+	transform: translateX(60px);
+	transition: opacity 0.8s ease-out 0.4s, transform 0.8s ease-out 0.4s;
+}
+
+section[data-animate="from-left"].animate-in .social-media-content,
+section[data-animate="from-left"].animate-in .social-videos-wrapper {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+	section[data-animate],
+	section[data-animate] .column-50,
+	.testimonials-grid,
+	.awards-gallery,
+	.reviews-carousel,
+	.social-media-content,
+	.social-videos-wrapper {
+		opacity: 1 !important;
+		transform: none !important;
+		transition: none !important;
+	}
 }
 
 .process-steps-grid {

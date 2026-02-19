@@ -3,6 +3,9 @@
  * actors Page
  * Converted from index.html
  */
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
 
 require_once __DIR__ . '/../includes/config.php';
 
@@ -18,11 +21,12 @@ require_once __DIR__ . '/../includes/head.php';
 
 // Page-specific inline CSS (inside <head>)
 ?>
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/actors.css">
 <?php
 ?></head>
 
-<body <?php body_class(); ?>>
+<body class="page">
 
 <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
