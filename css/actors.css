@@ -189,6 +189,85 @@
 	text-decoration: underline;
 }
 
+/* ----- Let's Create Something Like This! – awards + contact form (match talkingheads.com/actors/) ----- */
+/* Override Elementor layout: same structure as th-1789033 (Choose a REAL human) */
+.elementor-1147 .th-b7d7ace .e-con-inner {
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: wrap !important;
+	align-items: flex-start !important;
+	justify-content: space-between !important;
+	gap: 48px !important;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 80px 30px;
+}
+.elementor-1147 .th-b7d7ace .th-b21ed24 {
+	flex: 1 1 45% !important;
+	min-width: 280px !important;
+	--container-widget-width: 100% !important;
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 24px;
+}
+.elementor-1147 .th-b7d7ace .th-b21ed24 .th-1451cc2 .elementor-heading-title {
+	margin: 0;
+	font-size: clamp(2rem, 4vw, 52px);
+	line-height: 1.2;
+}
+.elementor-1147 .th-b7d7ace .th-8f6da4b {
+	width: 100% !important;
+	flex: 1 1 auto !important;
+}
+.elementor-1147 .th-b7d7ace .th-3a9b51b {
+	flex: 1 1 45% !important;
+	min-width: 280px !important;
+	display: flex !important;
+	align-items: flex-start !important;
+	justify-content: center !important;
+}
+/* Awards galleries: reset WordPress gallery, use grid */
+.elementor-1147 .th-b7d7ace .elementor-image-gallery,
+.elementor-1147 .th-b7d7ace .gallery {
+	display: grid !important;
+	gap: 20px;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.elementor-1147 .th-b7d7ace .gallery.gallery-columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+.elementor-1147 .th-b7d7ace .gallery.gallery-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+.elementor-1147 .th-b7d7ace .gallery-item {
+	margin: 0 !important;
+	float: none !important;
+}
+.elementor-1147 .th-b7d7ace .gallery-icon {
+	display: block;
+	overflow: hidden;
+}
+.elementor-1147 .th-b7d7ace .gallery-icon img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+/* Contact form: strip wrapper padding, size iframe */
+.elementor-1147 .th-b7d7ace .contact-page-form .e-con-inner,
+.elementor-1147 .th-b7d7ace .elementor-template .elementor-widget-container,
+.elementor-1147 .th-b7d7ace .th-5786d0e .e-con-inner {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.elementor-1147 .th-b7d7ace .contact-form-iframe {
+	width: 530px !important;
+	height: 720px !important;
+	border: none;
+	border-radius: 12px;
+	display: block;
+}
+
 /* ----- Our Spokespeople section ----- */
 .elementor-1147 .our-spokepeople-wrapper .e-con-inner {
 	max-width: 1600px;
@@ -316,8 +395,41 @@
 	color: #fff;
 }
 
+/* #1 Virtual Spokesperson For Site Engagement – video nearly full width, correct 16:9 aspect ratio */
+.elementor-1147 .th-8ae68d4.our-spokepeople-wrapper .video-section-big {
+	width: 98vw;
+	max-width: none;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+.elementor-1147 .th-8ae68d4.our-spokepeople-wrapper .video-section-big .elementor-wrapper {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+}
+.elementor-1147 .th-8ae68d4.our-spokepeople-wrapper .video-section-big .elementor-video-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /* ----- Responsive: match talkingheads.com breakpoints ----- */
 @media (max-width: 1024px) {
+	.elementor-1147 .th-b7d7ace .e-con-inner {
+		flex-direction: column !important;
+		gap: 40px;
+		padding: 60px 24px;
+	}
+	.elementor-1147 .th-b7d7ace .gallery.gallery-columns-4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.elementor-1147 .th-b7d7ace .contact-form-iframe {
+		width: 100% !important;
+		max-width: 530px;
+	}
 	.elementor-1147 .th-1789033 .e-con-inner {
 		flex-direction: column;
 		gap: 40px;
@@ -352,6 +464,18 @@
 }
 
 @media (max-width: 767px) {
+	.elementor-1147 .th-b7d7ace .e-con-inner {
+		padding: 50px 20px;
+		gap: 32px;
+	}
+	.elementor-1147 .th-b7d7ace .gallery.gallery-columns-4,
+	.elementor-1147 .th-b7d7ace .gallery.gallery-columns-3 {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+	.elementor-1147 .th-b7d7ace .contact-form-iframe {
+		height: 650px !important;
+	}
 	.elementor-1147 .th-1789033 .e-con-inner {
 		padding: 50px 20px;
 		gap: 32px;

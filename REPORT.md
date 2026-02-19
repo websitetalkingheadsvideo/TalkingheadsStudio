@@ -1,3 +1,41 @@
+# Session Report: Actors Page – Virtual Spokesperson, Awards & Contact Form
+
+**Date:** February 2025  
+**Project:** Talking Heads Studio Website  
+**Version:** 0.2.7 → 0.2.8  
+**Type:** Patch (Actors Page CSS - Video, Awards, Contact Form)
+
+## Summary
+
+Improved the actors page to match https://talkingheads.com/actors/: (1) #1 Virtual Spokesperson video – nearly full width with correct 16:9 aspect ratio; (2) removed "Talking Heads" overlay from video; (3) styled "Let's Create Something Like This!" section – awards gallery grid + contact form in two-column layout; (4) larger heading; (5) removed grey box around awards.
+
+## Work Completed
+
+### 1. **#1 Virtual Spokesperson For Site Engagement** (`css/actors.css`)
+   - Video section: 98vw width, centered with transform
+   - Wrapper: aspect-ratio 16/9, iframe positioned absolute to fill
+   - Hidden overlay heading (th-6643414) with display: none
+
+### 2. **Let's Create Something Like This! – Awards + Contact Form** (`css/actors.css`)
+   - Two-column layout (flex, 45% each): left = heading + galleries, right = contact form
+   - Galleries: grid layout (4 cols + 3 cols), reset WordPress gallery floats
+   - Contact form iframe: 530×720px, border-radius 12px
+   - Removed grey background/border from gallery-icon
+   - Heading: clamp(2rem, 4vw, 52px)
+   - Responsive: stack columns at 1024px; single-col gallery at 767px
+
+## Files Modified
+
+1. **`css/actors.css`** – Video width/aspect ratio, awards+contact layout, heading size, remove grey box
+
+2. **`includes/config.php`** – Version 0.2.7 → 0.2.8
+
+## Version
+
+**v0.2.8** - Actors page: Virtual Spokesperson video full width, awards + contact form layout, styling tweaks
+
+---
+
 # Session Report: Actors Page Layout – Match talkingheads.com
 
 **Date:** February 2025  
