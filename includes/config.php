@@ -4,6 +4,17 @@
  * Provides path resolution for includes from any directory depth
  */
 
+// Polyfill for body_class() when WordPress is not loaded
+if (!function_exists('body_class')) {
+	function body_class($class = '') {
+		$classes = ['page'];
+		if (is_string($class) && $class !== '') {
+			$classes[] = $class;
+		}
+		echo 'class="' . htmlspecialchars(implode(' ', $classes), ENT_QUOTES, 'UTF-8') . '"';
+	}
+}
+
 // Get the directory depth of current file relative to root
 function get_path_prefix($file_path) {
     $current_dir = dirname($file_path);
@@ -47,7 +58,7 @@ if (!defined('PATH_PREFIX')) {
 // Site configuration
 define('SITE_NAME', 'Video Agency');
 define('SITE_DESCRIPTION', '| Your Video Spokesperson');
-define('SITE_VERSION', '0.2.8');
+define('SITE_VERSION', '0.2.9');
 // SITE_URL will be auto-detected from HTTP_HOST to avoid hardcoded domains
 if (!defined('SITE_URL')) {
     $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';

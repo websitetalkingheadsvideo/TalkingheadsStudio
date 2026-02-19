@@ -18,7 +18,7 @@ require_once __DIR__ . '/../includes/head.php';
 
 // Page-specific inline CSS (inside <head>)
 ?>
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="/css/main.css">
 <?php
 ?></head>
 
@@ -36,7 +36,9 @@ require_once __DIR__ . '/../includes/head.php';
 				<div class="th th-2321e37 e-flex e-con-boxed e-con e-parent" data-id="2321e37" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1102560126\/b123a0265c&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
 					<div class="e-con-inner">
 		<div class="elementor-background-video-container" aria-hidden="true">
-							<div class="elementor-background-video-embed"></div>
+							<div class="elementor-background-video-embed">
+								<iframe class="elementor-background-video-embed" src="https://player.vimeo.com/video/1102560126?autoplay=1&loop=1&muted=1&background=1&controls=0&playsinline=1&h=b123a0265c" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hero Background Video"></iframe>
+							</div>
 						</div>		<div class="th th-f984b1c elementor-invisible elementor-widget elementor-widget-heading" data-id="f984b1c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<h2 class="elementor-heading-title elementor-size-default">Which Video Will <br><span class="mp-gradient-text">Supercharge Your Growth?

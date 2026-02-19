@@ -3,6 +3,29 @@ a.skip-link.screen-reader-text {
 	display: none !important;
 }
 
+/* Our-work page: hero background video and layout */
+.elementor-1533 .th.th-2321e37 .e-con-inner {
+	position: relative;
+	z-index: 1;
+}
+.elementor-1533 .th.th-2321e37 .e-con-inner > .elementor-background-video-container {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+	overflow: hidden;
+}
+.elementor-1533 .th.th-2321e37 .elementor-background-video-embed iframe {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+
 /* Actors page: prevent content under header and fix hero text overlap */
 body.page .site-main .page-content {
 	padding-top: 0;

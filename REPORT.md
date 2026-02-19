@@ -1,3 +1,43 @@
+# Session Report: Our-Work Page – Hero Background Video & Visual Parity
+
+**Date:** February 2025  
+**Project:** Talking Heads Studio Website  
+**Version:** 0.2.8 → 0.2.9  
+**Type:** Patch (Our-Work Page CSS - Hero Video, Layout)
+
+## Summary
+
+Visual parity for our-work page with https://talkingheads.com/our-work/: (1) hero background video – Vimeo iframe with autoplay/loop/muted; (2) hero background video CSS – `.elementor-background-video-container` positioned absolutely to cover hero, iframe centered and scaled; (3) layout centering; (4) body_class polyfill and main.css path fix to resolve 500 error and skip-link visibility.
+
+## Work Completed
+
+### 1. **Hero Background Video** (`our-work/index.php`, `css/main.css`)
+   - Vimeo iframe (1102560126) in `.elementor-background-video-container` with autoplay, loop, muted, background mode
+   - CSS: `.elementor-1533 .th.th-2321e37 .e-con-inner` position relative, z-index 1
+   - `.elementor-background-video-container`: position absolute, inset 0, z-index 0, pointer-events none, overflow hidden
+   - `.elementor-background-video-embed iframe`: centered via transform translate(-50%,-50%), min-width/min-height 100%
+
+### 2. **Layout & Fixes**
+   - `main.css` path fix for our-work (`/css/main.css` instead of relative)
+   - `body_class()` polyfill in `includes/config.php` (htmlspecialchars for esc_attr)
+   - Layout centering in `css/layout.css` for `.e-con-boxed`
+
+## Files Modified
+
+1. **`css/main.css`** – Hero background video styles for elementor-1533 th-2321e37
+
+2. **`our-work/index.php`** – Hero iframe markup (existing from prior session)
+
+3. **`includes/config.php`** – Version 0.2.8 → 0.2.9, body_class polyfill (prior session)
+
+4. **`css/layout.css`** – e-con-boxed centering (prior session)
+
+## Version
+
+**v0.2.9** - Our-work page: hero background video styling, layout centering, parity with talkingheads.com/our-work
+
+---
+
 # Session Report: Actors Page – Virtual Spokesperson, Awards & Contact Form
 
 **Date:** February 2025  

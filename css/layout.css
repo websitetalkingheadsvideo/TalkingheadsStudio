@@ -1,16 +1,75 @@
 /**
  * Layout Styles
  * Grid/flexbox layouts, containers
+ * Elementor base rules required for our-work parity with talkingheads.com
  */
 
 .e-con {
-	--container-max-width: var(--container-max-width);
+	--container-max-width: var(--container-max-width, 1600px);
+	--display: flex;
+	--flex-direction: column;
+	--flex-wrap: wrap;
+	--gap: 20px;
+	--row-gap: 20px;
+	--column-gap: 20px;
+	--margin-top: 0;
+	--margin-right: 0;
+	--margin-bottom: 0;
+	--margin-left: 0;
+	--padding-top: 10px;
+	--padding-right: 10px;
+	--padding-bottom: 10px;
+	--padding-left: 10px;
+	--justify-content: initial;
+	--align-items: initial;
+	display: var(--display);
+	flex-direction: var(--flex-direction);
+	flex-wrap: var(--flex-wrap, wrap);
+	gap: var(--gap);
+	row-gap: var(--row-gap);
+	column-gap: var(--column-gap);
+	margin-top: var(--margin-top);
+	margin-right: var(--margin-right);
+	margin-bottom: var(--margin-bottom);
+	margin-left: var(--margin-left);
+	padding-top: var(--padding-top);
+	padding-right: var(--padding-right);
+	padding-bottom: var(--padding-bottom);
+	padding-left: var(--padding-left);
+	justify-content: var(--justify-content);
+	align-items: var(--align-items);
+	min-width: 0;
 }
 
-/* Make main content containers full width like header/footer */
-main#content .e-con-boxed,
+.e-con > .e-con-inner {
+	display: var(--display, flex);
+	flex-direction: var(--flex-direction);
+	flex-wrap: var(--flex-wrap, wrap);
+	gap: var(--gap);
+	row-gap: var(--row-gap);
+	column-gap: var(--column-gap);
+	justify-content: var(--justify-content);
+	align-items: var(--align-items);
+	width: 100%;
+}
+
+.e-con.e-flex {
+	flex: var(--flex-grow, 0) var(--flex-shrink, 1) var(--flex-basis, auto);
+}
+
+.e-con-boxed.e-flex {
+	flex-flow: column;
+}
+
+/* Main content containers: constrained width, centered */
+main#content .e-con-boxed {
+	max-width: var(--container-max-width, 1600px);
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
 main#content .e-con-boxed .e-con-inner {
-	max-width: 100% !important;
+	max-width: 100%;
 	width: 100%;
 }
 
