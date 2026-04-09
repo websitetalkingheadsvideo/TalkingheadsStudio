@@ -1,0 +1,127 @@
+/**
+ * footer2.php — talkingheads.com layout: 4 columns (Follow+logo | Quick | Services | Contact),
+ * white social circles / black icons, accent Contact link. Stacks with footer.css tokens.
+ */
+
+/* Main grid: four columns (brand stack + three link columns) */
+.site-footer-bs .footer-bs-grid {
+	display: grid;
+	gap: 40px;
+	align-items: flex-start;
+	margin-bottom: 50px;
+}
+
+.site-footer-bs .footer-brand-column {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+.site-footer-bs .footer-logo--under-social {
+	margin-top: 0;
+}
+
+/* Logo: never inherit “fill the track” width — footer.css sets 340px + max-width 100% */
+.site-footer-bs .footer-logo--under-social {
+	width: fit-content;
+	max-width: 100%;
+	align-self: flex-start;
+}
+
+.site-footer-bs .footer-logo--under-social .footer-logo-image {
+	width: auto;
+	max-width: 220px;
+	height: auto;
+	display: block;
+}
+
+@media (min-width: 1024px) {
+	.site-footer-bs .footer-bs-grid {
+		/* Cap column 1; +56px so padding-end doesn’t squeeze the social row */
+		grid-template-columns: minmax(0, 336px) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+		column-gap: 40px;
+		justify-content: space-between;
+	}
+
+	.site-footer-bs .footer-brand-column {
+		min-width: 0;
+		max-width: 336px;
+		/* Extra air only before column 2 (Quick menu); keeps other column gaps at 40px */
+		padding-inline-end: 56px;
+	}
+}
+
+@media (max-width: 1023px) {
+	.site-footer-bs .footer-bs-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.site-footer-bs .footer-brand-column {
+		grid-column: 1 / -1;
+		align-items: center;
+		text-align: center;
+	}
+
+	.site-footer-bs .footer-brand-column .footer-social {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.site-footer-bs .footer-bs-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.site-footer-bs .footer-brand-column {
+		align-items: center;
+	}
+}
+
+/* talkingheads.com social: white circle, black glyph */
+.site-footer-bs .footer-social-link {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.site-footer-bs .footer-social-link:hover,
+.site-footer-bs .footer-social-link:focus {
+	background-color: var(--footer-link-hover);
+	color: #ffffff;
+}
+
+/* Quick menu: Contact in brand orange */
+.site-footer-bs .footer-link--accent {
+	color: var(--footer-link-hover);
+	font-weight: 600;
+}
+
+.site-footer-bs .footer-link--accent:hover,
+.site-footer-bs .footer-link--accent:focus {
+	color: #ffffff;
+}
+
+/* “collaborate” — solid orange like reference (not gradient clip) */
+.site-footer-bs .footer-cta-title .mp-gradient-text {
+	background: none;
+	-webkit-text-fill-color: unset;
+	background-clip: unset;
+	color: #d07e01;
+}
+
+/* Same as footer-hello-overrides for .footer-inner */
+.site-footer.site-footer-bs .footer-inner {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.site-footer.site-footer-bs {
+	padding-block-start: 0;
+	padding-block-end: 0;
+}
+
+.site-footer-bs .footer-nav-list li {
+	margin: 0;
+	padding: 0;
+}

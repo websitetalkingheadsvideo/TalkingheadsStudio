@@ -1,0 +1,264 @@
+/**
+ * Bootstrap trial header — grid shell; desktop nav + CTA reuse .th-* (main.css / header.css).
+ */
+
+.site-header-bs {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 1000;
+}
+
+/* Desktop: [ logo | centered nav | CTA ]; gap: 0 matches .th-header-inner */
+.site-header-bs__bar {
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr) auto;
+	align-items: center;
+	column-gap: 0;
+	background-color: #141414;
+	padding: 30px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.site-header-bs__brand {
+	grid-column: 1;
+	grid-row: 1;
+	margin: 0;
+	padding: 0;
+	justify-self: start;
+}
+
+.site-header-bs__brand img {
+	width: 340px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.site-header-bs__desktop {
+	grid-column: 2;
+	grid-row: 1;
+	justify-self: center;
+	min-width: 0;
+	max-width: 100%;
+}
+
+.site-header-bs__actions {
+	grid-column: 3;
+	grid-row: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0;
+	justify-self: end;
+	flex-shrink: 0;
+}
+
+.site-header-bs__mobile-wrap {
+	grid-column: 1 / -1;
+	grid-row: 2;
+	width: 100%;
+	background-color: #141414;
+	padding: 20px 0 0;
+	box-sizing: border-box;
+}
+
+/* Desktop link spacing (header.css uses 30px on .th-nav-list site-wide) */
+.site-header-bs .site-header-bs__nav-list.th-nav-list {
+	gap: 30px !important;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+}
+
+.site-header-bs .site-header-bs__desktop .th-nav-link {
+	padding: 10px 0 !important;
+	color: #ffffff !important;
+}
+
+.site-header-bs .site-header-bs__desktop .th-nav-link:hover,
+.site-header-bs .site-header-bs__desktop .th-nav-link:focus {
+	color: #eaa73f !important;
+}
+
+.site-header-bs .site-header-bs__desktop .th-nav-link-active {
+	color: #eaa73f !important;
+}
+
+/* Single pill CTA: rely on .th-cta-button-link (main.css); strip Bootstrap/chromium button chrome from menu toggle only */
+.site-header-bs .th-cta-button-link {
+	text-decoration: none !important;
+	box-shadow: none !important;
+}
+
+.site-header-bs__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.site-header-bs__toggler {
+	display: none;
+	margin: 0;
+	cursor: pointer;
+	padding: 0.35rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	position: relative;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	color: inherit;
+	line-height: 0;
+}
+
+.site-header-bs__toggler:focus-visible {
+	outline: 2px solid #eaa73f;
+	outline-offset: 2px;
+}
+
+.site-header-bs__toggler-icon--open {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 1.35rem;
+	height: 1px;
+	background: #ffffff;
+	box-shadow:
+		0 -6px 0 #ffffff,
+		0 6px 0 #ffffff;
+}
+
+.site-header-bs__toggler-icon--close {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 1.25rem;
+	height: 1.25rem;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.site-header-bs__toggler-icon--close::before,
+.site-header-bs__toggler-icon--close::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: #ffffff;
+	transform: translate(-50%, -50%);
+}
+
+.site-header-bs__toggler-icon--close::before {
+	width: 100%;
+	height: 2px;
+}
+
+.site-header-bs__toggler-icon--close::after {
+	width: 2px;
+	height: 100%;
+}
+
+.site-header-bs__toggler[aria-expanded="true"] .site-header-bs__toggler-icon--open {
+	display: none;
+}
+
+.site-header-bs__toggler[aria-expanded="true"] .site-header-bs__toggler-icon--close {
+	display: block;
+}
+
+.site-header-bs__list--drawer {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0;
+}
+
+.site-header-bs__link {
+	font-family: "Goli", Sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	display: block;
+	transition: color 0.3s ease;
+}
+
+.site-header-bs__link--drawer {
+	color: #000000;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.site-header-bs__list--drawer .site-header-bs__link--drawer:hover,
+.site-header-bs__list--drawer .site-header-bs__link--drawer:focus,
+.site-header-bs__list--drawer .site-header-bs__link--drawer.site-header-bs__link--active {
+	background-color: #eaa73f;
+	color: #000000;
+}
+
+@media (min-width: 1025px) {
+	.site-header-bs__mobile-wrap {
+		display: none !important;
+	}
+
+	.site-header-bs__toggler {
+		display: none !important;
+	}
+}
+
+@media (max-width: 1024.98px) {
+	.site-header-bs__bar {
+		grid-template-columns: 1fr auto;
+		row-gap: 0.75rem;
+	}
+
+	.site-header-bs__brand {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.site-header-bs__desktop {
+		display: none !important;
+	}
+
+	.site-header-bs__actions {
+		grid-column: 2;
+		grid-row: 1;
+		gap: 0.625rem;
+	}
+
+	.site-header-bs__mobile-wrap {
+		grid-column: 1 / -1;
+		grid-row: 2;
+	}
+
+	.site-header-bs__toggler {
+		display: block;
+	}
+}
+
+@media (max-width: 767px) {
+	.site-header-bs__bar {
+		padding: 20px;
+	}
+
+	.site-header-bs__brand img {
+		max-width: 150px;
+	}
+
+	.site-header-bs .th-cta-button-link {
+		font-size: 16px;
+		padding: 15px 20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024.98px) {
+	.site-header-bs__brand img {
+		max-width: 200px;
+	}
+}

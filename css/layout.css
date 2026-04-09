@@ -69,8 +69,9 @@ main#content .e-con-boxed {
 	margin-right: auto;
 }
 main#content .e-con-boxed .e-con-inner {
-	max-width: 100%;
+	/* width only: a max-width here blocked page-level caps (e.g. contact) from shrinking the column */
 	width: 100%;
+	box-sizing: border-box;
 }
 
 /* Row and Column Layout */

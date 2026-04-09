@@ -1,0 +1,119 @@
+/**
+ * Contact page (elementor-1535): spacing, responsive Pipedrive iframe (C1 wrapper), motion preference.
+ */
+
+/* Gutters beside the capped Elementor column; !important beats Bootstrap Reboot body background */
+html:has(main#content.post-1535),
+body:has(main#content.post-1535),
+body.page-contact {
+	background-color: #141414 !important;
+}
+
+main#content.post-1535,
+main#content.post-1535 .page-content {
+	background-color: #141414;
+}
+
+/* Hard cap the whole Elementor tree for this page (see main#content.post-1535 in contact/index.php). */
+main#content.post-1535 .page-content .elementor.elementor-1535 {
+	max-width: 1140px !important;
+	width: 100%;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	box-sizing: border-box;
+}
+
+/* Pull section under header like WordPress export (contact/index.html post-1535 inline CSS). */
+main#content .elementor-1535 .th.th-c960ed4,
+main#content.post-1535 .th.th-c960ed4 {
+	--margin-top: -125px;
+	margin-top: -125px;
+	/* layout.css uses max-width: var(--container-max-width) on .e-con-boxed; force var on this node */
+	--container-max-width: 1140px;
+}
+
+/*
+ * Readable column + dark band: `#141414` is on this .e-con-boxed, not only on .e-con-inner.
+ */
+main#content .elementor-1535 .th.th-c960ed4.e-con-boxed,
+main#content.post-1535 .th.th-c960ed4.e-con-boxed {
+	max-width: 1140px !important;
+	width: 100% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	box-sizing: border-box;
+}
+
+main#content .elementor-1535 .th.th-c960ed4 > .e-con-inner {
+	max-width: none;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+
+main#content .elementor-1535 .th.th-af92b27 {
+	--gap: 1rem 2rem;
+	--row-gap: 1rem;
+	--column-gap: 2rem;
+}
+
+main#content .elementor-1535 .th.th-6e43335 .th.th-1f738dd .elementor-widget-container {
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+/* C1: on-brand frame around Pipedrive embed */
+main#content .elementor-1535 .contact-form-panel {
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+main#content .elementor-1535 .contact-form-panel__inner {
+	width: 100%;
+	max-width: min(530px, 100%);
+	margin: 0 auto;
+	padding: 1.25rem 1.25rem 1.5rem;
+	box-sizing: border-box;
+	background-color: #1a1a1a;
+	border: 1px solid #2e2e2e;
+	border-radius: 12px;
+}
+
+main#content .elementor-1535 .contact-form-panel__inner .contact-form-iframe {
+	display: block;
+	width: 100% !important;
+	max-width: 100% !important;
+	min-width: 0;
+	height: 720px;
+	min-height: 520px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0;
+}
+
+@media (max-width: 767px) {
+	main#content .elementor-1535 .contact-form-panel__inner .contact-form-iframe {
+		min-height: 560px;
+		height: 640px;
+	}
+}
+
+@media (max-width: 1024px) {
+	main#content .elementor-1535 .th.th-9ceb907.e-con {
+		flex-direction: column;
+	}
+}
+
+/* Elementor “invisible until animated”; show content even if frontend animation never runs */
+body.page-contact main#content.post-1535 .elementor-1535 .elementor-invisible,
+main#content.post-1535 .elementor-1535 .elementor-invisible {
+	opacity: 1 !important;
+	visibility: visible !important;
+	animation: none !important;
+	transform: none !important;
+}

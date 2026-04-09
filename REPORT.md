@@ -1,3 +1,44 @@
+# Session Report: Footer2 (talkingheads.com layout), scripts split, contact integration
+
+**Date:** April 2026  
+**Project:** Talking Heads Studio Website  
+**Version:** 0.2.11 → 0.2.12  
+**Type:** Patch (footer markup/CSS, contact page includes)
+
+## Summary
+
+Added Bootstrap-oriented `includes/footer2.php` and `css/footer2.css` to mirror **talkingheads.com** footer: four columns (Follow Us + logo stacked, Quick menu with **Contact** accent, Services, Get in Touch), white social circles with dark icons, copyright + **Let’s collaborate** CTA with arrow after the headline. Narrowed logo and capped column 1; extra space before column 2 via `padding-inline-end` (28px → 56px) with matching grid `max-width` so the social row does not wrap. Extracted post-`</footer>` stack to `includes/footer-scripts.php`; `includes/footer.php` now requires it (Elementor `elementorFrontendConfig` uses `additional_custom_breakpoints`). Contact page loads Bootstrap + `header2` / `footer2`, `css/contact.css`, and `css/layout.css` tweak for `.e-con-inner` so page-level width caps apply.
+
+## Work Completed
+
+### 1. **Footer2** (`includes/footer2.php`, `css/footer2.css`)
+   - Brand column, grid, social + logo sizing, accent Contact link, CTA order and styling scoped under `.site-footer-bs`.
+
+### 2. **Scripts** (`includes/footer-scripts.php`, `includes/footer.php`)
+   - Shared scripts include; legacy footer behavior preserved.
+
+### 3. **Contact** (`contact/index.php`, `css/contact.css`, `css/header2.css`, `includes/header2.php`)
+   - Bootstrap header/footer2 path; cache-bust query aligned with `SITE_VERSION`.
+
+### 4. **Layout** (`css/layout.css`)
+   - `.e-con-boxed .e-con-inner`: removed blocking `max-width: 100%`, added `box-sizing` note for contact.
+
+## Files Touched
+
+- `includes/config.php` — `SITE_VERSION` 0.2.11 → 0.2.12  
+- `includes/footer2.php`, `includes/footer-scripts.php`, `includes/footer.php`  
+- `css/footer2.css`  
+- `contact/index.php`  
+- `includes/header2.php`, `css/header2.css`, `css/contact.css`  
+- `css/layout.css`  
+- `REPORT.md`
+
+## Version
+
+**v0.2.12** — Footer2 (talkingheads.com match), footer scripts include, contact + header2/bootstrap integration, layout inner width fix
+
+---
+
 # Session Report: Contact — Remove In-Page Social Row, Center Form, Spacing
 
 **Date:** April 2026  
