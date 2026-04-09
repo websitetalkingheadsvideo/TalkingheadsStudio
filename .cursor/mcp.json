@@ -24,15 +24,6 @@
       "args": [
         "chrome-devtools-mcp@latest"
       ]
-    },
-    "git": {
-      "command": "python",
-      "args": [
-        "-m",
-        "mcp_server_git",
-        "--repository",
-        "G:/VbN"
-      ]
     }
   }
 }

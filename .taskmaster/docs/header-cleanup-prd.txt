@@ -1,0 +1,48 @@
+Header Elementor Cleanup and Rebuild
+
+OBJECTIVE:
+Remove all Elementor dependencies from includes/header.php, delete Elementor CSS, rebuild with clean semantic HTML classes, and restyle entirely in css/main.css to match the talkingheads.com header design.
+
+REQUIREMENTS:
+
+1. STRIP ALL ELEMENTOR FROM HEADER MARKUP
+   - Remove all class="elementor ..." from header.php
+   - Remove all .elementor-* classes
+   - Remove all Elementor IDs
+   - Remove all Elementor data-id="..." attributes
+   - Remove all Elementor data-* attributes
+   - Remove unnecessary nested <div> wrappers created by Elementor
+   - Replace with clean semantic classes: .th-header, .th-header-inner, .th-logo, .th-nav, .th-nav-list, .th-nav-item, .th-nav-link, .th-mobile-toggle, .th-mobile-menu, .th-cta-button
+
+2. DELETE ELEMENTOR CSS FILES
+   - Delete css/elementor-frontend-inline-reference.css
+   - Delete css/elementor-frontend-reference.css
+   - Remove all Elementor CSS rules from css/main.css
+   - Remove Elementor references from css/layout.css
+   - Remove Elementor references from css/components.css
+
+3. REBUILD HEADER STYLING IN css/main.css ONLY
+   - Match header of talkingheads.com exactly
+   - Include: header height, background color/gradient, spacing, logo size/alignment, navigation layout, hover states, typography, responsive behavior
+   - No black area above #content
+   - No overlapping sections
+
+4. FIX TOP SPACING AND OVERLAPS
+   - Remove --margin-top:-125px causing black bar
+   - Ensure header connects directly to content
+   - Prevent header from overlapping content at any viewport width
+
+5. RESPONSIVE REQUIREMENTS
+   - Match responsive behavior of talkingheads.com
+   - Ensure header/nav doesn't collapse badly
+   - Prevent overlap on smaller screens
+   - Resize logo and nav appropriately
+
+TECHNICAL CONSTRAINTS:
+- Use ONLY css/main.css for all header styling
+- Do NOT comment out code - DELETE it
+- Do NOT preserve Elementor wrappers or data attributes
+- Preserve WordPress menu classes (menu-item, current-menu-item) for compatibility
+- Maintain accessibility attributes (aria-label, aria-expanded, aria-hidden)
+- Keep SVG icons for hamburger/close toggle and CTA arrow
+

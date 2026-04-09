@@ -1,0 +1,178 @@
+/**
+ * Merged CSS File - plugins.css
+ * This file contains concatenated CSS from multiple source files
+ * Generated automatically - do not edit directly
+ * 
+ * Source files merged in order:
+ * 1. css/reset.css
+ * 2. css/variables.css
+ * 3. css/typography.css
+ * 4. css/layout.css
+ * 5. css/components.css
+ * 6. css/header.css
+ * 7. css/footer.css
+ * 8. css/responsive.css
+ * 
+ * NOTE: Elementor-specific CSS rules have been removed as of 2025-11-20
+ * All Elementor classes (.elementor-*, .e-con-*) and related CSS variables removed
+ */
+
+/* Source: css/reset.css */
+/**
+ * Reset/Normalize CSS
+ * Base reset styles from hello-elementor theme
+ */
+
+
+/* Source: css/variables.css */
+/**
+ * CSS Custom Properties (Variables)
+ * Color palette, fonts, spacing, shadows
+ */
+
+:root {
+	--wp--preset--color--black: #000000;
+	--wp--preset--color--white: #ffffff;
+	--wp--preset--color--cyan-bluish-gray: #abb8c3;
+	
+	/* Elementor CSS variables removed - no longer needed */
+	
+	/* Container */
+	--container-max-width: 1600px;
+}
+
+@media(max-width: 1024px) {
+	:root {
+		--container-max-width: 1024px;
+	}
+}
+
+@media(max-width: 767px) {
+	:root {
+		--container-max-width: 767px;
+	}
+}
+
+
+/* Source: css/typography.css */
+/**
+ * Typography Styles
+ * Font families, sizes, weights, line heights
+ * Goli font @font-face declarations
+ */
+
+/* Goli Font */
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Regular.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Regular.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.svg#Goli') format('svg');
+}
+
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Medium.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Medium.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.svg#Goli') format('svg');
+}
+
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-SemiBold.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-SemiBold.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.svg#Goli') format('svg');
+}
+
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Bold.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Bold.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.svg#Goli') format('svg');
+}
+
+
+/* Source: css/layout.css */
+/**
+ * Layout Styles
+ * Grid/flexbox layouts, containers
+ */
+
+/* Elementor CSS removed - no longer needed */
+/* Base box-sizing reset preserved */
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+
+/* Source: css/components.css */
+/**
+ * Component Styles
+ * Buttons, forms, cards, etc.
+ */
+
+/* Elementor widget styles removed - will be replaced with semantic classes in main.css */
+
+
+/* Source: css/header.css */
+/**
+ * Header Styles
+ * Header and navigation styles
+ */
+
+/* Header specific styles will be extracted here */
+.site-header .site-branding {
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.site-header {
+	padding-inline-end: 0px;
+	padding-inline-start: 0px;
+}
+
+
+/* Source: css/footer.css */
+/**
+ * Footer Styles
+ * Footer content styles
+ */
+
+.site-footer .site-branding {
+	flex-direction: column;
+	align-items: stretch;
+}
+
+
+/* Source: css/responsive.css */
+/**
+ * Responsive Styles
+ * Media queries and breakpoints
+ */
+
+/* Responsive breakpoints will be defined here */
+

@@ -1,0 +1,392 @@
+/**
+ * Merged CSS File - plugins.css
+ * This file contains concatenated CSS from multiple source files
+ * Generated automatically - do not edit directly
+ * 
+ * Source files merged in order:
+ * 1. css/reset.css
+ * 2. css/variables.css
+ * 3. css/typography.css
+ * 4. css/layout.css
+ * 5. css/components.css
+ * 6. css/header.css
+ * 7. css/footer.css
+ * 8. css/responsive.css
+ */
+
+/* Source: css/reset.css */
+/**
+ * Reset/Normalize CSS
+ * Base reset styles from hello-elementor theme
+ */
+
+
+/* Source: css/variables.css */
+/**
+ * CSS Custom Properties (Variables)
+ * Color palette, fonts, spacing, shadows
+ */
+
+:root {
+	--wp--preset--color--black: #000000;
+	--wp--preset--color--white: #ffffff;
+	--wp--preset--color--cyan-bluish-gray: #abb8c3;
+	
+	/* Elementor Colors */
+	--e-global-color-primary: #6EC1E4;
+	--e-global-color-secondary: #54595F;
+	--e-global-color-text: #7A7A7A;
+	--e-global-color-accent: #61CE70;
+	--e-global-color-1ba7292: #EAA73F;
+	
+	/* Typography */
+	--e-global-typography-primary-font-family: "Roboto", Sans-serif;
+	--e-global-typography-primary-font-weight: 600;
+	--e-global-typography-secondary-font-family: "Roboto Slab", Sans-serif;
+	--e-global-typography-secondary-font-weight: 400;
+	--e-global-typography-text-font-family: "Roboto", Sans-serif;
+	--e-global-typography-text-font-weight: 400;
+	--e-global-typography-accent-font-family: "Roboto", Sans-serif;
+	--e-global-typography-accent-font-weight: 500;
+	
+	/* Container */
+	--container-max-width: 1600px;
+}
+
+@media(max-width: 1024px) {
+	:root {
+		--container-max-width: 1024px;
+	}
+}
+
+@media(max-width: 767px) {
+	:root {
+		--container-max-width: 767px;
+	}
+}
+
+
+/* Source: css/typography.css */
+/**
+ * Typography Styles
+ * Font families, sizes, weights, line heights
+ * Goli font @font-face declarations
+ */
+
+/* Goli Font */
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Regular.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Regular.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Regular.svg#Goli') format('svg');
+}
+
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Medium.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Medium.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Medium.svg#Goli') format('svg');
+}
+
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-SemiBold.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-SemiBold.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-SemiBold.svg#Goli') format('svg');
+}
+
+@font-face {
+	font-family: 'Goli';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url('/wp-content/uploads/2025/06/Goli-Bold.eot');
+	src: url('/wp-content/uploads/2025/06/Goli-Bold.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.woff2') format('woff2'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.woff') format('woff'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.ttf') format('truetype'),
+		url('/wp-content/uploads/2025/06/Goli-Bold.svg#Goli') format('svg');
+}
+
+
+/* Source: css/layout.css */
+/**
+ * Layout Styles
+ * Grid/flexbox layouts, containers
+ */
+
+/* Base Elementor CSS - Converts CSS variables to actual properties */
+/* This is required for Elementor's CSS variable system to work */
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+.elementor *, .elementor ::after, .elementor ::before {
+	box-sizing: border-box;
+}
+
+.elementor-element {
+	--flex-direction: initial;
+	--flex-wrap: initial;
+	--justify-content: initial;
+	--align-items: initial;
+	--align-content: initial;
+	--gap: initial;
+	--flex-basis: initial;
+	--flex-grow: initial;
+	--flex-shrink: initial;
+	--order: initial;
+	--align-self: initial;
+	--display: initial;
+	--min-height: initial;
+	--width: initial;
+	--margin-top: 0px;
+	--margin-right: 0px;
+	--margin-bottom: 0px;
+	--margin-left: 0px;
+	--padding-top: 0px;
+	--padding-right: 0px;
+	--padding-bottom: 0px;
+	--padding-left: 0px;
+	--container-widget-width: initial;
+	--container-widget-height: initial;
+	--container-widget-flex-grow: 0;
+	--container-widget-align-self: initial;
+	align-self: var(--align-self);
+	flex-basis: var(--flex-basis);
+	flex-grow: var(--flex-grow);
+	flex-shrink: var(--flex-shrink);
+	order: var(--order);
+	display: var(--display);
+	min-height: var(--min-height);
+	flex-direction: var(--flex-direction);
+	flex-wrap: var(--flex-wrap, var(--flex-wrap-mobile, wrap));
+	justify-content: var(--justify-content);
+	align-items: var(--align-items);
+	align-content: var(--align-content);
+	gap: var(--gap);
+	row-gap: var(--row-gap);
+	column-gap: var(--column-gap);
+	width: var(--width, var(--container-widget-width, 100%));
+	max-width: var(--width, var(--container-widget-width, 100%));
+	margin-top: var(--margin-top);
+	margin-right: var(--margin-right);
+	margin-bottom: var(--margin-bottom);
+	margin-left: var(--margin-left);
+	padding-top: var(--padding-top);
+	padding-right: var(--padding-right);
+	padding-bottom: var(--padding-bottom);
+	padding-left: var(--padding-left);
+}
+
+.e-con {
+	--border-radius: 0;
+	--border-top-width: 0px;
+	--border-right-width: 0px;
+	--border-bottom-width: 0px;
+	--border-left-width: 0px;
+	--border-style: initial;
+	--border-color: initial;
+	--container-widget-width: 100%;
+	--container-widget-height: initial;
+	--container-widget-flex-grow: 0;
+	--container-widget-align-self: initial;
+	height: auto;
+	--content-width: min(100%,var(--container-max-width,1140px));
+	--width: 100%;
+	--min-height: initial;
+	--height: auto;
+	--text-align: initial;
+	--margin-top: 0px;
+	--margin-right: 0px;
+	--margin-bottom: 0px;
+	--margin-left: 0px;
+	--padding-top: var(--container-default-padding-top,10px);
+	--padding-right: var(--container-default-padding-right,10px);
+	--padding-bottom: var(--container-default-padding-bottom,10px);
+	--padding-left: var(--container-default-padding-left,10px);
+	--position: relative;
+	--z-index: revert;
+	--overflow: visible;
+	--gap: var(--widgets-spacing,20px);
+	--row-gap: var(--widgets-spacing-row,20px);
+	--column-gap: var(--widgets-spacing-column,20px);
+	--overlay-mix-blend-mode: initial;
+	--overlay-opacity: 1;
+	--overlay-transition: .3s;
+	--e-con-grid-template-columns: repeat(3,1fr);
+	--e-con-grid-template-rows: repeat(2,1fr);
+	border-radius: var(--border-radius);
+	height: var(--height);
+	min-height: var(--min-height);
+	min-width: 0px;
+	overflow: var(--overflow);
+	position: var(--position);
+	width: var(--width);
+	z-index: var(--z-index);
+	--flex-wrap-mobile: wrap;
+	margin-block-end: var(--margin-block-end);
+	margin-block-start: var(--margin-block-start);
+	margin-inline-end: var(--margin-inline-end);
+	margin-inline-start: var(--margin-inline-start);
+	padding-inline-end: var(--padding-inline-end);
+	padding-inline-start: var(--padding-inline-start);
+}
+
+.e-con:where(:not(.e-div-block-base)) {
+	transition: background var(--background-transition,.3s),border var(--border-transition,.3s),box-shadow var(--border-transition,.3s),transform var(--e-con-transform-transition-duration,.4s);
+}
+
+.e-con, .e-con > .e-con-inner {
+	display: var(--display);
+}
+
+.e-con.e-flex {
+	--flex-direction: column;
+	--flex-basis: auto;
+	--flex-grow: 0;
+	--flex-shrink: 1;
+	flex: var(--flex-grow) var(--flex-shrink) var(--flex-basis);
+}
+
+/* Apply flexbox properties from CSS variables */
+.e-con {
+	flex-direction: var(--flex-direction);
+	flex-wrap: var(--flex-wrap, var(--flex-wrap-mobile, wrap));
+	justify-content: var(--justify-content);
+	align-items: var(--align-items);
+	align-content: var(--align-content);
+	gap: var(--gap);
+	row-gap: var(--row-gap);
+	column-gap: var(--column-gap);
+	margin-top: var(--margin-top);
+	margin-right: var(--margin-right);
+	margin-bottom: var(--margin-bottom);
+	margin-left: var(--margin-left);
+	padding-top: var(--padding-top);
+	padding-right: var(--padding-right);
+	padding-bottom: var(--padding-bottom);
+	padding-left: var(--padding-left);
+}
+
+.e-con-boxed.e-flex {
+	place-content: normal;
+	align-items: normal;
+	flex-flow: column;
+}
+
+.e-con-boxed {
+	gap: initial;
+	text-align: initial;
+}
+
+.elementor-section.elementor-section-boxed > .elementor-container {
+	max-width: var(--container-max-width);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.e-con {
+	--container-max-width: var(--container-max-width);
+}
+
+/* Make main content containers full width like header/footer */
+main#content .e-con-boxed,
+main#content .e-con-boxed .e-con-inner {
+	max-width: 100% !important;
+	width: 100%;
+}
+
+.elementor-widget:not(:last-child) {
+	margin-block-end: 20px;
+}
+
+.elementor-element {
+	--widgets-spacing: 20px 20px;
+	--widgets-spacing-row: 20px;
+	--widgets-spacing-column: 20px;
+}
+
+
+/* Source: css/components.css */
+/**
+ * Component Styles
+ * Buttons, forms, cards, etc.
+ */
+
+.elementor-widget-button .elementor-button {
+	background-color: var(--e-global-color-accent);
+	font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+	font-weight: var(--e-global-typography-accent-font-weight);
+}
+
+.elementor-widget-heading .elementor-heading-title {
+	font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+	font-weight: var(--e-global-typography-primary-font-weight);
+	color: var(--e-global-color-primary);
+}
+
+.elementor-widget-text-editor {
+	font-family: var(--e-global-typography-text-font-family), Sans-serif;
+	font-weight: var(--e-global-typography-text-font-weight);
+	color: var(--e-global-color-text);
+}
+
+
+/* Source: css/header.css */
+/**
+ * Header Styles
+ * Header and navigation styles
+ */
+
+/* Header specific styles will be extracted here */
+.site-header .site-branding {
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.site-header {
+	padding-inline-end: 0px;
+	padding-inline-start: 0px;
+}
+
+
+/* Source: css/footer.css */
+/**
+ * Footer Styles
+ * Footer content styles
+ */
+
+.site-footer .site-branding {
+	flex-direction: column;
+	align-items: stretch;
+}
+
+
+/* Source: css/responsive.css */
+/**
+ * Responsive Styles
+ * Media queries and breakpoints
+ */
+
+/* Responsive breakpoints will be defined here */
+

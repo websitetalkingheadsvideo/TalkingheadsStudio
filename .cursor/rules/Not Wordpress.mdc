@@ -1,0 +1,10 @@
+This codebase is not a live WordPress site. It is a static export of a WordPress site (plain PHP/HTML/CSS/JS files).
+Do not treat this project as a WordPress installation:
+
+Do not suggest using WordPress plugins, themes, the WordPress admin, or wp-cli.
+
+Do not assume access to a database or wp-config.php.
+
+All changes must work purely as static files (PHP includes, HTML, CSS, JS).---
+alwaysApply: true
+---

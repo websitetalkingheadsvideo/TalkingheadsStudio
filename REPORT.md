@@ -1,3 +1,38 @@
+# Session Report: Repo sweep — `/next` stages all, backlog files, tooling
+
+**Date:** April 2026  
+**Project:** Talking Heads Studio Website  
+**Version:** 0.2.13 → 0.2.14  
+**Type:** Patch (workflow, docs, assets, backups)
+
+## Summary
+
+Updated **`.cursor/commands/next.md`** so `/next` always runs **`git add -A`** (full non-ignored tree) instead of cherry-picking files. Committed previously untracked and modified work: **`.cursor/mcp.json`**, **`.cursor/rules/Not Wordpress.mdc`**, **`.env.example`**, **`.taskmaster/docs/`** PRD/planning text files, **`ELEMENTOR_TO_CUSTOM_CSS_PLAN.md`**, CSS **`plugins.css`** plus **Elementor-removal / pre-sync backup** copies under **`css/`**, **`index.php.backup-elementor-removal`**, static exports **`talkingheads.html`** / **`talkingheadstudio.html`**, **`tmp/`** comparison screenshots, and stray **`.FullName`**. **`SITE_VERSION`** → **0.2.14**; contact page CSS cache query **`?v=0.2.14`**.
+
+## Work Completed
+
+### 1. **Cursor command** (`.cursor/commands/next.md`)
+   - Documented stage-all policy and push to `main`.
+
+### 2. **Backlog / workspace files**
+   - Added all of the above paths in one commit per user workflow.
+
+## Files Touched
+
+- `includes/config.php` — `SITE_VERSION` 0.2.13 → 0.2.14  
+- `contact/index.php` — stylesheet `?v=0.2.14`  
+- `.cursor/commands/next.md`, `.cursor/mcp.json`, `.cursor/rules/Not Wordpress.mdc`  
+- `.env.example`, `.taskmaster/docs/*`, `ELEMENTOR_TO_CUSTOM_CSS_PLAN.md`  
+- `css/plugins.css`, `css/*.backup*`, `index.php.backup-elementor-removal`  
+- `talkingheads.html`, `talkheadstudio.html`, `tmp/*.png`, `.FullName`  
+- `REPORT.md`
+
+## Version
+
+**v0.2.14** — `/next` stage-all; committed deferred untracked + modified tooling/docs/backups/tmp
+
+---
+
 # Session Report: Contact page — Bootstrap body, width shell, column animations
 
 **Date:** April 2026  

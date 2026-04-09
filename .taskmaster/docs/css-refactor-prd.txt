@@ -1,0 +1,86 @@
+# CSS Refactoring Project - Remove Duplicate Statements
+
+## Overview
+Refactor all CSS files in the `css/` folder to remove duplicate CSS rules and duplicate declarations within rules, while preserving visual behavior. This is a code quality improvement task focused on eliminating redundancy without changing functionality.
+
+## Scope
+- **Target Files**: All `*.css` files in `css/` folder (excluding backup files)
+  - css/components.css
+  - css/footer.css
+  - css/header.css
+  - css/layout.css
+  - css/main.css
+  - css/plugins.css
+  - css/reset.css
+  - css/responsive.css
+  - css/typography.css
+  - css/variables.css
+- **Exclusions**: Backup files (`.backup-*`, `.backup.*`), files in subdirectories of wp-content
+- **No functional changes**: Visual appearance must remain identical
+
+## Core Requirements
+
+### 1. Discovery and Analysis Phase
+- Scan all CSS files in `css/` folder
+- Identify current code style (indentation: tabs, spacing conventions)
+- Catalog all CSS rules and their locations
+- Detect duplicate rules (same selector + identical declarations)
+- Detect duplicate declarations within the same rule block
+
+### 2. Code Style Standardization
+- Establish consistent formatting rules based on existing patterns
+- Normalize indentation (tabs, consistent width)
+- Standardize brace placement (opening brace on selector line, closing brace on own line)
+- Ensure one property per line with trailing semicolon
+- Remove trailing whitespace
+- Ensure files end with single newline
+
+### 3. Duplicate Declaration Removal
+- Within each rule block, identify duplicate property declarations
+- Keep the last declaration (CSS cascade rule: last one wins)
+- Remove earlier duplicates
+- Handle cases where values differ (keep last value)
+
+### 4. Duplicate Rule Removal
+- Identify rules with identical selectors and identical declarations
+- Merge duplicate rules into single rule
+- Preserve cascade order when merging (maintain specificity behavior)
+- Handle cases where selectors are same but declarations differ (merge safely or preserve order)
+
+### 5. Safety and Verification
+- Ensure no selector changes
+- Ensure no property name changes
+- Ensure no value changes (except removing overridden duplicates)
+- Preserve cascade and specificity behavior
+- When in doubt, prefer keeping original code over risky deduplication
+
+### 6. Implementation in Plan Mode
+- All changes must be made using Cursor Plan Mode
+- Work in small, reviewable batches:
+  - Batch 1: Formatting normalization
+  - Batch 2: Duplicate declaration removal
+  - Batch 3: Duplicate rule removal/merging
+- Show Plan Mode diff for each batch
+- Provide explanation for each change
+
+### 7. Final Verification
+- Re-scan CSS files to verify no duplicates remain
+- Summarize files modified
+- Document common duplication patterns found
+- Note any areas intentionally not deduplicated due to cascade concerns
+
+## Technical Constraints
+- Do not rename files
+- Do not move directories
+- Do not convert to SASS/SCSS/PostCSS/Tailwind
+- Do not introduce new CSS features or variables
+- Do not reorganize selectors in ways that affect cascade
+- Use tabs for indentation (matching existing style)
+
+## Success Criteria
+- Zero duplicate rules (same selector + same declarations)
+- Zero duplicate declarations within same rule block
+- Visual appearance unchanged
+- All changes made in Plan Mode
+- Clean, maintainable CSS codebase
+

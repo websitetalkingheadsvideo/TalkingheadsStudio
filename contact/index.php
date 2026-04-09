@@ -19,10 +19,10 @@ require_once __DIR__ . '/../includes/head.php';
 // Page-specific styles: main.css (brand type, schedule button); contact.css = this page only.
 ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-<link rel="stylesheet" href="/css/main.css?v=0.2.13">
-<link rel="stylesheet" href="/css/header2.css?v=0.2.13">
-<link rel="stylesheet" href="/css/contact.css?v=0.2.13">
-<link rel="stylesheet" href="/css/footer2.css?v=0.2.13">
+<link rel="stylesheet" href="/css/main.css?v=0.2.14">
+<link rel="stylesheet" href="/css/header2.css?v=0.2.14">
+<link rel="stylesheet" href="/css/contact.css?v=0.2.14">
+<link rel="stylesheet" href="/css/footer2.css?v=0.2.14">
 </head>
 
 <body <?php body_class('page-contact'); ?>>

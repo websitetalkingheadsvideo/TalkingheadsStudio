@@ -1,0 +1,16 @@
+/**
+ * Layout Styles
+ * Grid/flexbox layouts, containers
+ */
+
+.e-con {
+	--container-max-width: var(--container-max-width);
+}
+
+/* Make main content containers full width like header/footer */
+main#content .e-con-boxed,
+main#content .e-con-boxed .e-con-inner {
+	max-width: 100% !important;
+	width: 100%;
+}
+
