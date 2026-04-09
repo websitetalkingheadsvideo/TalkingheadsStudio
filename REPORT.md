@@ -1,3 +1,35 @@
+# Session Report: Contact page — Bootstrap body, width shell, column animations
+
+**Date:** April 2026  
+**Project:** Talking Heads Studio Website  
+**Version:** 0.2.12 → 0.2.13  
+**Type:** Patch (contact markup/CSS, motion)
+
+## Summary
+
+Replaced the Contact **main** area (`contact/index.php`) with Bootstrap grid markup (no Elementor wrapper): hero **Contact Us**, two `col-lg-6` columns (copy + Bookafy schedule + address/phone/email row; Pipedrive iframe in the dark panel). **`css/contact.css`** owns page background, negative top offset, typography, form frame, and **scoped wrapper** **`.contact-page-container`** (**`max-width: 1000px`**, centered) — dropped Bootstrap **`.container`** on that page because **`main.css`** redefines `.container` and caused edge-to-edge layout on wide screens. Form column uses **`justify-content-center`**; form inner margins center the embed instead of hugging the far right. **Column entrance**: staggered fade + slide; duration **1.4s**; keyframes use **`translate3d(calc(±100% ± 1.5rem), 0, 0)`** so each column starts from roughly the **other** column’s side (cross-over motion). **`prefers-reduced-motion`** disables animations. Stylesheet query strings on the contact page aligned to **`SITE_VERSION`**.
+
+## Work Completed
+
+### 1. **Contact main** (`contact/index.php`)
+   - Semantic headings, `row` / `col-lg-6`, schedule block + iframe unchanged functionally.
+
+### 2. **Contact CSS** (`css/contact.css`)
+   - `.contact-page-container` width shell; form panel; cross-over `@keyframes`; reduced-motion guard.
+
+## Files Touched
+
+- `includes/config.php` — `SITE_VERSION` 0.2.12 → 0.2.13  
+- `contact/index.php` — markup, `?v=0.2.13` on CSS links  
+- `css/contact.css`  
+- `REPORT.md`
+
+## Version
+
+**v0.2.13** — Contact: Bootstrap main content, fixed centered width, cross-over column animation, 1.4s duration
+
+---
+
 # Session Report: Footer2 (talkingheads.com layout), scripts split, contact integration
 
 **Date:** April 2026  

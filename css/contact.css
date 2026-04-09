@@ -1,82 +1,99 @@
 /**
- * Contact page (elementor-1535): spacing, responsive Pipedrive iframe (C1 wrapper), motion preference.
+ * Contact page main content only (Bootstrap markup in contact/index.php).
  */
 
-/* Gutters beside the capped Elementor column; !important beats Bootstrap Reboot body background */
-html:has(main#content.post-1535),
-body:has(main#content.post-1535),
+html:has(main.contact-page-main),
+body:has(main.contact-page-main),
 body.page-contact {
 	background-color: #141414 !important;
 }
 
-main#content.post-1535,
-main#content.post-1535 .page-content {
+main.contact-page-main {
 	background-color: #141414;
+	min-height: 40vh;
 }
 
-/* Hard cap the whole Elementor tree for this page (see main#content.post-1535 in contact/index.php). */
-main#content.post-1535 .page-content .elementor.elementor-1535 {
-	max-width: 1140px !important;
-	width: 100%;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	box-sizing: border-box;
-}
-
-/* Pull section under header like WordPress export (contact/index.html post-1535 inline CSS). */
-main#content .elementor-1535 .th.th-c960ed4,
-main#content.post-1535 .th.th-c960ed4 {
-	--margin-top: -125px;
+/* Pull section under header (parity with former Elementor export) */
+.contact-page-section {
 	margin-top: -125px;
-	/* layout.css uses max-width: var(--container-max-width) on .e-con-boxed; force var on this node */
-	--container-max-width: 1140px;
+	padding-top: 2rem;
+	padding-bottom: 3.75rem;
+	box-sizing: border-box;
 }
 
 /*
- * Readable column + dark band: `#141414` is on this .e-con-boxed, not only on .e-con-inner.
+ * Own wrapper (no Bootstrap .container): main.css ships a second .container that forces
+ * width:100% and fights BS5 — content looked edge-to-edge on wide screens.
  */
-main#content .elementor-1535 .th.th-c960ed4.e-con-boxed,
-main#content.post-1535 .th.th-c960ed4.e-con-boxed {
-	max-width: 1140px !important;
-	width: 100% !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	box-sizing: border-box;
-}
-
-main#content .elementor-1535 .th.th-c960ed4 > .e-con-inner {
-	max-width: none;
+.contact-page-container {
 	width: 100%;
+	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
 }
 
-main#content .elementor-1535 .th.th-af92b27 {
-	--gap: 1rem 2rem;
-	--row-gap: 1rem;
-	--column-gap: 2rem;
+.contact-page-hero-title {
+	font-family: "Goli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: clamp(2.75rem, 6vw, 5.5rem);
+	font-weight: 700;
+	line-height: 1.05;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin: 0 0 2.5rem 0;
 }
 
-main#content .elementor-1535 .th.th-6e43335 .th.th-1f738dd .elementor-widget-container {
+.contact-page-lead-title {
+	font-family: "Goli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+	font-weight: 700;
+	line-height: 1.2;
+	color: #ffffff;
+	margin: 0 0 1.25rem 0;
+}
+
+.contact-page-detail-heading {
+	font-family: "Goli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.3;
+	margin: 0 0 0.5rem 0;
+}
+
+.contact-page-detail-heading a {
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+	transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-page-detail-heading a:hover,
+.contact-page-detail-heading a:focus {
+	color: #eaa73f;
+	border-bottom-color: #eaa73f;
+}
+
+.contact-page-detail-text {
+	font-size: 0.95rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.85);
+	line-height: 1.5;
+	margin: 0;
+	word-break: break-word;
+}
+
+/* Pipedrive embed frame */
+.contact-form-panel {
 	width: 100%;
 	max-width: 100%;
-	display: flex;
-	justify-content: center;
 	box-sizing: border-box;
 }
 
-/* C1: on-brand frame around Pipedrive embed */
-main#content .elementor-1535 .contact-form-panel {
-	width: 100%;
-	max-width: 100%;
-	box-sizing: border-box;
-}
-
-main#content .elementor-1535 .contact-form-panel__inner {
+.contact-form-panel__inner {
 	width: 100%;
 	max-width: min(530px, 100%);
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 1.25rem 1.25rem 1.5rem;
 	box-sizing: border-box;
 	background-color: #1a1a1a;
@@ -84,7 +101,14 @@ main#content .elementor-1535 .contact-form-panel__inner {
 	border-radius: 12px;
 }
 
-main#content .elementor-1535 .contact-form-panel__inner .contact-form-iframe {
+@media (min-width: 992px) {
+	.contact-form-panel__inner {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.contact-form-panel__inner .contact-form-iframe {
 	display: block;
 	width: 100% !important;
 	max-width: 100% !important;
@@ -97,23 +121,54 @@ main#content .elementor-1535 .contact-form-panel__inner .contact-form-iframe {
 }
 
 @media (max-width: 767px) {
-	main#content .elementor-1535 .contact-form-panel__inner .contact-form-iframe {
+	.contact-form-panel__inner .contact-form-iframe {
 		min-height: 560px;
 		height: 640px;
 	}
 }
 
-@media (max-width: 1024px) {
-	main#content .elementor-1535 .th.th-9ceb907.e-con {
-		flex-direction: column;
+/*
+ * Cross-over entrance (Elementor-style): each column starts one full column width + gutter
+ * past the midline — as if sliding in from where the *other* column sits, not a 48px nudge.
+ * % is relative to the animated element’s own width (≈ half the row at lg+).
+ */
+@keyframes contact-col-from-right {
+	from {
+		opacity: 0;
+		transform: translate3d(calc(100% + 1.5rem), 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
 	}
 }
 
-/* Elementor “invisible until animated”; show content even if frontend animation never runs */
-body.page-contact main#content.post-1535 .elementor-1535 .elementor-invisible,
-main#content.post-1535 .elementor-1535 .elementor-invisible {
-	opacity: 1 !important;
-	visibility: visible !important;
-	animation: none !important;
-	transform: none !important;
+@keyframes contact-col-from-left {
+	from {
+		opacity: 0;
+		transform: translate3d(calc(-100% - 1.5rem), 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.contact-page-col--from-right {
+	animation: contact-col-from-right 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both;
+}
+
+.contact-page-col--from-left {
+	animation: contact-col-from-left 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.18s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.contact-page-col--from-right,
+	.contact-page-col--from-left {
+		animation: none;
+		opacity: 1;
+		transform: none;
+	}
 }
