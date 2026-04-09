@@ -1,3 +1,35 @@
+# Session Report: Contact — Remove In-Page Social Row, Center Form, Spacing
+
+**Date:** April 2026  
+**Project:** Talking Heads Studio Website  
+**Version:** 0.2.10 → 0.2.11  
+**Type:** Patch (Contact markup and CSS)
+
+## Summary
+
+Contact page (`contact/index.php`): removed the Elementor social-icons widget block (`th-8772051`) so Facebook/X/Instagram/YouTube/LinkedIn no longer appear in the main content (footer social block unchanged). CSS (`css/main.css`, end of file): scoped rules for `.elementor-1535 .th.th-6e43335` to center the Pipedrive iframe (flex alignment, `--align-items`, centered HTML widget and iframe margins) and add `padding-bottom: 60px` below the form, loaded after the Elementor export so overrides win in the cascade.
+
+## Work Completed
+
+### 1. **Contact markup** (`contact/index.php`)
+   - Removed in-page Elementor `elementor-widget-social-icons` column/widget (`th-8772051`).
+
+### 2. **Contact form layout** (`css/main.css`)
+   - Post-export overrides: center form column content; `padding-bottom: 60px` under iframe.
+
+## Files Touched
+
+- `contact/index.php` — social icons block removed  
+- `css/main.css` — contact form centering and bottom spacing  
+- `includes/config.php` — `SITE_VERSION` 0.2.10 → 0.2.11  
+- `REPORT.md`
+
+## Version
+
+**v0.2.11** — Contact: no in-page social row; Pipedrive form centered with 60px space below
+
+---
+
 # Session Report: Contact Page, Animations, Footer Overrides & Assets
 
 **Date:** April 2026  
