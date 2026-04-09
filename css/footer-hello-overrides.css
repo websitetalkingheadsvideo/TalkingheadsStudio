@@ -1,0 +1,15 @@
+/**
+ * Loaded after talkingheads.css — undoes Hello Elementor footer rules bundled there.
+ * Theme uses .site-footer .footer-inner { display:flex } for branding + copyright in one row.
+ * includes/footer.php uses .footer-top + .footer-bottom; flex row breaks layout.
+ */
+.site-footer.site-footer .footer-inner {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.site-footer.site-footer {
+	padding-block-start: 0;
+	padding-block-end: 0;
+}

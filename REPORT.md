@@ -1,3 +1,52 @@
+# Session Report: Contact Page, Animations, Footer Overrides & Assets
+
+**Date:** April 2026  
+**Project:** Talking Heads Studio Website  
+**Version:** 0.2.9 → 0.2.10  
+**Type:** Patch (Contact markup/CSS, scroll animations, footer, static cleanup)
+
+## Summary
+
+Contact page: switched main stylesheet to root-absolute `/css/main.css` path; cleaned/re-indented Elementor-export markup (hero, CTAs, icon boxes, social icons, Pipedrive iframe). CSS: `components.css` component block refresh; `main.css` adds desktop bottom padding for contact container (1535) to reduce overlap with footer; `footer.css` tightens social row alignment. `head.php` loads `footer-hello-overrides.css` to neutralize Hello Elementor footer flex rules vs custom `footer.php` structure. `animations.js`: `prefers-reduced-motion`, generic `section[data-animate]` IntersectionObserver, viewport-on-load handling, legacy process/steps observers preserved. Removed obsolete `actors/index.html` static export. Added missing runtime assets: `css/footer-hello-overrides.css`, `images/Talking Heads Logo.svg` (favicon), `js/counters.js` (referenced by `index.php`). Cursor MCP config updated.
+
+## Work Completed
+
+### 1. **Contact** (`contact/index.php`, `css/main.css`)
+   - Root-absolute `/css/main.css` link
+   - Markup normalization and layout structure for page 1535
+
+### 2. **Animations & counters** (`js/animations.js`, `js/counters.js`)
+   - Scroll animations: reduced motion, `data-animate` sections, observer tuning
+   - Counter animation script committed (was referenced but untracked)
+
+### 3. **Footer & theme overrides** (`css/footer.css`, `css/footer-hello-overrides.css`, `includes/head.php`)
+   - Social links row: `justify-content`, width constraints
+   - Hello Elementor override layer after `talkingheads.css`
+
+### 4. **Components** (`css/components.css`)
+   - Component styles refresh (buttons, process UI, forms-related blocks)
+
+### 5. **Cleanup & tooling**
+   - Deleted `actors/index.html`
+   - `.cursor/mcp.json` MCP server list updates
+
+## Files Touched
+
+- `includes/config.php` — `SITE_VERSION` 0.2.9 → 0.2.10  
+- `contact/index.php`, `css/main.css`, `css/components.css`, `css/footer.css`  
+- `includes/head.php`, `css/footer-hello-overrides.css`  
+- `js/animations.js`, `js/counters.js`  
+- `images/Talking Heads Logo.svg`  
+- `actors/index.html` (removed)  
+- `.cursor/mcp.json`  
+- `REPORT.md`
+
+## Version
+
+**v0.2.10** — Contact page and CSS path fixes, animation/counter scripts, footer overrides, favicon asset, actors static HTML removed, MCP config
+
+---
+
 # Session Report: Our-Work Page – Hero Background Video & Visual Parity
 
 **Date:** February 2025  

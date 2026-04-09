@@ -101,5 +101,6 @@ if (!isset($og_image)) {
 	<link rel="stylesheet" href="/css/responsive.css">
 	<!-- Synced from talkingheads.com for visual parity -->
 	<link rel="stylesheet" href="/css/talkingheads.css">
+	<link rel="stylesheet" href="/css/footer-hello-overrides.css">
 	
 	<!-- Close head tag and open body tag should be in the page file after inline CSS -->

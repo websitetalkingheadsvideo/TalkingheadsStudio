@@ -30,6 +30,14 @@ a.skip-link.screen-reader-text {
 body.page .site-main .page-content {
 	padding-top: 0;
 }
+
+/* Contact (1535): Elementor export sets --padding-bottom: 0 on large viewports; ≤1024px already uses 50px. Footer is after <main> in the DOM, so on overlap it paints above the form; matching bottom padding reduces that overlap. */
+@media (min-width: 1025px) {
+	.elementor-1535 .th.th-c960ed4 {
+		--padding-bottom: 50px;
+	}
+}
+
 .elementor-1147 .th.th-a814b9d {
 	padding-top: 100px !important;
 	padding-bottom: 60px !important;
